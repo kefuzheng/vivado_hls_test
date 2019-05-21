@@ -41,14 +41,14 @@ set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7z020:-clg484:-1
 set SourceFiles {sc {} c ../../convolution.cpp}
-set SourceFlags {sc {} c {{}}}
-set DirectiveFile /wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/solution1.directive
-set TBFiles {verilog ../../convolution_test.cpp bc ../../convolution_test.cpp vhdl ../../convolution_test.cpp sc ../../convolution_test.cpp cas ../../convolution_test.cpp c {}}
+set SourceFlags {sc {} c {{ } {}}}
+set DirectiveFile /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/solution1.directive
+set TBFiles {verilog ../../convolution_test.cpp bc ../../convolution_test.cpp sc ../../convolution_test.cpp vhdl ../../convolution_test.cpp c {} cas ../../convolution_test.cpp}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
-set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
+set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

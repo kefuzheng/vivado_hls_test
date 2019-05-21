@@ -196,7 +196,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
@@ -245,7 +245,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -294,7 +294,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -344,7 +344,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -394,7 +394,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -444,7 +444,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -494,7 +494,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>

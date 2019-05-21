@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'filter11x11_strm'" level="0">
-<item name = "Date">Fri Feb 22 08:55:06 2019
+<item name = "Date">Tue May 21 08:04:38 2019
 </item>
-<item name = "Version">2019.1.0 (Build 2455522 on Wed Feb 20 04:08:51 MST 2019)</item>
+<item name = "Version">2019.2.0 (Build 2547110 on Sun May 19 23:20:49 MDT 2019)</item>
 <item name = "Project">proj_2D_convolution_with_linebuffer</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
@@ -24,16 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, dataflow</column>
+<column name="">23, 2070627, 6, 2070613, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_Loop_HConvH_proc8_fu_154">Loop_HConvH_proc8, ?, ?, ?, ?, none</column>
-<column name="grp_Loop_VConvH_proc_fu_163">Loop_VConvH_proc, ?, ?, ?, ?, none</column>
-<column name="grp_Loop_Border_proc_fu_193">Loop_Border_proc, ?, ?, ?, ?, none</column>
+<column name="grp_Loop_HConvH_proc6_fu_154">Loop_HConvH_proc6, 5, 2070612, 5, 2070612, none</column>
+<column name="grp_Loop_VConvH_proc_fu_163">Loop_VConvH_proc, 5, 2059825, 5, 2059825, none</column>
+<column name="grp_Loop_Border_proc_fu_193">Loop_Border_proc, 5, 2070609, 5, 2070609, none</column>
 <column name="grp_Block_proc_fu_203">Block_proc, 1, 1, 1, 1, none</column>
 <column name="call_ln264_filter11x11_strm_ent_fu_212">filter11x11_strm_ent, 0, 0, 0, 0, none</column>
 </table>

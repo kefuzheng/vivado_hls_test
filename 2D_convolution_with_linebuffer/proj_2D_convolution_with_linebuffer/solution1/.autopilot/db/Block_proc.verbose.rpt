@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'Block_proc'
 ================================================================
-* Date:           Fri Feb 22 08:55:06 2019
+* Date:           Tue May 21 08:04:38 2019
 
-* Version:        2019.1.0 (Build 2455522 on Wed Feb 20 04:08:51 MST 2019)
+* Version:        2019.2.0 (Build 2547110 on Sun May 19 23:20:49 MDT 2019)
 * Project:        proj_2D_convolution_with_linebuffer
 * Solution:       solution1
 * Product family: zynq
@@ -67,7 +67,7 @@
     * Instance: 
     N/A
 
-    * DSP48: 
+    * DSP48E: 
     N/A
 
     * Memory: 
@@ -183,8 +183,7 @@ IsGatedGlobalClock: 0
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
-1 --> 
-	2  / true
+1 --> 2 
 2 --> 
 
 * FSM state operations: 

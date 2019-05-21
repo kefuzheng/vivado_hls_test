@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Loop_Border_proc'" level="0">
-<item name = "Date">Fri Feb 22 08:55:05 2019
+<item name = "Date">Tue May 21 08:04:37 2019
 </item>
-<item name = "Version">2019.1.0 (Build 2455522 on Wed Feb 20 04:08:51 MST 2019)</item>
+<item name = "Version">2019.2.0 (Build 2547110 on Sun May 19 23:20:49 MDT 2019)</item>
 <item name = "Project">proj_2D_convolution_with_linebuffer</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, none</column>
+<column name="">5, 2070609, 5, 2070609, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Border_L">?, ?, 5, 1, 1, ?, yes</column>
+<column name="- Border_L">0, 2070604, 5, 1, 1, 0 ~ 2070601, yes</column>
 </table>
 </item>
 </section>

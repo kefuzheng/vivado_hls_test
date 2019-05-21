@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'Loop_Border_proc'
 ================================================================
-* Date:           Fri Feb 22 08:55:05 2019
+* Date:           Tue May 21 08:04:37 2019
 
-* Version:        2019.1.0 (Build 2455522 on Wed Feb 20 04:08:51 MST 2019)
+* Version:        2019.2.0 (Build 2547110 on Sun May 19 23:20:49 MDT 2019)
 * Project:        proj_2D_convolution_with_linebuffer
 * Solution:       solution1
 * Product family: zynq
@@ -25,24 +25,24 @@
 
 + Latency (clock cycles): 
     * Summary: 
-    +-----+-----+-----+-----+---------+
-    |  Latency  |  Interval | Pipeline|
-    | min | max | min | max |   Type  |
-    +-----+-----+-----+-----+---------+
-    |    ?|    ?|    ?|    ?|   none  |
-    +-----+-----+-----+-----+---------+
+    +-----+---------+-----+---------+---------+
+    |    Latency    |    Interval   | Pipeline|
+    | min |   max   | min |   max   |   Type  |
+    +-----+---------+-----+---------+---------+
+    |    5|  2070609|    5|  2070609|   none  |
+    +-----+---------+-----+---------+---------+
 
     + Detail: 
         * Instance: 
         N/A
 
         * Loop: 
-        +------------+-----+-----+----------+-----------+-----------+------+----------+
-        |            |  Latency  | Iteration|  Initiation Interval  | Trip |          |
-        |  Loop Name | min | max |  Latency |  achieved |   target  | Count| Pipelined|
-        +------------+-----+-----+----------+-----------+-----------+------+----------+
-        |- Border_L  |    ?|    ?|         5|          1|          1|     ?|    yes   |
-        +------------+-----+-----+----------+-----------+-----------+------+----------+
+        +------------+-----+---------+----------+-----------+-----------+-------------+----------+
+        |            |    Latency    | Iteration|  Initiation Interval  |     Trip    |          |
+        |  Loop Name | min |   max   |  Latency |  achieved |   target  |    Count    | Pipelined|
+        +------------+-----+---------+----------+-----------+-----------+-------------+----------+
+        |- Border_L  |    0|  2070604|         5|          1|          1| 0 ~ 2070601 |    yes   |
+        +------------+-----+---------+----------+-----------+-----------+-------------+----------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -79,25 +79,15 @@ IsGatedGlobalClock: 0
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
-1 --> 
-	2  / true
-2 --> 
-	3  / true
-3 --> 
-	4  / true
-4 --> 
-	5  / true
-5 --> 
-	10  / (icmp_ln204)
-	6  / (!icmp_ln204)
-6 --> 
-	7  / true
-7 --> 
-	8  / true
-8 --> 
-	9  / true
-9 --> 
-	5  / true
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 10 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 5 
 10 --> 
 
 * FSM state operations: 
@@ -198,16 +188,17 @@ ST_8 : Operation 88 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.vola
 
 State 9 <SV = 8> <Delay = 0.00>
 ST_9 : Operation 89 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([9 x i8]* @Border_L_str)"   --->   Operation 89 'specloopname' <Predicate = (!icmp_ln204)> <Delay = 0.00>
-ST_9 : Operation 90 [1/1] (0.00ns)   --->   "%tmp_14_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str21)" [convolution.cpp:205->convolution.cpp:271]   --->   Operation 90 'specregionbegin' 'tmp_14_i_i' <Predicate = (!icmp_ln204)> <Delay = 0.00>
-ST_9 : Operation 91 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [convolution.cpp:207->convolution.cpp:271]   --->   Operation 91 'specpipeline' <Predicate = (!icmp_ln204)> <Delay = 0.00>
-ST_9 : Operation 92 [1/1] (0.00ns)   --->   "br label %._crit_edge9.i.i.i" [convolution.cpp:214->convolution.cpp:271]   --->   Operation 92 'br' <Predicate = (select_ln204_1 & icmp_ln211)> <Delay = 0.00>
-ST_9 : Operation 93 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [convolution.cpp:221->convolution.cpp:271]   --->   Operation 93 'br' <Predicate = (select_ln204_1)> <Delay = 0.00>
-ST_9 : Operation 94 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P(i32* %dst_V, i32 %pix_out_10)" [convolution.cpp:230->convolution.cpp:271]   --->   Operation 94 'write' <Predicate = (!icmp_ln204)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_9 : Operation 95 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str21, i32 %tmp_14_i_i)" [convolution.cpp:231->convolution.cpp:271]   --->   Operation 95 'specregionend' 'empty' <Predicate = (!icmp_ln204)> <Delay = 0.00>
-ST_9 : Operation 96 [1/1] (0.00ns)   --->   "br label %0" [convolution.cpp:205->convolution.cpp:271]   --->   Operation 96 'br' <Predicate = (!icmp_ln204)> <Delay = 0.00>
+ST_9 : Operation 90 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 2070601, i64 0)"   --->   Operation 90 'speclooptripcount' 'empty' <Predicate = (!icmp_ln204)> <Delay = 0.00>
+ST_9 : Operation 91 [1/1] (0.00ns)   --->   "%tmp_17_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str21)" [convolution.cpp:205->convolution.cpp:271]   --->   Operation 91 'specregionbegin' 'tmp_17_i_i' <Predicate = (!icmp_ln204)> <Delay = 0.00>
+ST_9 : Operation 92 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [convolution.cpp:207->convolution.cpp:271]   --->   Operation 92 'specpipeline' <Predicate = (!icmp_ln204)> <Delay = 0.00>
+ST_9 : Operation 93 [1/1] (0.00ns)   --->   "br label %._crit_edge9.i.i.i" [convolution.cpp:214->convolution.cpp:271]   --->   Operation 93 'br' <Predicate = (select_ln204_1 & icmp_ln211)> <Delay = 0.00>
+ST_9 : Operation 94 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [convolution.cpp:221->convolution.cpp:271]   --->   Operation 94 'br' <Predicate = (select_ln204_1)> <Delay = 0.00>
+ST_9 : Operation 95 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P(i32* %dst_V, i32 %pix_out_10)" [convolution.cpp:230->convolution.cpp:271]   --->   Operation 95 'write' <Predicate = (!icmp_ln204)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_9 : Operation 96 [1/1] (0.00ns)   --->   "%empty_16 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str21, i32 %tmp_17_i_i)" [convolution.cpp:231->convolution.cpp:271]   --->   Operation 96 'specregionend' 'empty_16' <Predicate = (!icmp_ln204)> <Delay = 0.00>
+ST_9 : Operation 97 [1/1] (0.00ns)   --->   "br label %0" [convolution.cpp:205->convolution.cpp:271]   --->   Operation 97 'br' <Predicate = (!icmp_ln204)> <Delay = 0.00>
 
 State 10 <SV = 5> <Delay = 0.00>
-ST_10 : Operation 97 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 97 'ret' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 98 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 98 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -235,25 +226,25 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'phi' operation ('j') with incoming values : ('j', convolution.cpp:205->convolution.cpp:271) [28]  (0 ns)
 	'icmp' operation ('icmp_ln205', convolution.cpp:205->convolution.cpp:271) [36]  (2.47 ns)
-	'select' operation ('select_ln204', convolution.cpp:204->convolution.cpp:271) [44]  (0.692 ns)
-	'icmp' operation ('icmp_ln211', convolution.cpp:211->convolution.cpp:271) [57]  (2.47 ns)
+	'select' operation ('select_ln204', convolution.cpp:204->convolution.cpp:271) [45]  (0.692 ns)
+	'icmp' operation ('icmp_ln211', convolution.cpp:211->convolution.cpp:271) [58]  (2.47 ns)
 	blocking operation 1.42 ns on control path)
 
  <State 6>: 2.91ns
 The critical path consists of the following:
-	fifo read on port 'vconv_V' (convolution.cpp:212->convolution.cpp:271) [60]  (2.91 ns)
+	fifo read on port 'vconv_V' (convolution.cpp:212->convolution.cpp:271) [61]  (2.91 ns)
 
  <State 7>: 4.89ns
 The critical path consists of the following:
-	'add' operation ('add_ln228', convolution.cpp:228->convolution.cpp:271) [82]  (1.64 ns)
-	'getelementptr' operation ('borderbuf_addr_1', convolution.cpp:228->convolution.cpp:271) [84]  (0 ns)
-	'load' operation ('pix_out', convolution.cpp:228->convolution.cpp:271) on array 'borderbuf', convolution.cpp:158->convolution.cpp:271 [85]  (3.25 ns)
+	'add' operation ('add_ln228', convolution.cpp:228->convolution.cpp:271) [83]  (1.64 ns)
+	'getelementptr' operation ('borderbuf_addr_1', convolution.cpp:228->convolution.cpp:271) [85]  (0 ns)
+	'load' operation ('pix_out', convolution.cpp:228->convolution.cpp:271) on array 'borderbuf', convolution.cpp:158->convolution.cpp:271 [86]  (3.25 ns)
 
  <State 8>: 4.23ns
 The critical path consists of the following:
-	'load' operation ('pix_out', convolution.cpp:228->convolution.cpp:271) on array 'borderbuf', convolution.cpp:158->convolution.cpp:271 [85]  (3.25 ns)
-	'select' operation ('pix_out', convolution.cpp:225->convolution.cpp:271) [88]  (0 ns)
-	'select' operation ('pix_out', convolution.cpp:223->convolution.cpp:271) [89]  (0.978 ns)
+	'load' operation ('pix_out', convolution.cpp:228->convolution.cpp:271) on array 'borderbuf', convolution.cpp:158->convolution.cpp:271 [86]  (3.25 ns)
+	'select' operation ('pix_out', convolution.cpp:225->convolution.cpp:271) [89]  (0 ns)
+	'select' operation ('pix_out', convolution.cpp:223->convolution.cpp:271) [90]  (0.978 ns)
 
  <State 9>: 0ns
 The critical path consists of the following:

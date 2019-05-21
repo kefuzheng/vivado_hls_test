@@ -189,14 +189,14 @@
 						<id>8</id>
 						<name>height_read</name>
 						<fileName>convolution.cpp</fileName>
-						<fileDirectory>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</fileDirectory>
+						<fileDirectory>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</fileDirectory>
 						<lineNumber>264</lineNumber>
 						<contextFuncName>filter11x11_strm</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+								<first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -238,14 +238,14 @@
 						<id>9</id>
 						<name>width_read</name>
 						<fileName>convolution.cpp</fileName>
-						<fileDirectory>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</fileDirectory>
+						<fileDirectory>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</fileDirectory>
 						<lineNumber>264</lineNumber>
 						<contextFuncName>filter11x11_strm</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+								<first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -287,14 +287,14 @@
 						<id>10</id>
 						<name>width_out_write_ln264</name>
 						<fileName>convolution.cpp</fileName>
-						<fileDirectory>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</fileDirectory>
+						<fileDirectory>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</fileDirectory>
 						<lineNumber>264</lineNumber>
 						<contextFuncName>filter11x11_strm</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+								<first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -337,14 +337,14 @@
 						<id>12</id>
 						<name>width_out1_write_ln264</name>
 						<fileName>convolution.cpp</fileName>
-						<fileDirectory>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</fileDirectory>
+						<fileDirectory>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</fileDirectory>
 						<lineNumber>264</lineNumber>
 						<contextFuncName>filter11x11_strm</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+								<first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -387,14 +387,14 @@
 						<id>14</id>
 						<name>height_out_write_ln264</name>
 						<fileName>convolution.cpp</fileName>
-						<fileDirectory>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</fileDirectory>
+						<fileDirectory>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</fileDirectory>
 						<lineNumber>264</lineNumber>
 						<contextFuncName>filter11x11_strm</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+								<first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -437,14 +437,14 @@
 						<id>16</id>
 						<name>height_out2_write_ln264</name>
 						<fileName>convolution.cpp</fileName>
-						<fileDirectory>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</fileDirectory>
+						<fileDirectory>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</fileDirectory>
 						<lineNumber>264</lineNumber>
 						<contextFuncName>filter11x11_strm</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+								<first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -487,14 +487,14 @@
 						<id>17</id>
 						<name>_ln264</name>
 						<fileName>convolution.cpp</fileName>
-						<fileDirectory>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</fileDirectory>
+						<fileDirectory>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</fileDirectory>
 						<lineNumber>264</lineNumber>
 						<contextFuncName>filter11x11_strm</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+								<first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>

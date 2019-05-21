@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'filter11x11_strm_ent'
 ================================================================
-* Date:           Fri Feb 22 08:55:03 2019
+* Date:           Tue May 21 08:04:36 2019
 
-* Version:        2019.1.0 (Build 2455522 on Wed Feb 20 04:08:51 MST 2019)
+* Version:        2019.2.0 (Build 2547110 on Sun May 19 23:20:49 MDT 2019)
 * Project:        proj_2D_convolution_with_linebuffer
 * Solution:       solution1
 * Product family: zynq

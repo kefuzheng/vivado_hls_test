@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'filter11x11_strm'" level="0">
-<item name = "Date">Fri Feb 22 08:55:08 2019
+<item name = "Date">Tue May 21 08:04:40 2019
 </item>
-<item name = "Version">2019.1.0 (Build 2455522 on Wed Feb 20 04:08:51 MST 2019)</item>
+<item name = "Version">2019.2.0 (Build 2547110 on Sun May 19 23:20:49 MDT 2019)</item>
 <item name = "Project">proj_2D_convolution_with_linebuffer</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
@@ -24,16 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, dataflow</column>
+<column name="">23, 2070627, 6, 2070613, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="Loop_HConvH_proc8_U0">Loop_HConvH_proc8, ?, ?, ?, ?, none</column>
-<column name="Loop_VConvH_proc_U0">Loop_VConvH_proc, ?, ?, ?, ?, none</column>
-<column name="Loop_Border_proc_U0">Loop_Border_proc, ?, ?, ?, ?, none</column>
+<column name="Loop_HConvH_proc6_U0">Loop_HConvH_proc6, 5, 2070612, 5, 2070612, none</column>
+<column name="Loop_VConvH_proc_U0">Loop_VConvH_proc, 5, 2059825, 5, 2059825, none</column>
+<column name="Loop_Border_proc_U0">Loop_Border_proc, 5, 2070609, 5, 2070609, none</column>
 <column name="Block_proc_U0">Block_proc, 1, 1, 1, 1, none</column>
 <column name="filter11x11_strm_ent_U0">filter11x11_strm_ent, 0, 0, 0, 0, none</column>
 </table>
@@ -54,7 +54,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 32, -</column>
 <column name="FIFO">0, -, 55, 484, -</column>
-<column name="Instance">44, 48, 8127, 4162, 0</column>
+<column name="Instance">44, 48, 8127, 4164, 0</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 36, -</column>
 <column name="Register">-, -, 6, -, -</column>
@@ -67,13 +67,13 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="Block_proc_U0">Block_proc, 0, 0, 68, 121, 0</column>
-<column name="Loop_Border_proc_U0">Loop_Border_proc, 4, 4, 1053, 1006, 0</column>
-<column name="Loop_HConvH_proc8_U0">Loop_HConvH_proc8, 0, 22, 3419, 1443, 0</column>
+<column name="Loop_Border_proc_U0">Loop_Border_proc, 4, 4, 1053, 1008, 0</column>
+<column name="Loop_HConvH_proc6_U0">Loop_HConvH_proc6, 0, 22, 3419, 1443, 0</column>
 <column name="Loop_VConvH_proc_U0">Loop_VConvH_proc, 40, 22, 3584, 1536, 0</column>
 <column name="filter11x11_strm_ent_U0">filter11x11_strm_ent, 0, 0, 3, 56, 0</column>
 </table>
 </item>
-<item name = "DSP48"><table name="" hasTotal="0">
+<item name = "DSP48E"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
 </table>
 </item>
@@ -98,28 +98,28 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="Loop_HConvH_proc8_U0_ap_ready_count">+, 0, 0, 10, 2, 1</column>
+<column name="Loop_HConvH_proc6_U0_ap_ready_count">+, 0, 0, 10, 2, 1</column>
 <column name="filter11x11_strm_ent_U0_ap_ready_count">+, 0, 0, 10, 2, 1</column>
-<column name="Loop_HConvH_proc8_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="Loop_HConvH_proc6_U0_ap_start">and, 0, 0, 2, 1, 1</column>
 <column name="ap_idle">and, 0, 0, 2, 1, 1</column>
 <column name="ap_sync_ready">and, 0, 0, 2, 1, 1</column>
 <column name="filter11x11_strm_ent_U0_ap_start">and, 0, 0, 2, 1, 1</column>
-<column name="ap_sync_Loop_HConvH_proc8_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_Loop_HConvH_proc6_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
 <column name="ap_sync_filter11x11_strm_ent_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="Loop_HConvH_proc8_U0_ap_ready_count">9, 2, 2, 4</column>
-<column name="ap_sync_reg_Loop_HConvH_proc8_U0_ap_ready">9, 2, 1, 2</column>
+<column name="Loop_HConvH_proc6_U0_ap_ready_count">9, 2, 2, 4</column>
+<column name="ap_sync_reg_Loop_HConvH_proc6_U0_ap_ready">9, 2, 1, 2</column>
 <column name="ap_sync_reg_filter11x11_strm_ent_U0_ap_ready">9, 2, 1, 2</column>
 <column name="filter11x11_strm_ent_U0_ap_ready_count">9, 2, 2, 4</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="Loop_HConvH_proc8_U0_ap_ready_count">2, 0, 2, 0</column>
-<column name="ap_sync_reg_Loop_HConvH_proc8_U0_ap_ready">1, 0, 1, 0</column>
+<column name="Loop_HConvH_proc6_U0_ap_ready_count">2, 0, 2, 0</column>
+<column name="ap_sync_reg_Loop_HConvH_proc6_U0_ap_ready">1, 0, 1, 0</column>
 <column name="ap_sync_reg_filter11x11_strm_ent_U0_ap_ready">1, 0, 1, 0</column>
 <column name="filter11x11_strm_ent_U0_ap_ready_count">2, 0, 2, 0</column>
 </table>

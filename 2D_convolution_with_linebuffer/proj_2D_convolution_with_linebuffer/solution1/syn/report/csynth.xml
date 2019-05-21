@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2019.1.0</Version>
+<Version>2019.2.0</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -21,12 +21,17 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>undef</Best-caseLatency>
+<Best-caseLatency>23</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>undef</Worst-caseLatency>
-<DataflowPipelineThroughput>undef</DataflowPipelineThroughput>
-<Interval-min>undef</Interval-min>
-<Interval-max>undef</Interval-max>
+<Worst-caseLatency>2070627</Worst-caseLatency>
+<DataflowPipelineThroughput>
+<range>
+<min>6</min>
+<max>2070613</max>
+</range>
+</DataflowPipelineThroughput>
+<Interval-min>6</Interval-min>
+<Interval-max>2070613</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
@@ -35,7 +40,7 @@
 <BRAM_18K>44</BRAM_18K>
 <DSP48E>48</DSP48E>
 <FF>8188</FF>
-<LUT>4714</LUT>
+<LUT>4716</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

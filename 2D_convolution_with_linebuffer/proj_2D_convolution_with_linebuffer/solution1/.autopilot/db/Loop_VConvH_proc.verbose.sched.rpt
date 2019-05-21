@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'Loop_VConvH_proc'
 ================================================================
-* Date:           Fri Feb 22 08:55:04 2019
+* Date:           Tue May 21 08:04:37 2019
 
-* Version:        2019.1.0 (Build 2455522 on Wed Feb 20 04:08:51 MST 2019)
+* Version:        2019.2.0 (Build 2547110 on Sun May 19 23:20:49 MDT 2019)
 * Project:        proj_2D_convolution_with_linebuffer
 * Solution:       solution1
 * Product family: zynq
@@ -25,24 +25,24 @@
 
 + Latency (clock cycles): 
     * Summary: 
-    +-----+-----+-----+-----+---------+
-    |  Latency  |  Interval | Pipeline|
-    | min | max | min | max |   Type  |
-    +-----+-----+-----+-----+---------+
-    |    ?|    ?|    ?|    ?|   none  |
-    +-----+-----+-----+-----+---------+
+    +-----+---------+-----+---------+---------+
+    |    Latency    |    Interval   | Pipeline|
+    | min |   max   | min |   max   |   Type  |
+    +-----+---------+-----+---------+---------+
+    |    5|  2059825|    5|  2059825|   none  |
+    +-----+---------+-----+---------+---------+
 
     + Detail: 
         * Instance: 
         N/A
 
         * Loop: 
-        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
-        |                 |  Latency  | Iteration|  Initiation Interval  | Trip |          |
-        |    Loop Name    | min | max |  Latency |  achieved |   target  | Count| Pipelined|
-        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
-        |- VConvH_VConvW  |    ?|    ?|        11|          1|          1|     ?|    yes   |
-        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+        +-----------------+-----+---------+----------+-----------+-----------+-------------+----------+
+        |                 |    Latency    | Iteration|  Initiation Interval  |     Trip    |          |
+        |    Loop Name    | min |   max   |  Latency |  achieved |   target  |    Count    | Pipelined|
+        +-----------------+-----+---------+----------+-----------+-----------+-------------+----------+
+        |- VConvH_VConvW  |    0|  2059820|        11|          1|          1| 0 ~ 2059811 |    yes   |
+        +-----------------+-----+---------+----------+-----------+-----------+-------------+----------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -79,37 +79,21 @@ IsGatedGlobalClock: 0
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
-1 --> 
-	2  / true
-2 --> 
-	3  / true
-3 --> 
-	4  / true
-4 --> 
-	5  / true
-5 --> 
-	16  / (icmp_ln185)
-	6  / (!icmp_ln185)
-6 --> 
-	7  / true
-7 --> 
-	8  / true
-8 --> 
-	9  / true
-9 --> 
-	10  / true
-10 --> 
-	11  / true
-11 --> 
-	12  / true
-12 --> 
-	13  / true
-13 --> 
-	14  / true
-14 --> 
-	15  / true
-15 --> 
-	5  / true
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 16 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 5 
 16 --> 
 
 * FSM state operations: 
@@ -239,38 +223,39 @@ ST_11 : Operation 117 [1/3] (5.74ns)   --->   "%mul_ln194_5 = mul i32 724, %line
 ST_11 : Operation 118 [1/3] (5.74ns)   --->   "%mul_ln194_6 = mul i32 498, %linebuf_7_load" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 118 'mul' 'mul_ln194_6' <Predicate = (!icmp_ln185)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 ST_11 : Operation 119 [1/1] (0.00ns)   --->   "%shl_ln194_2 = shl i32 %tmp_1, 5" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 119 'shl' 'shl_ln194_2' <Predicate = (!icmp_ln185)> <Delay = 0.00>
 ST_11 : Operation 120 [1/1] (0.00ns)   --->   "%shl_ln194_3 = shl i32 %tmp_1, 2" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 120 'shl' 'shl_ln194_3' <Predicate = (!icmp_ln185)> <Delay = 0.00>
-ST_11 : Operation 121 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln194 = add i32 %shl_ln194_2, %shl_ln194" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 121 'add' 'add_ln194' <Predicate = (!icmp_ln185)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 85 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_11 : Operation 122 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln194_1 = add i32 %add_ln194, %shl_ln194_3" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 122 'add' 'add_ln194_1' <Predicate = (!icmp_ln185)> <Delay = 4.37> <Core = "TAddSub">   --->   Core 85 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_11 : Operation 123 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln194_2 = add i32 %mul_ln194, %mul_ln194_1" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 123 'add' 'add_ln194_2' <Predicate = (!icmp_ln185)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 85 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_11 : Operation 124 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln194_3 = add i32 %add_ln194_2, %shl_ln194_1" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 124 'add' 'add_ln194_3' <Predicate = (!icmp_ln185)> <Delay = 4.37> <Core = "TAddSub">   --->   Core 85 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_11 : Operation 121 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln194 = add i32 %shl_ln194_2, %shl_ln194" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 121 'add' 'add_ln194' <Predicate = (!icmp_ln185)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_11 : Operation 122 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln194_1 = add i32 %add_ln194, %shl_ln194_3" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 122 'add' 'add_ln194_1' <Predicate = (!icmp_ln185)> <Delay = 4.37> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_11 : Operation 123 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln194_2 = add i32 %mul_ln194, %mul_ln194_1" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 123 'add' 'add_ln194_2' <Predicate = (!icmp_ln185)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_11 : Operation 124 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln194_3 = add i32 %add_ln194_2, %shl_ln194_1" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 124 'add' 'add_ln194_3' <Predicate = (!icmp_ln185)> <Delay = 4.37> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 ST_11 : Operation 125 [1/1] (2.55ns)   --->   "%add_ln194_5 = add i32 %mul_ln194_3, %mul_ln194_4" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 125 'add' 'add_ln194_5' <Predicate = (!icmp_ln185)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_11 : Operation 126 [1/1] (2.55ns)   --->   "%add_ln194_8 = add i32 %mul_ln194_7, %mul_ln194_8" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 126 'add' 'add_ln194_8' <Predicate = (!icmp_ln185)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
 State 12 <SV = 11> <Delay = 5.74>
 ST_12 : Operation 127 [1/3] (5.74ns)   --->   "%mul_ln194_2 = mul i32 498, %linebuf_3_load" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 127 'mul' 'mul_ln194_2' <Predicate = (!icmp_ln185)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_12 : Operation 128 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln194_7 = add i32 %mul_ln194_5, %mul_ln194_6" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 128 'add' 'add_ln194_7' <Predicate = (!icmp_ln185)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 85 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_12 : Operation 129 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln194_9 = add i32 %add_ln194_8, %add_ln194_7" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 129 'add' 'add_ln194_9' <Predicate = (!icmp_ln185)> <Delay = 4.37> <Core = "TAddSub">   --->   Core 85 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_12 : Operation 128 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln194_7 = add i32 %mul_ln194_5, %mul_ln194_6" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 128 'add' 'add_ln194_7' <Predicate = (!icmp_ln185)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_12 : Operation 129 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln194_9 = add i32 %add_ln194_8, %add_ln194_7" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 129 'add' 'add_ln194_9' <Predicate = (!icmp_ln185)> <Delay = 4.37> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 
 State 13 <SV = 12> <Delay = 4.37>
-ST_13 : Operation 130 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln194_6 = add i32 %add_ln194_5, %mul_ln194_2" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 130 'add' 'add_ln194_6' <Predicate = (!icmp_ln185)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 85 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_13 : Operation 131 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln194_10 = add i32 %add_ln194_9, %add_ln194_6" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 131 'add' 'add_ln194_10' <Predicate = (!icmp_ln185)> <Delay = 4.37> <Core = "TAddSub">   --->   Core 85 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_13 : Operation 130 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln194_6 = add i32 %add_ln194_5, %mul_ln194_2" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 130 'add' 'add_ln194_6' <Predicate = (!icmp_ln185)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_13 : Operation 131 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln194_10 = add i32 %add_ln194_9, %add_ln194_6" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 131 'add' 'add_ln194_10' <Predicate = (!icmp_ln185)> <Delay = 4.37> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 
 State 14 <SV = 13> <Delay = 4.37>
-ST_14 : Operation 132 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln194_4 = add i32 %add_ln194_3, %add_ln194_1" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 132 'add' 'add_ln194_4' <Predicate = (!icmp_ln185)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 85 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
-ST_14 : Operation 133 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%tmp = add i32 %add_ln194_10, %add_ln194_4" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 133 'add' 'tmp' <Predicate = (!icmp_ln185)> <Delay = 4.37> <Core = "TAddSub">   --->   Core 85 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_14 : Operation 132 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln194_4 = add i32 %add_ln194_3, %add_ln194_1" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 132 'add' 'add_ln194_4' <Predicate = (!icmp_ln185)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_14 : Operation 133 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%tmp = add i32 %add_ln194_10, %add_ln194_4" [convolution.cpp:194->convolution.cpp:271]   --->   Operation 133 'add' 'tmp' <Predicate = (!icmp_ln185)> <Delay = 4.37> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 
 State 15 <SV = 14> <Delay = 2.91>
 ST_15 : Operation 134 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @VConvH_VConvW_str)"   --->   Operation 134 'specloopname' <Predicate = (!icmp_ln185)> <Delay = 0.00>
-ST_15 : Operation 135 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([7 x i8]* @p_str18) nounwind" [convolution.cpp:186->convolution.cpp:271]   --->   Operation 135 'specloopname' <Predicate = (!icmp_ln185)> <Delay = 0.00>
-ST_15 : Operation 136 [1/1] (0.00ns)   --->   "%tmp_11_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([7 x i8]* @p_str18)" [convolution.cpp:186->convolution.cpp:271]   --->   Operation 136 'specregionbegin' 'tmp_11_i_i' <Predicate = (!icmp_ln185)> <Delay = 0.00>
-ST_15 : Operation 137 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [convolution.cpp:188->convolution.cpp:271]   --->   Operation 137 'specpipeline' <Predicate = (!icmp_ln185)> <Delay = 0.00>
-ST_15 : Operation 138 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i32P(i32* %vconv_V, i32 %tmp)" [convolution.cpp:199->convolution.cpp:271]   --->   Operation 138 'write' <Predicate = (select_ln185_1)> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_15 : Operation 139 [1/1] (0.00ns)   --->   "br label %VConvW_end" [convolution.cpp:199->convolution.cpp:271]   --->   Operation 139 'br' <Predicate = (select_ln185_1)> <Delay = 0.00>
-ST_15 : Operation 140 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([7 x i8]* @p_str18, i32 %tmp_11_i_i)" [convolution.cpp:200->convolution.cpp:271]   --->   Operation 140 'specregionend' 'empty' <Predicate = (!icmp_ln185)> <Delay = 0.00>
-ST_15 : Operation 141 [1/1] (0.00ns)   --->   "br label %0" [convolution.cpp:186->convolution.cpp:271]   --->   Operation 141 'br' <Predicate = (!icmp_ln185)> <Delay = 0.00>
+ST_15 : Operation 135 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 2059811, i64 0)"   --->   Operation 135 'speclooptripcount' 'empty' <Predicate = (!icmp_ln185)> <Delay = 0.00>
+ST_15 : Operation 136 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([7 x i8]* @p_str18) nounwind" [convolution.cpp:186->convolution.cpp:271]   --->   Operation 136 'specloopname' <Predicate = (!icmp_ln185)> <Delay = 0.00>
+ST_15 : Operation 137 [1/1] (0.00ns)   --->   "%tmp_12_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([7 x i8]* @p_str18)" [convolution.cpp:186->convolution.cpp:271]   --->   Operation 137 'specregionbegin' 'tmp_12_i_i' <Predicate = (!icmp_ln185)> <Delay = 0.00>
+ST_15 : Operation 138 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [convolution.cpp:188->convolution.cpp:271]   --->   Operation 138 'specpipeline' <Predicate = (!icmp_ln185)> <Delay = 0.00>
+ST_15 : Operation 139 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i32P(i32* %vconv_V, i32 %tmp)" [convolution.cpp:199->convolution.cpp:271]   --->   Operation 139 'write' <Predicate = (select_ln185_1)> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_15 : Operation 140 [1/1] (0.00ns)   --->   "br label %VConvW_end" [convolution.cpp:199->convolution.cpp:271]   --->   Operation 140 'br' <Predicate = (select_ln185_1)> <Delay = 0.00>
+ST_15 : Operation 141 [1/1] (0.00ns)   --->   "%empty_14 = call i32 (...)* @_ssdm_op_SpecRegionEnd([7 x i8]* @p_str18, i32 %tmp_12_i_i)" [convolution.cpp:200->convolution.cpp:271]   --->   Operation 141 'specregionend' 'empty_14' <Predicate = (!icmp_ln185)> <Delay = 0.00>
+ST_15 : Operation 142 [1/1] (0.00ns)   --->   "br label %0" [convolution.cpp:186->convolution.cpp:271]   --->   Operation 142 'br' <Predicate = (!icmp_ln185)> <Delay = 0.00>
 
 State 16 <SV = 5> <Delay = 0.00>
-ST_16 : Operation 142 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 142 'ret' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 143 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 143 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -299,51 +284,51 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'phi' operation ('row') with incoming values : ('row', convolution.cpp:186->convolution.cpp:271) [34]  (0 ns)
 	'icmp' operation ('icmp_ln186', convolution.cpp:186->convolution.cpp:271) [36]  (2.47 ns)
-	'select' operation ('select_ln185', convolution.cpp:185->convolution.cpp:271) [42]  (0.692 ns)
-	'add' operation ('row', convolution.cpp:186->convolution.cpp:271) [114]  (1.64 ns)
+	'select' operation ('select_ln185', convolution.cpp:185->convolution.cpp:271) [43]  (0.692 ns)
+	'add' operation ('row', convolution.cpp:186->convolution.cpp:271) [115]  (1.64 ns)
 
  <State 6>: 3.25ns
 The critical path consists of the following:
-	'getelementptr' operation ('linebuf_1_addr', convolution.cpp:193->convolution.cpp:271) [57]  (0 ns)
-	'load' operation ('linebuf_1_load', convolution.cpp:193->convolution.cpp:271) on array 'linebuf_1' [58]  (3.25 ns)
+	'getelementptr' operation ('linebuf_1_addr', convolution.cpp:193->convolution.cpp:271) [58]  (0 ns)
+	'load' operation ('linebuf_1_load', convolution.cpp:193->convolution.cpp:271) on array 'linebuf_1' [59]  (3.25 ns)
 
  <State 7>: 3.25ns
 The critical path consists of the following:
-	'load' operation ('linebuf_0_load', convolution.cpp:193->convolution.cpp:271) on array 'linebuf_0' [54]  (3.25 ns)
+	'load' operation ('linebuf_0_load', convolution.cpp:193->convolution.cpp:271) on array 'linebuf_0' [55]  (3.25 ns)
 
  <State 8>: 5.75ns
 The critical path consists of the following:
-	'mul' operation ('mul_ln194', convolution.cpp:194->convolution.cpp:271) [59]  (5.75 ns)
+	'mul' operation ('mul_ln194', convolution.cpp:194->convolution.cpp:271) [60]  (5.75 ns)
 
  <State 9>: 5.75ns
 The critical path consists of the following:
-	'mul' operation ('mul_ln194', convolution.cpp:194->convolution.cpp:271) [59]  (5.75 ns)
+	'mul' operation ('mul_ln194', convolution.cpp:194->convolution.cpp:271) [60]  (5.75 ns)
 
  <State 10>: 5.75ns
 The critical path consists of the following:
-	'mul' operation ('mul_ln194', convolution.cpp:194->convolution.cpp:271) [59]  (5.75 ns)
+	'mul' operation ('mul_ln194', convolution.cpp:194->convolution.cpp:271) [60]  (5.75 ns)
 
  <State 11>: 5.75ns
 The critical path consists of the following:
-	'mul' operation ('mul_ln194_2', convolution.cpp:194->convolution.cpp:271) [67]  (5.75 ns)
+	'mul' operation ('mul_ln194_2', convolution.cpp:194->convolution.cpp:271) [68]  (5.75 ns)
 
  <State 12>: 5.75ns
 The critical path consists of the following:
-	'mul' operation ('mul_ln194_2', convolution.cpp:194->convolution.cpp:271) [67]  (5.75 ns)
+	'mul' operation ('mul_ln194_2', convolution.cpp:194->convolution.cpp:271) [68]  (5.75 ns)
 
  <State 13>: 4.37ns
 The critical path consists of the following:
-	'add' operation ('add_ln194_6', convolution.cpp:194->convolution.cpp:271) [101]  (0 ns)
-	'add' operation ('add_ln194_10', convolution.cpp:194->convolution.cpp:271) [105]  (4.37 ns)
+	'add' operation ('add_ln194_6', convolution.cpp:194->convolution.cpp:271) [102]  (0 ns)
+	'add' operation ('add_ln194_10', convolution.cpp:194->convolution.cpp:271) [106]  (4.37 ns)
 
  <State 14>: 4.37ns
 The critical path consists of the following:
-	'add' operation ('add_ln194_4', convolution.cpp:194->convolution.cpp:271) [99]  (0 ns)
-	'add' operation ('tmp', convolution.cpp:194->convolution.cpp:271) [106]  (4.37 ns)
+	'add' operation ('add_ln194_4', convolution.cpp:194->convolution.cpp:271) [100]  (0 ns)
+	'add' operation ('tmp', convolution.cpp:194->convolution.cpp:271) [107]  (4.37 ns)
 
  <State 15>: 2.91ns
 The critical path consists of the following:
-	fifo write on port 'vconv_V' (convolution.cpp:199->convolution.cpp:271) [110]  (2.91 ns)
+	fifo write on port 'vconv_V' (convolution.cpp:199->convolution.cpp:271) [111]  (2.91 ns)
 
  <State 16>: 0ns
 The critical path consists of the following:

@@ -121,6 +121,8 @@ extern "C" {
     void _ssdm_op_SpecStable(...) __attribute__ ((nothrow));
     void _ssdm_op_SpecStableContent(...) __attribute__ ((nothrow));
 
+    void _ssdm_op_SpecPipoDepth(...) __attribute__ ((nothrow));
+
     void _ssdm_SpecExpr(...) __attribute__ ((nothrow));
     void _ssdm_SpecExprBalance(...) __attribute__ ((nothrow));
 
@@ -192,8 +194,8 @@ extern void __assert (const char *__assertion, const char *__file, int __line)
 
 }
 # 50 "./convolution.h" 2
-# 1 "/proj/xbuilds/2019.1_0219_2226/installs/lin64/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
-# 33 "/proj/xbuilds/2019.1_0219_2226/installs/lin64/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
+# 1 "/proj/xbuilds/2019.2_0519_2227/installs/lin64/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
+# 33 "/proj/xbuilds/2019.2_0519_2227/installs/lin64/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
 # 1 "/usr/include/bits/wchar.h" 1 3 4
@@ -268,7 +270,7 @@ typedef unsigned long int uintptr_t;
 # 134 "/usr/include/stdint.h" 3 4
 typedef long int intmax_t;
 typedef unsigned long int uintmax_t;
-# 34 "/proj/xbuilds/2019.1_0219_2226/installs/lin64/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
+# 34 "/proj/xbuilds/2019.2_0519_2227/installs/lin64/Vivado/2019.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
 # 51 "./convolution.h" 2
 # 1 "/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/autopilot/hls_stream.h" 1
 # 66 "/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/autopilot/hls_stream.h"
@@ -385,17 +387,23 @@ class stream
 
   public:
 
-
     inline __attribute__((always_inline)) bool empty() const {
+
         bool tmp = _ssdm_StreamCanRead(&V);
         return !tmp;
+
+
+
     }
 
     inline __attribute__((always_inline)) bool full() const {
+
         bool tmp = _ssdm_StreamCanWrite(&V);
         return !tmp;
-    }
 
+
+
+    }
 
 
     inline __attribute__((always_inline)) void read(__STREAM_T__& dout) {
@@ -409,26 +417,22 @@ class stream
     }
 
     inline __attribute__((always_inline)) __STREAM_T__ read() {
-
-        __STREAM_T__ tmp;
-        _ssdm_StreamRead(&V, &tmp);
-        return tmp;
-
-
-
-
-
+       __STREAM_T__ tmp;
+       read(tmp);
+       return tmp;
     }
 
 
-
     inline __attribute__((always_inline)) bool read_nb(__STREAM_T__& dout) {
+
         __STREAM_T__ tmp;
         bool empty_n = _ssdm_StreamNbRead(&V, &tmp);
         dout = tmp;
         return empty_n;
-    }
 
+
+
+    }
 
 
     inline __attribute__((always_inline)) void write(const __STREAM_T__& din) {
@@ -441,12 +445,16 @@ class stream
     }
 
 
-
     inline __attribute__((always_inline)) bool write_nb(const __STREAM_T__& din) {
+
         __STREAM_T__ tmp = din;
         bool full_n = _ssdm_StreamNbWrite(&V, &tmp);
         return full_n;
+
+
+
     }
+
 
 
     inline __attribute__((always_inline)) unsigned size() {

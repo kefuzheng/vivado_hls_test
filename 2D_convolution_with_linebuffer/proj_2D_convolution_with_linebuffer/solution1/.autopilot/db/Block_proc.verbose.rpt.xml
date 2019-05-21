@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Block_proc'" level="0">
-<item name = "Date">Fri Feb 22 08:55:06 2019
+<item name = "Date">Tue May 21 08:04:38 2019
 </item>
-<item name = "Version">2019.1.0 (Build 2455522 on Wed Feb 20 04:08:51 MST 2019)</item>
+<item name = "Version">2019.2.0 (Build 2547110 on Sun May 19 23:20:49 MDT 2019)</item>
 <item name = "Project">proj_2D_convolution_with_linebuffer</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
@@ -63,7 +63,7 @@
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 </table>
 </item>
-<item name = "DSP48"><table name="" hasTotal="0">
+<item name = "DSP48E"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
 </table>
 </item>

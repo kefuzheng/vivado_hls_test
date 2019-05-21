@@ -20,7 +20,7 @@ start_for_Loop_Border_proc_U0
 start_for_Loop_VConvH_proc_U0
 filter11x11_strm_ent
 Block_proc
-Loop_HConvH_proc8
+Loop_HConvH_proc6
 Loop_VConvH_proc
 Loop_Border_proc
 filter11x11_strm

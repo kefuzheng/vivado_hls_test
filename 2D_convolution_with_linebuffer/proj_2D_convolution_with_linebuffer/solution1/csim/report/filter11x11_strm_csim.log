@@ -1,6 +1,8 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-make: 'csim.exe' is up to date.
+   Compiling ../../../../convolution_test.cpp in debug mode
+   Compiling ../../../../convolution.cpp in debug mode
+   Generating csim.exe
 
 *** TEST PASSED ***
 INFO: [SIM 1] CSim done with 0 errors.

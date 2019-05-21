@@ -161,14 +161,14 @@
 						<id>9</id>
 						<name>width_read</name>
 						<fileName>convolution.cpp</fileName>
-						<fileDirectory>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</fileDirectory>
+						<fileDirectory>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</fileDirectory>
 						<lineNumber>156</lineNumber>
 						<contextFuncName>convolution_strm&amp;lt;unsigned int, 11&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+								<first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>2</count>
 									<item_version>0</item_version>
@@ -252,14 +252,14 @@
 						<id>12</id>
 						<name>width_out_write_ln143</name>
 						<fileName>convolution.cpp</fileName>
-						<fileDirectory>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</fileDirectory>
+						<fileDirectory>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>convolution_strm&amp;lt;unsigned int, 11&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+								<first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -309,14 +309,14 @@
 						<id>14</id>
 						<name>height_out_write_ln143</name>
 						<fileName>convolution.cpp</fileName>
-						<fileDirectory>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</fileDirectory>
+						<fileDirectory>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>convolution_strm&amp;lt;unsigned int, 11&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+								<first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -366,14 +366,14 @@
 						<id>15</id>
 						<name>vconv_xlim</name>
 						<fileName>convolution.cpp</fileName>
-						<fileDirectory>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</fileDirectory>
+						<fileDirectory>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</fileDirectory>
 						<lineNumber>156</lineNumber>
 						<contextFuncName>convolution_strm&amp;lt;unsigned int, 11&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+								<first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -422,14 +422,14 @@
 						<id>16</id>
 						<name>vconv_xlim_out_out_write_ln156</name>
 						<fileName>convolution.cpp</fileName>
-						<fileDirectory>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</fileDirectory>
+						<fileDirectory>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</fileDirectory>
 						<lineNumber>156</lineNumber>
 						<contextFuncName>convolution_strm&amp;lt;unsigned int, 11&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+								<first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -479,14 +479,14 @@
 						<id>17</id>
 						<name>_ln143</name>
 						<fileName>convolution.cpp</fileName>
-						<fileDirectory>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</fileDirectory>
+						<fileDirectory>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>convolution_strm&amp;lt;unsigned int, 11&amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+								<first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>

@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'filter11x11_strm'
 ================================================================
-* Date:           Fri Feb 22 08:55:08 2019
+* Date:           Tue May 21 08:04:40 2019
 
-* Version:        2019.1.0 (Build 2455522 on Wed Feb 20 04:08:51 MST 2019)
+* Version:        2019.2.0 (Build 2547110 on Sun May 19 23:20:49 MDT 2019)
 * Project:        proj_2D_convolution_with_linebuffer
 * Solution:       solution1
 * Product family: zynq
@@ -25,25 +25,25 @@
 
 + Latency (clock cycles): 
     * Summary: 
-    +-----+-----+-----+-----+----------+
-    |  Latency  |  Interval | Pipeline |
-    | min | max | min | max |   Type   |
-    +-----+-----+-----+-----+----------+
-    |    ?|    ?|    ?|    ?| dataflow |
-    +-----+-----+-----+-----+----------+
+    +-----+---------+-----+---------+----------+
+    |    Latency    |    Interval   | Pipeline |
+    | min |   max   | min |   max   |   Type   |
+    +-----+---------+-----+---------+----------+
+    |   23|  2070627|    6|  2070613| dataflow |
+    +-----+---------+-----+---------+----------+
 
     + Detail: 
         * Instance: 
-        +-------------------------+----------------------+-----+-----+-----+-----+---------+
-        |                         |                      |  Latency  |  Interval | Pipeline|
-        |         Instance        |        Module        | min | max | min | max |   Type  |
-        +-------------------------+----------------------+-----+-----+-----+-----+---------+
-        |Loop_HConvH_proc8_U0     |Loop_HConvH_proc8     |    ?|    ?|    ?|    ?|   none  |
-        |Loop_VConvH_proc_U0      |Loop_VConvH_proc      |    ?|    ?|    ?|    ?|   none  |
-        |Loop_Border_proc_U0      |Loop_Border_proc      |    ?|    ?|    ?|    ?|   none  |
-        |Block_proc_U0            |Block_proc            |    1|    1|    1|    1|   none  |
-        |filter11x11_strm_ent_U0  |filter11x11_strm_ent  |    0|    0|    0|    0|   none  |
-        +-------------------------+----------------------+-----+-----+-----+-----+---------+
+        +-------------------------+----------------------+-----+---------+-----+---------+---------+
+        |                         |                      |    Latency    |    Interval   | Pipeline|
+        |         Instance        |        Module        | min |   max   | min |   max   |   Type  |
+        +-------------------------+----------------------+-----+---------+-----+---------+---------+
+        |Loop_HConvH_proc6_U0     |Loop_HConvH_proc6     |    5|  2070612|    5|  2070612|   none  |
+        |Loop_VConvH_proc_U0      |Loop_VConvH_proc      |    5|  2059825|    5|  2059825|   none  |
+        |Loop_Border_proc_U0      |Loop_Border_proc      |    5|  2070609|    5|  2070609|   none  |
+        |Block_proc_U0            |Block_proc            |    1|        1|    1|        1|   none  |
+        |filter11x11_strm_ent_U0  |filter11x11_strm_ent  |    0|        0|    0|        0|   none  |
+        +-------------------------+----------------------+-----+---------+-----+---------+---------+
 
         * Loop: 
         N/A
@@ -60,12 +60,12 @@
 |DSP              |        -|      -|       -|      -|    -|
 |Expression       |        -|      -|       0|     32|    -|
 |FIFO             |        0|      -|      55|    484|    -|
-|Instance         |       44|     48|    8127|   4162|    0|
+|Instance         |       44|     48|    8127|   4164|    0|
 |Memory           |        -|      -|       -|      -|    -|
 |Multiplexer      |        -|      -|       -|     36|    -|
 |Register         |        -|      -|       6|      -|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |       44|     48|    8188|   4714|    0|
+|Total            |       44|     48|    8188|   4716|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
@@ -78,15 +78,15 @@
     |         Instance        |        Module        | BRAM_18K| DSP48E|  FF  |  LUT | URAM|
     +-------------------------+----------------------+---------+-------+------+------+-----+
     |Block_proc_U0            |Block_proc            |        0|      0|    68|   121|    0|
-    |Loop_Border_proc_U0      |Loop_Border_proc      |        4|      4|  1053|  1006|    0|
-    |Loop_HConvH_proc8_U0     |Loop_HConvH_proc8     |        0|     22|  3419|  1443|    0|
+    |Loop_Border_proc_U0      |Loop_Border_proc      |        4|      4|  1053|  1008|    0|
+    |Loop_HConvH_proc6_U0     |Loop_HConvH_proc6     |        0|     22|  3419|  1443|    0|
     |Loop_VConvH_proc_U0      |Loop_VConvH_proc      |       40|     22|  3584|  1536|    0|
     |filter11x11_strm_ent_U0  |filter11x11_strm_ent  |        0|      0|     3|    56|    0|
     +-------------------------+----------------------+---------+-------+------+------+-----+
-    |Total                    |                      |       44|     48|  8127|  4162|    0|
+    |Total                    |                      |       44|     48|  8127|  4164|    0|
     +-------------------------+----------------------+---------+-------+------+------+-----+
 
-    * DSP48: 
+    * DSP48E: 
     N/A
 
     * Memory: 
@@ -115,13 +115,13 @@
     +------------------------------------------+----------+-------+---+----+------------+------------+
     |               Variable Name              | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +------------------------------------------+----------+-------+---+----+------------+------------+
-    |Loop_HConvH_proc8_U0_ap_ready_count       |     +    |      0|  0|  10|           2|           1|
+    |Loop_HConvH_proc6_U0_ap_ready_count       |     +    |      0|  0|  10|           2|           1|
     |filter11x11_strm_ent_U0_ap_ready_count    |     +    |      0|  0|  10|           2|           1|
-    |Loop_HConvH_proc8_U0_ap_start             |    and   |      0|  0|   2|           1|           1|
+    |Loop_HConvH_proc6_U0_ap_start             |    and   |      0|  0|   2|           1|           1|
     |ap_idle                                   |    and   |      0|  0|   2|           1|           1|
     |ap_sync_ready                             |    and   |      0|  0|   2|           1|           1|
     |filter11x11_strm_ent_U0_ap_start          |    and   |      0|  0|   2|           1|           1|
-    |ap_sync_Loop_HConvH_proc8_U0_ap_ready     |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_Loop_HConvH_proc6_U0_ap_ready     |    or    |      0|  0|   2|           1|           1|
     |ap_sync_filter11x11_strm_ent_U0_ap_ready  |    or    |      0|  0|   2|           1|           1|
     +------------------------------------------+----------+-------+---+----+------------+------------+
     |Total                                     |          |      0|  0|  32|          10|           8|
@@ -131,8 +131,8 @@
     +----------------------------------------------+----+-----------+-----+-----------+
     |                     Name                     | LUT| Input Size| Bits| Total Bits|
     +----------------------------------------------+----+-----------+-----+-----------+
-    |Loop_HConvH_proc8_U0_ap_ready_count           |   9|          2|    2|          4|
-    |ap_sync_reg_Loop_HConvH_proc8_U0_ap_ready     |   9|          2|    1|          2|
+    |Loop_HConvH_proc6_U0_ap_ready_count           |   9|          2|    2|          4|
+    |ap_sync_reg_Loop_HConvH_proc6_U0_ap_ready     |   9|          2|    1|          2|
     |ap_sync_reg_filter11x11_strm_ent_U0_ap_ready  |   9|          2|    1|          2|
     |filter11x11_strm_ent_U0_ap_ready_count        |   9|          2|    2|          4|
     +----------------------------------------------+----+-----------+-----+-----------+
@@ -143,8 +143,8 @@
     +----------------------------------------------+---+----+-----+-----------+
     |                     Name                     | FF| LUT| Bits| Const Bits|
     +----------------------------------------------+---+----+-----+-----------+
-    |Loop_HConvH_proc8_U0_ap_ready_count           |  2|   0|    2|          0|
-    |ap_sync_reg_Loop_HConvH_proc8_U0_ap_ready     |  1|   0|    1|          0|
+    |Loop_HConvH_proc6_U0_ap_ready_count           |  2|   0|    2|          0|
+    |ap_sync_reg_Loop_HConvH_proc6_U0_ap_ready     |  1|   0|    1|          0|
     |ap_sync_reg_filter11x11_strm_ent_U0_ap_ready  |  1|   0|    1|          0|
     |filter11x11_strm_ent_U0_ap_ready_count        |  2|   0|    2|          0|
     +----------------------------------------------+---+----+-----+-----------+
@@ -208,20 +208,13 @@ IsGatedGlobalClock: 0
   DF-Pipeline-0: Size = 8, States = { 1 2 3 4 5 6 7 8 }
 
 * FSM state transitions: 
-1 --> 
-	2  / true
-2 --> 
-	3  / true
-3 --> 
-	4  / true
-4 --> 
-	5  / true
-5 --> 
-	6  / true
-6 --> 
-	7  / true
-7 --> 
-	8  / true
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
 8 --> 
 
 * FSM state operations: 
@@ -244,11 +237,11 @@ ST_1 : Operation 22 [1/1] (2.91ns)   --->   "call fastcc void @filter11x11_strm.
 
 State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 23 [2/2] (0.00ns)   --->   "call fastcc void @Block__proc(i32* nocapture %width_c, i32* nocapture %height_c, i32* %width_c165, i32* %height_c166, i32* %vconv_xlim_loc_c)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 23 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_2 : Operation 24 [2/2] (0.00ns)   --->   "call fastcc void @Loop_HConvH_proc8(i32* nocapture %height_c164, i32* nocapture %width_c163, i32* %src_V, i32* %hconv_V)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 24 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 24 [2/2] (0.00ns)   --->   "call fastcc void @Loop_HConvH_proc6(i32* nocapture %height_c164, i32* nocapture %width_c163, i32* %src_V, i32* %hconv_V)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 24 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 3 <SV = 2> <Delay = 0.00>
 ST_3 : Operation 25 [1/2] (0.00ns)   --->   "call fastcc void @Block__proc(i32* nocapture %width_c, i32* nocapture %height_c, i32* %width_c165, i32* %height_c166, i32* %vconv_xlim_loc_c)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 25 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_3 : Operation 26 [1/2] (0.00ns)   --->   "call fastcc void @Loop_HConvH_proc8(i32* nocapture %height_c164, i32* nocapture %width_c163, i32* %src_V, i32* %hconv_V)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 26 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 26 [1/2] (0.00ns)   --->   "call fastcc void @Loop_HConvH_proc6(i32* nocapture %height_c164, i32* nocapture %width_c163, i32* %src_V, i32* %hconv_V)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 26 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 3> <Delay = 0.00>
 ST_4 : Operation 27 [2/2] (0.00ns)   --->   "call fastcc void @Loop_VConvH_proc(i32* nocapture %height_c166, i32* nocapture %vconv_xlim_loc_c, i32* %hconv_V, i32* %vconv_V, i32* %height_c167, i32* %vconv_xlim_loc_c168)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 27 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
@@ -264,34 +257,34 @@ ST_7 : Operation 30 [1/2] (0.00ns)   --->   "call fastcc void @Loop_Border_proc(
 
 State 8 <SV = 7> <Delay = 0.00>
 ST_8 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str1) nounwind" [convolution.cpp:264]   --->   Operation 31 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %width), !map !41"   --->   Operation 32 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %height), !map !47"   --->   Operation 33 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %src_V), !map !51"   --->   Operation 34 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %dst_V), !map !57"   --->   Operation 35 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %width), !map !43"   --->   Operation 32 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %height), !map !49"   --->   Operation 33 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %src_V), !map !53"   --->   Operation 34 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %dst_V), !map !59"   --->   Operation 35 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 36 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @hconv_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32* %hconv_V, i32* %hconv_V)"   --->   Operation 36 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %hconv_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 37 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 38 [1/1] (0.00ns)   --->   "%empty_7 = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @vconv_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32* %vconv_V, i32* %vconv_V)"   --->   Operation 38 'specchannel' 'empty_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 38 [1/1] (0.00ns)   --->   "%empty_4 = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @vconv_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32* %vconv_V, i32* %vconv_V)"   --->   Operation 38 'specchannel' 'empty_4' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %vconv_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 39 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @filter11x11_strm_str) nounwind"   --->   Operation 40 'spectopmodule' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 41 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %src_V, [5 x i8]* @p_str5, i32 1, i32 1, [5 x i8]* @p_str6, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [convolution.cpp:261]   --->   Operation 41 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 42 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %dst_V, [5 x i8]* @p_str5, i32 1, i32 1, [5 x i8]* @p_str6, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [convolution.cpp:262]   --->   Operation 42 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 43 [1/1] (0.00ns)   --->   "%empty_8 = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @width_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %width_c, i32* %width_c)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 43 'specchannel' 'empty_8' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 43 [1/1] (0.00ns)   --->   "%empty_5 = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @width_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %width_c, i32* %width_c)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 43 'specchannel' 'empty_5' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 44 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %width_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 44 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 45 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @width_c163_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %width_c163, i32* %width_c163)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 45 'specchannel' 'empty_9' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 45 [1/1] (0.00ns)   --->   "%empty_6 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @width_c163_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %width_c163, i32* %width_c163)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 45 'specchannel' 'empty_6' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 46 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %width_c163, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 46 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 47 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecChannel([9 x i8]* @height_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %height_c, i32* %height_c)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 47 'specchannel' 'empty_10' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 47 [1/1] (0.00ns)   --->   "%empty_7 = call i32 (...)* @_ssdm_op_SpecChannel([9 x i8]* @height_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %height_c, i32* %height_c)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 47 'specchannel' 'empty_7' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 48 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %height_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 48 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 49 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @height_c164_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %height_c164, i32* %height_c164)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 49 'specchannel' 'empty_11' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 49 [1/1] (0.00ns)   --->   "%empty_8 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @height_c164_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %height_c164, i32* %height_c164)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 49 'specchannel' 'empty_8' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 50 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %height_c164, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 50 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 51 [1/1] (0.00ns)   --->   "%empty_12 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @width_c165_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 3, i32 0, i32* %width_c165, i32* %width_c165)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 51 'specchannel' 'empty_12' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 51 [1/1] (0.00ns)   --->   "%empty_9 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @width_c165_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 3, i32 0, i32* %width_c165, i32* %width_c165)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 51 'specchannel' 'empty_9' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 52 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %width_c165, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 52 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 53 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @height_c166_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %height_c166, i32* %height_c166)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 53 'specchannel' 'empty_13' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 53 [1/1] (0.00ns)   --->   "%empty_10 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @height_c166_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %height_c166, i32* %height_c166)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 53 'specchannel' 'empty_10' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 54 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %height_c166, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 54 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 55 [1/1] (0.00ns)   --->   "%empty_14 = call i32 (...)* @_ssdm_op_SpecChannel([17 x i8]* @vconv_xlim_OC_loc_c_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %vconv_xlim_loc_c, i32* %vconv_xlim_loc_c)"   --->   Operation 55 'specchannel' 'empty_14' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 55 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecChannel([17 x i8]* @vconv_xlim_OC_loc_c_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %vconv_xlim_loc_c, i32* %vconv_xlim_loc_c)"   --->   Operation 55 'specchannel' 'empty_11' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 56 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %vconv_xlim_loc_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 56 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 57 [1/1] (0.00ns)   --->   "%empty_15 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @height_c167_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %height_c167, i32* %height_c167)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 57 'specchannel' 'empty_15' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 57 [1/1] (0.00ns)   --->   "%empty_12 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @height_c167_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %height_c167, i32* %height_c167)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 57 'specchannel' 'empty_12' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 58 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %height_c167, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 58 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 59 [1/1] (0.00ns)   --->   "%empty_16 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @vconv_xlim_OC_loc_c1, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %vconv_xlim_loc_c168, i32* %vconv_xlim_loc_c168)"   --->   Operation 59 'specchannel' 'empty_16' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 59 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @vconv_xlim_OC_loc_c1, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %vconv_xlim_loc_c168, i32* %vconv_xlim_loc_c168)"   --->   Operation 59 'specchannel' 'empty_13' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 60 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %vconv_xlim_loc_c168, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 60 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 61 [1/1] (0.00ns)   --->   "ret void" [convolution.cpp:274]   --->   Operation 61 'ret' <Predicate = true> <Delay = 0.00>
 
@@ -352,11 +345,17 @@ specbitsmap_ln0            (specbitsmap         ) [ 000000000]
 specbitsmap_ln0            (specbitsmap         ) [ 000000000]
 empty                      (specchannel         ) [ 000000000]
 specinterface_ln0          (specinterface       ) [ 000000000]
-empty_7                    (specchannel         ) [ 000000000]
+empty_4                    (specchannel         ) [ 000000000]
 specinterface_ln0          (specinterface       ) [ 000000000]
 spectopmodule_ln0          (spectopmodule       ) [ 000000000]
 specinterface_ln261        (specinterface       ) [ 000000000]
 specinterface_ln262        (specinterface       ) [ 000000000]
+empty_5                    (specchannel         ) [ 000000000]
+specinterface_ln143        (specinterface       ) [ 000000000]
+empty_6                    (specchannel         ) [ 000000000]
+specinterface_ln143        (specinterface       ) [ 000000000]
+empty_7                    (specchannel         ) [ 000000000]
+specinterface_ln143        (specinterface       ) [ 000000000]
 empty_8                    (specchannel         ) [ 000000000]
 specinterface_ln143        (specinterface       ) [ 000000000]
 empty_9                    (specchannel         ) [ 000000000]
@@ -364,16 +363,10 @@ specinterface_ln143        (specinterface       ) [ 000000000]
 empty_10                   (specchannel         ) [ 000000000]
 specinterface_ln143        (specinterface       ) [ 000000000]
 empty_11                   (specchannel         ) [ 000000000]
-specinterface_ln143        (specinterface       ) [ 000000000]
+specinterface_ln0          (specinterface       ) [ 000000000]
 empty_12                   (specchannel         ) [ 000000000]
 specinterface_ln143        (specinterface       ) [ 000000000]
 empty_13                   (specchannel         ) [ 000000000]
-specinterface_ln143        (specinterface       ) [ 000000000]
-empty_14                   (specchannel         ) [ 000000000]
-specinterface_ln0          (specinterface       ) [ 000000000]
-empty_15                   (specchannel         ) [ 000000000]
-specinterface_ln143        (specinterface       ) [ 000000000]
-empty_16                   (specchannel         ) [ 000000000]
 specinterface_ln0          (specinterface       ) [ 000000000]
 ret_ln274                  (ret                 ) [ 000000000]
 </LifeTime>
@@ -558,7 +551,7 @@ ret_ln274                  (ret                 ) [ 000000000]
 <pin id="37" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="Loop_HConvH_proc8"/></StgValue>
+<StgValue><ssdm name="Loop_HConvH_proc6"/></StgValue>
 </bind>
 </comp>
 
@@ -977,7 +970,7 @@ ret_ln274                  (ret                 ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="154" class="1004" name="grp_Loop_HConvH_proc8_fu_154">
+<comp id="154" class="1004" name="grp_Loop_HConvH_proc6_fu_154">
 <pin_list>
 <pin id="155" dir="0" index="0" bw="0" slack="0"/>
 <pin id="156" dir="0" index="1" bw="32" slack="1"/>
@@ -1367,7 +1360,7 @@ ret_ln274                  (ret                 ) [ 000000000]
 |----------|----------------------------------------|---------|---------|---------|---------|---------|---------|
 | Operation|             Functional Unit            |   BRAM  |  DSP48E |  Delay  |    FF   |   LUT   |   URAM  |
 |----------|----------------------------------------|---------|---------|---------|---------|---------|---------|
-|          |      grp_Loop_HConvH_proc8_fu_154      |    0    |    22   |  14.152 |   3252  |   1115  |    0    |
+|          |      grp_Loop_HConvH_proc6_fu_154      |    0    |    22   |  14.152 |   3252  |   1115  |    0    |
 |          |       grp_Loop_VConvH_proc_fu_163      |    0    |    22   |  19.459 |   3075  |   1181  |    0    |
 |   call   |       grp_Loop_Border_proc_fu_193      |    4    |    4    |  7.076  |   909   |   691   |    0    |
 |          |          grp_Block_proc_fu_203         |    0    |    0    |    0    |    64   |    39   |    0    |

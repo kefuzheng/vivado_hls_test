@@ -1,0 +1,319 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_HConvH_proc6'
+================================================================
+* Date:           Tue May 21 08:04:36 2019
+
+* Version:        2019.2.0 (Build 2547110 on Sun May 19 23:20:49 MDT 2019)
+* Project:        proj_2D_convolution_with_linebuffer
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   6.66|     5.745|        0.83|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+---------+-----+---------+---------+
+    |    Latency    |    Interval   | Pipeline|
+    | min |   max   | min |   max   |   Type  |
+    +-----+---------+-----+---------+---------+
+    |    5|  2070612|    5|  2070612|   none  |
+    +-----+---------+-----+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------+-----+---------+----------+-----------+-----------+-------------+----------+
+        |                 |    Latency    | Iteration|  Initiation Interval  |     Trip    |          |
+        |    Loop Name    | min |   max   |  Latency |  achieved |   target  |    Count    | Pipelined|
+        +-----------------+-----+---------+----------+-----------+-----------+-------------+----------+
+        |- HConvH_HConvW  |    0|  2070607|         8|          1|          1| 0 ~ 2070601 |    yes   |
+        +-----------------+-----+---------+----------+-----------+-----------+-------------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 8
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 13
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 8, States = { 5 6 7 8 9 10 11 12 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 13 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 5 
+13 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.91>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%hwin_1_1_i = alloca i32"   --->   Operation 14 'alloca' 'hwin_1_1_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%hwin_1 = alloca i32"   --->   Operation 15 'alloca' 'hwin_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%hwin_2 = alloca i32"   --->   Operation 16 'alloca' 'hwin_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%hwin_3 = alloca i32"   --->   Operation 17 'alloca' 'hwin_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%hwin_4 = alloca i32"   --->   Operation 18 'alloca' 'hwin_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%hwin_5 = alloca i32"   --->   Operation 19 'alloca' 'hwin_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%hwin_6 = alloca i32"   --->   Operation 20 'alloca' 'hwin_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%hwin_7 = alloca i32"   --->   Operation 21 'alloca' 'hwin_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%hwin_8 = alloca i32"   --->   Operation 22 'alloca' 'hwin_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%hwin_9 = alloca i32"   --->   Operation 23 'alloca' 'hwin_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (2.91ns)   --->   "%height_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %height)" [convolution.cpp:168->convolution.cpp:271]   --->   Operation 24 'read' 'height_read' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 25 [1/1] (2.91ns)   --->   "%width_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %width)" [convolution.cpp:169->convolution.cpp:271]   --->   Operation 25 'read' 'width_read' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+
+State 2 <SV = 1> <Delay = 5.74>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%cast = zext i32 %height_read to i64" [convolution.cpp:168->convolution.cpp:271]   --->   Operation 26 'zext' 'cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%cast1 = zext i32 %width_read to i64" [convolution.cpp:169->convolution.cpp:271]   --->   Operation 27 'zext' 'cast1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [3/3] (5.74ns)   --->   "%bound = mul i64 %cast1, %cast" [convolution.cpp:169->convolution.cpp:271]   --->   Operation 28 'mul' 'bound' <Predicate = true> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 5.74>
+ST_3 : Operation 29 [2/3] (5.74ns)   --->   "%bound = mul i64 %cast1, %cast" [convolution.cpp:169->convolution.cpp:271]   --->   Operation 29 'mul' 'bound' <Predicate = true> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 5.74>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %src_V, [5 x i8]* @p_str5, i32 1, i32 1, [5 x i8]* @p_str6, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 30 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %hconv_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 31 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %width, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 32 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %height, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 33 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 34 [1/3] (5.74ns)   --->   "%bound = mul i64 %cast1, %cast" [convolution.cpp:169->convolution.cpp:271]   --->   Operation 34 'mul' 'bound' <Predicate = true> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 35 [1/1] (1.76ns)   --->   "br label %0"   --->   Operation 35 'br' <Predicate = true> <Delay = 1.76>
+
+State 5 <SV = 4> <Delay = 5.74>
+ST_5 : Operation 36 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i64 [ 0, %entry ], [ %add_ln168, %HConvW_end ]" [convolution.cpp:168->convolution.cpp:271]   --->   Operation 36 'phi' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%row_0_i_i = phi i11 [ 0, %entry ], [ %row, %HConvW_end ]"   --->   Operation 37 'phi' 'row_0_i_i' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 38 [1/1] (0.00ns)   --->   "%hwin_1_1_i_load = load i32* %hwin_1_1_i" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 38 'load' 'hwin_1_1_i_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%hwin_1_load = load i32* %hwin_1" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 39 'load' 'hwin_1_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 40 [1/1] (0.00ns)   --->   "%hwin_2_load = load i32* %hwin_2" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 40 'load' 'hwin_2_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%hwin_3_load = load i32* %hwin_3" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 41 'load' 'hwin_3_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 42 [1/1] (0.00ns)   --->   "%hwin_4_load = load i32* %hwin_4" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 42 'load' 'hwin_4_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 43 [1/1] (0.00ns)   --->   "%hwin_5_load = load i32* %hwin_5" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 43 'load' 'hwin_5_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 44 [1/1] (0.00ns)   --->   "%hwin_6_load = load i32* %hwin_6" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 44 'load' 'hwin_6_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%hwin_7_load = load i32* %hwin_7" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 45 'load' 'hwin_7_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 46 [1/1] (0.00ns)   --->   "%hwin_8_load = load i32* %hwin_8" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 46 'load' 'hwin_8_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%hwin_9_load_1 = load i32* %hwin_9"   --->   Operation 47 'load' 'hwin_9_load_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 48 [1/1] (0.00ns)   --->   "%zext_ln169 = zext i11 %row_0_i_i to i32" [convolution.cpp:169->convolution.cpp:271]   --->   Operation 48 'zext' 'zext_ln169' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 49 [1/1] (2.47ns)   --->   "%icmp_ln169 = icmp slt i32 %zext_ln169, %width_read" [convolution.cpp:169->convolution.cpp:271]   --->   Operation 49 'icmp' 'icmp_ln169' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 50 [1/1] (2.77ns)   --->   "%icmp_ln168 = icmp eq i64 %indvar_flatten, %bound" [convolution.cpp:168->convolution.cpp:271]   --->   Operation 50 'icmp' 'icmp_ln168' <Predicate = true> <Delay = 2.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 51 [1/1] (3.52ns)   --->   "%add_ln168 = add i64 %indvar_flatten, 1" [convolution.cpp:168->convolution.cpp:271]   --->   Operation 51 'add' 'add_ln168' <Predicate = true> <Delay = 3.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 52 [1/1] (0.00ns)   --->   "store i32 %hwin_9_load_1, i32* %hwin_8"   --->   Operation 52 'store' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 53 [1/1] (0.00ns)   --->   "store i32 %hwin_8_load, i32* %hwin_7" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 53 'store' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 54 [1/1] (0.00ns)   --->   "store i32 %hwin_7_load, i32* %hwin_6" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 54 'store' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 55 [1/1] (0.00ns)   --->   "store i32 %hwin_6_load, i32* %hwin_5" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 55 'store' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 56 [1/1] (0.00ns)   --->   "store i32 %hwin_5_load, i32* %hwin_4" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 56 'store' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "store i32 %hwin_4_load, i32* %hwin_3" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 57 'store' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "store i32 %hwin_3_load, i32* %hwin_2" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 58 'store' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 59 [1/1] (0.00ns)   --->   "store i32 %hwin_2_load, i32* %hwin_1" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 59 'store' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 60 [1/1] (0.00ns)   --->   "store i32 %hwin_1_load, i32* %hwin_1_1_i" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 60 'store' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 61 [1/1] (0.00ns)   --->   "br i1 %icmp_ln168, label %.exit, label %HConvW_begin" [convolution.cpp:168->convolution.cpp:271]   --->   Operation 61 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%hwin_9_load = load i32* %hwin_9" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 62 'load' 'hwin_9_load' <Predicate = (!icmp_ln168)> <Delay = 0.00>
+ST_5 : Operation 63 [1/1] (0.69ns)   --->   "%select_ln169 = select i1 %icmp_ln169, i11 %row_0_i_i, i11 0" [convolution.cpp:169->convolution.cpp:271]   --->   Operation 63 'select' 'select_ln169' <Predicate = (!icmp_ln168)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 64 [1/1] (0.00ns)   --->   "%tmp_2 = call i32 @_ssdm_op_Read.axis.volatile.i32P(i32* %src_V)" [convolution.cpp:171->convolution.cpp:271]   --->   Operation 64 'read' 'tmp_2' <Predicate = (!icmp_ln168)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 65 [3/3] (5.74ns)   --->   "%mul_ln176 = mul i32 111, %hwin_1_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 65 'mul' 'mul_ln176' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 66 [3/3] (5.74ns)   --->   "%mul_ln176_1 = mul i32 266, %hwin_2_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 66 'mul' 'mul_ln176_1' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 67 [3/3] (5.74ns)   --->   "%mul_ln176_3 = mul i32 724, %hwin_4_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 67 'mul' 'mul_ln176_3' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 68 [3/3] (5.74ns)   --->   "%mul_ln176_4 = mul i32 821, %hwin_5_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 68 'mul' 'mul_ln176_4' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 69 [3/3] (5.74ns)   --->   "%mul_ln176_7 = mul i32 266, %hwin_8_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 69 'mul' 'mul_ln176_7' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 70 [3/3] (5.74ns)   --->   "%mul_ln176_8 = mul i32 111, %hwin_9_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 70 'mul' 'mul_ln176_8' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 71 [1/1] (1.88ns)   --->   "%icmp_ln178 = icmp ugt i11 %select_ln169, 9" [convolution.cpp:178->convolution.cpp:271]   --->   Operation 71 'icmp' 'icmp_ln178' <Predicate = (!icmp_ln168)> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 72 [1/1] (0.00ns)   --->   "store i32 %tmp_2, i32* %hwin_9" [convolution.cpp:178->convolution.cpp:271]   --->   Operation 72 'store' <Predicate = (!icmp_ln168)> <Delay = 0.00>
+ST_5 : Operation 73 [1/1] (0.00ns)   --->   "br i1 %icmp_ln178, label %1, label %HConvW_end" [convolution.cpp:178->convolution.cpp:271]   --->   Operation 73 'br' <Predicate = (!icmp_ln168)> <Delay = 0.00>
+ST_5 : Operation 74 [1/1] (1.63ns)   --->   "%row = add i11 %select_ln169, 1" [convolution.cpp:169->convolution.cpp:271]   --->   Operation 74 'add' 'row' <Predicate = (!icmp_ln168)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 5.74>
+ST_6 : Operation 75 [2/3] (5.74ns)   --->   "%mul_ln176 = mul i32 111, %hwin_1_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 75 'mul' 'mul_ln176' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 76 [2/3] (5.74ns)   --->   "%mul_ln176_1 = mul i32 266, %hwin_2_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 76 'mul' 'mul_ln176_1' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 77 [2/3] (5.74ns)   --->   "%mul_ln176_3 = mul i32 724, %hwin_4_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 77 'mul' 'mul_ln176_3' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 78 [2/3] (5.74ns)   --->   "%mul_ln176_4 = mul i32 821, %hwin_5_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 78 'mul' 'mul_ln176_4' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 79 [3/3] (5.74ns)   --->   "%mul_ln176_5 = mul i32 724, %hwin_6_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 79 'mul' 'mul_ln176_5' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 80 [3/3] (5.74ns)   --->   "%mul_ln176_6 = mul i32 498, %hwin_7_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 80 'mul' 'mul_ln176_6' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 81 [2/3] (5.74ns)   --->   "%mul_ln176_7 = mul i32 266, %hwin_8_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 81 'mul' 'mul_ln176_7' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 82 [2/3] (5.74ns)   --->   "%mul_ln176_8 = mul i32 111, %hwin_9_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 82 'mul' 'mul_ln176_8' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 5.74>
+ST_7 : Operation 83 [1/3] (5.74ns)   --->   "%mul_ln176 = mul i32 111, %hwin_1_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 83 'mul' 'mul_ln176' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 84 [1/3] (5.74ns)   --->   "%mul_ln176_1 = mul i32 266, %hwin_2_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 84 'mul' 'mul_ln176_1' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 85 [3/3] (5.74ns)   --->   "%mul_ln176_2 = mul i32 498, %hwin_3_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 85 'mul' 'mul_ln176_2' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 86 [1/3] (5.74ns)   --->   "%mul_ln176_3 = mul i32 724, %hwin_4_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 86 'mul' 'mul_ln176_3' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 87 [1/3] (5.74ns)   --->   "%mul_ln176_4 = mul i32 821, %hwin_5_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 87 'mul' 'mul_ln176_4' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 88 [2/3] (5.74ns)   --->   "%mul_ln176_5 = mul i32 724, %hwin_6_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 88 'mul' 'mul_ln176_5' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 89 [2/3] (5.74ns)   --->   "%mul_ln176_6 = mul i32 498, %hwin_7_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 89 'mul' 'mul_ln176_6' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 90 [1/3] (5.74ns)   --->   "%mul_ln176_7 = mul i32 266, %hwin_8_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 90 'mul' 'mul_ln176_7' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 91 [1/3] (5.74ns)   --->   "%mul_ln176_8 = mul i32 111, %hwin_9_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 91 'mul' 'mul_ln176_8' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 5.74>
+ST_8 : Operation 92 [1/1] (0.00ns)   --->   "%shl_ln176 = shl i32 %hwin_1_1_i_load, 5" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 92 'shl' 'shl_ln176' <Predicate = (!icmp_ln168)> <Delay = 0.00>
+ST_8 : Operation 93 [1/1] (0.00ns)   --->   "%shl_ln176_1 = shl i32 %hwin_1_1_i_load, 2" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 93 'shl' 'shl_ln176_1' <Predicate = (!icmp_ln168)> <Delay = 0.00>
+ST_8 : Operation 94 [2/3] (5.74ns)   --->   "%mul_ln176_2 = mul i32 498, %hwin_3_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 94 'mul' 'mul_ln176_2' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 95 [1/3] (5.74ns)   --->   "%mul_ln176_5 = mul i32 724, %hwin_6_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 95 'mul' 'mul_ln176_5' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 96 [1/3] (5.74ns)   --->   "%mul_ln176_6 = mul i32 498, %hwin_7_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 96 'mul' 'mul_ln176_6' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 97 [1/1] (0.00ns)   --->   "%shl_ln176_2 = shl i32 %tmp_2, 5" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 97 'shl' 'shl_ln176_2' <Predicate = (!icmp_ln168)> <Delay = 0.00>
+ST_8 : Operation 98 [1/1] (0.00ns)   --->   "%shl_ln176_3 = shl i32 %tmp_2, 2" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 98 'shl' 'shl_ln176_3' <Predicate = (!icmp_ln168)> <Delay = 0.00>
+ST_8 : Operation 99 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln176 = add i32 %shl_ln176_2, %shl_ln176" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 99 'add' 'add_ln176' <Predicate = (!icmp_ln168)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 100 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln176_1 = add i32 %add_ln176, %shl_ln176_3" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 100 'add' 'add_ln176_1' <Predicate = (!icmp_ln168)> <Delay = 4.37> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 101 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln176_2 = add i32 %mul_ln176, %mul_ln176_1" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 101 'add' 'add_ln176_2' <Predicate = (!icmp_ln168)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 102 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln176_3 = add i32 %add_ln176_2, %shl_ln176_1" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 102 'add' 'add_ln176_3' <Predicate = (!icmp_ln168)> <Delay = 4.37> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 103 [1/1] (2.55ns)   --->   "%add_ln176_5 = add i32 %mul_ln176_3, %mul_ln176_4" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 103 'add' 'add_ln176_5' <Predicate = (!icmp_ln168)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 104 [1/1] (2.55ns)   --->   "%add_ln176_8 = add i32 %mul_ln176_7, %mul_ln176_8" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 104 'add' 'add_ln176_8' <Predicate = (!icmp_ln168)> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 5.74>
+ST_9 : Operation 105 [1/3] (5.74ns)   --->   "%mul_ln176_2 = mul i32 498, %hwin_3_load" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 105 'mul' 'mul_ln176_2' <Predicate = (!icmp_ln168)> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 106 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln176_7 = add i32 %mul_ln176_5, %mul_ln176_6" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 106 'add' 'add_ln176_7' <Predicate = (!icmp_ln168)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 107 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln176_9 = add i32 %add_ln176_8, %add_ln176_7" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 107 'add' 'add_ln176_9' <Predicate = (!icmp_ln168)> <Delay = 4.37> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+
+State 10 <SV = 9> <Delay = 4.37>
+ST_10 : Operation 108 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln176_6 = add i32 %add_ln176_5, %mul_ln176_2" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 108 'add' 'add_ln176_6' <Predicate = (!icmp_ln168)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_10 : Operation 109 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%add_ln176_10 = add i32 %add_ln176_9, %add_ln176_6" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 109 'add' 'add_ln176_10' <Predicate = (!icmp_ln168)> <Delay = 4.37> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+
+State 11 <SV = 10> <Delay = 4.37>
+ST_11 : Operation 110 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln176_4 = add i32 %add_ln176_3, %add_ln176_1" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 110 'add' 'add_ln176_4' <Predicate = (!icmp_ln168)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_11 : Operation 111 [1/1] (4.37ns) (root node of TernaryAdder)   --->   "%tmp = add i32 %add_ln176_10, %add_ln176_4" [convolution.cpp:176->convolution.cpp:271]   --->   Operation 111 'add' 'tmp' <Predicate = (!icmp_ln168)> <Delay = 4.37> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.18> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+
+State 12 <SV = 11> <Delay = 2.91>
+ST_12 : Operation 112 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([14 x i8]* @HConvH_HConvW_str)"   --->   Operation 112 'specloopname' <Predicate = (!icmp_ln168)> <Delay = 0.00>
+ST_12 : Operation 113 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 2070601, i64 0)"   --->   Operation 113 'speclooptripcount' 'empty' <Predicate = (!icmp_ln168)> <Delay = 0.00>
+ST_12 : Operation 114 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([7 x i8]* @p_str15) nounwind" [convolution.cpp:169->convolution.cpp:271]   --->   Operation 114 'specloopname' <Predicate = (!icmp_ln168)> <Delay = 0.00>
+ST_12 : Operation 115 [1/1] (0.00ns)   --->   "%tmp_5_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([7 x i8]* @p_str15)" [convolution.cpp:169->convolution.cpp:271]   --->   Operation 115 'specregionbegin' 'tmp_5_i' <Predicate = (!icmp_ln168)> <Delay = 0.00>
+ST_12 : Operation 116 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [convolution.cpp:170->convolution.cpp:271]   --->   Operation 116 'specpipeline' <Predicate = (!icmp_ln168)> <Delay = 0.00>
+ST_12 : Operation 117 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i32P(i32* %hconv_V, i32 %tmp)" [convolution.cpp:179->convolution.cpp:271]   --->   Operation 117 'write' <Predicate = (icmp_ln178)> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_12 : Operation 118 [1/1] (0.00ns)   --->   "br label %HConvW_end" [convolution.cpp:179->convolution.cpp:271]   --->   Operation 118 'br' <Predicate = (icmp_ln178)> <Delay = 0.00>
+ST_12 : Operation 119 [1/1] (0.00ns)   --->   "%empty_15 = call i32 (...)* @_ssdm_op_SpecRegionEnd([7 x i8]* @p_str15, i32 %tmp_5_i)" [convolution.cpp:180->convolution.cpp:271]   --->   Operation 119 'specregionend' 'empty_15' <Predicate = (!icmp_ln168)> <Delay = 0.00>
+ST_12 : Operation 120 [1/1] (0.00ns)   --->   "br label %0" [convolution.cpp:169->convolution.cpp:271]   --->   Operation 120 'br' <Predicate = (!icmp_ln168)> <Delay = 0.00>
+
+State 13 <SV = 5> <Delay = 0.00>
+ST_13 : Operation 121 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 121 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 6.66ns, clock uncertainty: 0.832ns.
+
+ <State 1>: 2.91ns
+The critical path consists of the following:
+	fifo read on port 'height' (convolution.cpp:168->convolution.cpp:271) [19]  (2.91 ns)
+
+ <State 2>: 5.75ns
+The critical path consists of the following:
+	'mul' operation ('bound', convolution.cpp:169->convolution.cpp:271) [23]  (5.75 ns)
+
+ <State 3>: 5.75ns
+The critical path consists of the following:
+	'mul' operation ('bound', convolution.cpp:169->convolution.cpp:271) [23]  (5.75 ns)
+
+ <State 4>: 5.75ns
+The critical path consists of the following:
+	'mul' operation ('bound', convolution.cpp:169->convolution.cpp:271) [23]  (5.75 ns)
+
+ <State 5>: 5.75ns
+The critical path consists of the following:
+	'load' operation ('hwin_1_load', convolution.cpp:176->convolution.cpp:271) on local variable 'hwin[1]' [29]  (0 ns)
+	'mul' operation ('mul_ln176', convolution.cpp:176->convolution.cpp:271) [63]  (5.75 ns)
+
+ <State 6>: 5.75ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln176', convolution.cpp:176->convolution.cpp:271) [63]  (5.75 ns)
+
+ <State 7>: 5.75ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln176', convolution.cpp:176->convolution.cpp:271) [63]  (5.75 ns)
+
+ <State 8>: 5.75ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln176_2', convolution.cpp:176->convolution.cpp:271) [65]  (5.75 ns)
+
+ <State 9>: 5.75ns
+The critical path consists of the following:
+	'mul' operation ('mul_ln176_2', convolution.cpp:176->convolution.cpp:271) [65]  (5.75 ns)
+
+ <State 10>: 4.37ns
+The critical path consists of the following:
+	'add' operation ('add_ln176_6', convolution.cpp:176->convolution.cpp:271) [80]  (0 ns)
+	'add' operation ('add_ln176_10', convolution.cpp:176->convolution.cpp:271) [84]  (4.37 ns)
+
+ <State 11>: 4.37ns
+The critical path consists of the following:
+	'add' operation ('add_ln176_4', convolution.cpp:176->convolution.cpp:271) [78]  (0 ns)
+	'add' operation ('tmp', convolution.cpp:176->convolution.cpp:271) [85]  (4.37 ns)
+
+ <State 12>: 2.91ns
+The critical path consists of the following:
+	fifo write on port 'hconv_V' (convolution.cpp:179->convolution.cpp:271) [90]  (2.91 ns)
+
+ <State 13>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

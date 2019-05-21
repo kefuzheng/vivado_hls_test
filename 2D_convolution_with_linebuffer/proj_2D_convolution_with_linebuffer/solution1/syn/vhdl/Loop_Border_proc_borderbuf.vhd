@@ -1,8 +1,5 @@
 -- ==============================================================
--- File generated on Fri Feb 22 08:55:08 IST 2019
--- Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1.0 (64-bit)
--- SW Build 2455171 on Wed Feb 20 03:30:41 MST 2019
--- IP Build 2455320 on Wed Feb 20 06:02:17 MST 2019
+-- Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2.0 (64-bit)
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- ==============================================================
 --
@@ -72,7 +69,7 @@ p_memory_access_1: process (clk)
 begin 
     if (clk'event and clk = '1') then
         if (ce1 = '1') then 
-            q1 <= ram(CONV_INTEGER(addr1_tmp)); 
+            q1 <= ram(CONV_INTEGER(addr1_tmp));
         end if;
     end if;
 end process;

@@ -244,7 +244,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="11" tracking_level="0" version="0">
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second class_id="12" tracking_level="0" version="0">
                     <count>2</count>
                     <item_version>0</item_version>
@@ -333,7 +333,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -388,7 +388,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -443,7 +443,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -498,7 +498,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -553,7 +553,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -608,7 +608,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -663,7 +663,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -718,7 +718,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -773,7 +773,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -827,7 +827,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -889,7 +889,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -911,7 +911,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>Loop_HConvH_proc8_U0</rtlName>
+              <rtlName>Loop_HConvH_proc6_U0</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -949,7 +949,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1023,7 +1023,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1085,7 +1085,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/test23/2D_convolution_with_linebuffer</first>
+                  <first>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
@@ -1165,7 +1165,7 @@
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
-          <const_type>6</const_type>
+          <const_type>7</const_type>
           <content>&lt;constant:filter11x11_strm.ent&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_26">
@@ -1188,7 +1188,7 @@
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
-          <const_type>6</const_type>
+          <const_type>7</const_type>
           <content>&lt;constant:Block__proc&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_27">
@@ -1196,7 +1196,7 @@
             <Obj>
               <type>2</type>
               <id>97</id>
-              <name>Loop_HConvH_proc8</name>
+              <name>Loop_HConvH_proc6</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -1211,8 +1211,8 @@
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
-          <const_type>6</const_type>
-          <content>&lt;constant:Loop_HConvH_proc8&gt;</content>
+          <const_type>7</const_type>
+          <content>&lt;constant:Loop_HConvH_proc6&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_28">
           <Value>
@@ -1234,7 +1234,7 @@
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
-          <const_type>6</const_type>
+          <const_type>7</const_type>
           <content>&lt;constant:Loop_VConvH_proc&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_29">
@@ -1257,7 +1257,7 @@
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
-          <const_type>6</const_type>
+          <const_type>7</const_type>
           <content>&lt;constant:Loop_Border_proc&gt;</content>
         </item>
       </consts>
@@ -1765,8 +1765,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>-1</mMinLatency>
-        <mMaxLatency>-1</mMaxLatency>
+        <mMinLatency>23</mMinLatency>
+        <mMaxLatency>2070627</mMaxLatency>
         <mIsDfPipe>1</mIsDfPipe>
         <mDfPipe class_id="23" tracking_level="1" version="0" object_id="_94">
           <port_list class_id="24" tracking_level="0" version="0">
@@ -1892,7 +1892,7 @@
             </item>
             <item class_id_reference="26" object_id="_121">
               <type>0</type>
-              <name>Loop_HConvH_proc8_U0</name>
+              <name>Loop_HConvH_proc6_U0</name>
               <ssdmobj_id>56</ssdmobj_id>
               <pins>
                 <count>4</count>
@@ -1905,7 +1905,7 @@
                   </port>
                   <inst class_id_reference="30" object_id="_124">
                     <type>0</type>
-                    <name>Loop_HConvH_proc8_U0</name>
+                    <name>Loop_HConvH_proc6_U0</name>
                     <ssdmobj_id>56</ssdmobj_id>
                   </inst>
                 </item>
@@ -2879,7 +2879,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>1006</second>
+              <second>1008</second>
             </item>
             <item>
               <first>URAM</first>
@@ -2888,7 +2888,7 @@
           </second>
         </item>
         <item>
-          <first>Loop_HConvH_proc8_U0 (Loop_HConvH_proc8)</first>
+          <first>Loop_HConvH_proc6_U0 (Loop_HConvH_proc6)</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -2978,7 +2978,7 @@
         <count>10</count>
         <item_version>0</item_version>
         <item>
-          <first>Loop_HConvH_proc8_U0_ap_ready_count ( + ) </first>
+          <first>Loop_HConvH_proc6_U0_ap_ready_count ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3001,7 +3001,7 @@
           </second>
         </item>
         <item>
-          <first>Loop_HConvH_proc8_U0_ap_ready_count ( - ) </first>
+          <first>Loop_HConvH_proc6_U0_ap_ready_count ( - ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3024,7 +3024,7 @@
           </second>
         </item>
         <item>
-          <first>Loop_HConvH_proc8_U0_ap_start ( and ) </first>
+          <first>Loop_HConvH_proc6_U0_ap_start ( and ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3070,7 +3070,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_Loop_HConvH_proc8_U0_ap_ready ( or ) </first>
+          <first>ap_sync_Loop_HConvH_proc6_U0_ap_ready ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3561,7 +3561,7 @@
         <count>4</count>
         <item_version>0</item_version>
         <item>
-          <first>Loop_HConvH_proc8_U0_ap_ready_count</first>
+          <first>Loop_HConvH_proc6_U0_ap_ready_count</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3584,7 +3584,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_reg_Loop_HConvH_proc8_U0_ap_ready</first>
+          <first>ap_sync_reg_Loop_HConvH_proc6_U0_ap_ready</first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -3657,7 +3657,7 @@
         <count>4</count>
         <item_version>0</item_version>
         <item>
-          <first>Loop_HConvH_proc8_U0_ap_ready_count</first>
+          <first>Loop_HConvH_proc6_U0_ap_ready_count</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3676,7 +3676,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sync_reg_Loop_HConvH_proc8_U0_ap_ready</first>
+          <first>ap_sync_reg_Loop_HConvH_proc6_U0_ap_ready</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -3751,7 +3751,7 @@
           </second>
         </item>
         <item>
-          <first>Loop_HConvH_proc8_U0</first>
+          <first>Loop_HConvH_proc6_U0</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -3813,7 +3813,7 @@
           </second>
         </item>
         <item>
-          <first>Loop_HConvH_proc8_U0 (Loop_HConvH_proc8)</first>
+          <first>Loop_HConvH_proc6_U0 (Loop_HConvH_proc6)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -4429,7 +4429,7 @@
         </second>
       </item>
       <item>
-        <first>grp_Loop_HConvH_proc8_fu_154</first>
+        <first>grp_Loop_HConvH_proc6_fu_154</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

@@ -1,8 +1,6 @@
 # ==============================================================
-# File generated on Tue Dec 25 11:47:47 IST 2018
-# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
-# SW Build (by kefuz) on Tue Dec 25 11:23:54 IST 2018
-# Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2.0 (64-bit)
+# Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
 CSIM_DESIGN = 1
 
@@ -24,7 +22,7 @@ HLS_SOURCES = ../../../../convolution_test.cpp ../../../../convolution.cpp
 
 TARGET := csim.exe
 
-AUTOPILOT_ROOT := /proj/xhdhdstaff1/kefuz/nobkup/workspace_18.3/Rodin/REL/2018.3/prep/rdi/vivado
+AUTOPILOT_ROOT := /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD
 AUTOPILOT_MACH := lnx64
 ifdef AP_GCC_M32
   AUTOPILOT_MACH := Linux_x86
