@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="filter11x11_strm.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_filter11x11_strm_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="AESL_inst_filter11x11_strm_group">
+      <obj_property name="label">AESL_inst_filter11x11_strm</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/filter11x11_strm_ent_U0_activity">
+         <obj_property name="ElementShortName">filter11x11_strm_ent_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">filter11x11_strm_ent_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/Block_proc_U0_activity">
+         <obj_property name="ElementShortName">Block_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Block_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/Loop_HConvH_proc8_U0_activity">
+         <obj_property name="ElementShortName">Loop_HConvH_proc8_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_HConvH_proc8_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/Loop_VConvH_proc_U0_activity">
+         <obj_property name="ElementShortName">Loop_VConvH_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_VConvH_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/Loop_Border_proc_U0_activity">
+         <obj_property name="ElementShortName">Loop_Border_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_Border_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_filter11x11_strm_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="filter11x11_strm_ent_U0_group">
+         <obj_property name="label">filter11x11_strm_ent_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="filter11x11_strm_ent_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="filter11x11_strm_ent_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="filter11x11_strm_ent_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="width_out_group">
+               <obj_property name="label">width_out(width_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/width_out_blk_n">
+                  <obj_property name="ElementShortName">width_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">width_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/width_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/width_out_full_n">
+                  <obj_property name="ElementShortName">width_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">width_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/width_out_write">
+                  <obj_property name="ElementShortName">width_out_write</obj_property>
+                  <obj_property name="ObjectShortName">width_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="width_out1_group">
+               <obj_property name="label">width_out1(width_c163_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/width_out1_blk_n">
+                  <obj_property name="ElementShortName">width_out1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">width_out1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/width_out1_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/width_out1_full_n">
+                  <obj_property name="ElementShortName">width_out1_full_n</obj_property>
+                  <obj_property name="ObjectShortName">width_out1_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/width_out1_write">
+                  <obj_property name="ElementShortName">width_out1_write</obj_property>
+                  <obj_property name="ObjectShortName">width_out1_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="height_out_group">
+               <obj_property name="label">height_out(height_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/height_out_blk_n">
+                  <obj_property name="ElementShortName">height_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">height_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/height_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/height_out_full_n">
+                  <obj_property name="ElementShortName">height_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">height_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/height_out_write">
+                  <obj_property name="ElementShortName">height_out_write</obj_property>
+                  <obj_property name="ObjectShortName">height_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="height_out2_group">
+               <obj_property name="label">height_out2(height_c164_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/height_out2_blk_n">
+                  <obj_property name="ElementShortName">height_out2_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">height_out2_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/height_out2_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/height_out2_full_n">
+                  <obj_property name="ElementShortName">height_out2_full_n</obj_property>
+                  <obj_property name="ObjectShortName">height_out2_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/filter11x11_strm_ent_U0/height_out2_write">
+                  <obj_property name="ElementShortName">height_out2_write</obj_property>
+                  <obj_property name="ObjectShortName">height_out2_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Block_proc_U0_group">
+         <obj_property name="label">Block_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Block_proc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="width_group">
+               <obj_property name="label">width(width_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/width_blk_n">
+                  <obj_property name="ElementShortName">width_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">width_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/width_dout">
+                  <obj_property name="ElementShortName">width_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">width_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/width_empty_n">
+                  <obj_property name="ElementShortName">width_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">width_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/width_read">
+                  <obj_property name="ElementShortName">width_read</obj_property>
+                  <obj_property name="ObjectShortName">width_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="height_group">
+               <obj_property name="label">height(height_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/height_blk_n">
+                  <obj_property name="ElementShortName">height_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">height_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/height_dout">
+                  <obj_property name="ElementShortName">height_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">height_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/height_empty_n">
+                  <obj_property name="ElementShortName">height_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">height_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/height_read">
+                  <obj_property name="ElementShortName">height_read</obj_property>
+                  <obj_property name="ObjectShortName">height_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Block_proc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Block_proc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="width_out_group">
+               <obj_property name="label">width_out(width_c165_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/width_out_blk_n">
+                  <obj_property name="ElementShortName">width_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">width_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/width_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/width_out_full_n">
+                  <obj_property name="ElementShortName">width_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">width_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/width_out_write">
+                  <obj_property name="ElementShortName">width_out_write</obj_property>
+                  <obj_property name="ObjectShortName">width_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="height_out_group">
+               <obj_property name="label">height_out(height_c166_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/height_out_blk_n">
+                  <obj_property name="ElementShortName">height_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">height_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/height_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/height_out_full_n">
+                  <obj_property name="ElementShortName">height_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">height_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/height_out_write">
+                  <obj_property name="ElementShortName">height_out_write</obj_property>
+                  <obj_property name="ObjectShortName">height_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="vconv_xlim_out_out_group">
+               <obj_property name="label">vconv_xlim_out_out(vconv_xlim_loc_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/vconv_xlim_out_out_blk_n">
+                  <obj_property name="ElementShortName">vconv_xlim_out_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">vconv_xlim_out_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/vconv_xlim_out_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/vconv_xlim_out_out_full_n">
+                  <obj_property name="ElementShortName">vconv_xlim_out_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">vconv_xlim_out_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Block_proc_U0/vconv_xlim_out_out_write">
+                  <obj_property name="ElementShortName">vconv_xlim_out_out_write</obj_property>
+                  <obj_property name="ObjectShortName">vconv_xlim_out_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Loop_HConvH_proc8_U0_group">
+         <obj_property name="label">Loop_HConvH_proc8_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Loop_HConvH_proc8_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="height_group">
+               <obj_property name="label">height(height_c164_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/height_blk_n">
+                  <obj_property name="ElementShortName">height_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">height_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/height_dout">
+                  <obj_property name="ElementShortName">height_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">height_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/height_empty_n">
+                  <obj_property name="ElementShortName">height_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">height_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/height_read">
+                  <obj_property name="ElementShortName">height_read</obj_property>
+                  <obj_property name="ObjectShortName">height_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="width_group">
+               <obj_property name="label">width(width_c163_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/width_blk_n">
+                  <obj_property name="ElementShortName">width_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">width_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/width_dout">
+                  <obj_property name="ElementShortName">width_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">width_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/width_empty_n">
+                  <obj_property name="ElementShortName">width_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">width_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/width_read">
+                  <obj_property name="ElementShortName">width_read</obj_property>
+                  <obj_property name="ObjectShortName">width_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_HConvH_proc8_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_HConvH_proc8_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="hconv_V_group">
+               <obj_property name="label">hconv_V(hconv_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/hconv_V_blk_n">
+                  <obj_property name="ElementShortName">hconv_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">hconv_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/hconv_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/hconv_V_full_n">
+                  <obj_property name="ElementShortName">hconv_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">hconv_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_HConvH_proc8_U0/hconv_V_write">
+                  <obj_property name="ElementShortName">hconv_V_write</obj_property>
+                  <obj_property name="ObjectShortName">hconv_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Loop_VConvH_proc_U0_group">
+         <obj_property name="label">Loop_VConvH_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Loop_VConvH_proc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="height_group">
+               <obj_property name="label">height(height_c166_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/height_blk_n">
+                  <obj_property name="ElementShortName">height_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">height_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/height_dout">
+                  <obj_property name="ElementShortName">height_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">height_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/height_empty_n">
+                  <obj_property name="ElementShortName">height_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">height_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/height_read">
+                  <obj_property name="ElementShortName">height_read</obj_property>
+                  <obj_property name="ObjectShortName">height_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="vconv_xlim_loc_group">
+               <obj_property name="label">vconv_xlim_loc(vconv_xlim_loc_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/vconv_xlim_loc_blk_n">
+                  <obj_property name="ElementShortName">vconv_xlim_loc_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">vconv_xlim_loc_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/vconv_xlim_loc_dout">
+                  <obj_property name="ElementShortName">vconv_xlim_loc_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">vconv_xlim_loc_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/vconv_xlim_loc_empty_n">
+                  <obj_property name="ElementShortName">vconv_xlim_loc_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">vconv_xlim_loc_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/vconv_xlim_loc_read">
+                  <obj_property name="ElementShortName">vconv_xlim_loc_read</obj_property>
+                  <obj_property name="ObjectShortName">vconv_xlim_loc_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="hconv_V_group">
+               <obj_property name="label">hconv_V(hconv_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/hconv_V_blk_n">
+                  <obj_property name="ElementShortName">hconv_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">hconv_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/hconv_V_dout">
+                  <obj_property name="ElementShortName">hconv_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">hconv_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/hconv_V_empty_n">
+                  <obj_property name="ElementShortName">hconv_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">hconv_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/hconv_V_read">
+                  <obj_property name="ElementShortName">hconv_V_read</obj_property>
+                  <obj_property name="ObjectShortName">hconv_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_VConvH_proc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_VConvH_proc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="vconv_V_group">
+               <obj_property name="label">vconv_V(vconv_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/vconv_V_blk_n">
+                  <obj_property name="ElementShortName">vconv_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">vconv_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/vconv_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/vconv_V_full_n">
+                  <obj_property name="ElementShortName">vconv_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">vconv_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/vconv_V_write">
+                  <obj_property name="ElementShortName">vconv_V_write</obj_property>
+                  <obj_property name="ObjectShortName">vconv_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="height_out_group">
+               <obj_property name="label">height_out(height_c167_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/height_out_blk_n">
+                  <obj_property name="ElementShortName">height_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">height_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/height_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/height_out_full_n">
+                  <obj_property name="ElementShortName">height_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">height_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/height_out_write">
+                  <obj_property name="ElementShortName">height_out_write</obj_property>
+                  <obj_property name="ObjectShortName">height_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="vconv_xlim_loc_out_group">
+               <obj_property name="label">vconv_xlim_loc_out(vconv_xlim_loc_c168_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/vconv_xlim_loc_out_blk_n">
+                  <obj_property name="ElementShortName">vconv_xlim_loc_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">vconv_xlim_loc_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/vconv_xlim_loc_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/vconv_xlim_loc_out_full_n">
+                  <obj_property name="ElementShortName">vconv_xlim_loc_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">vconv_xlim_loc_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_VConvH_proc_U0/vconv_xlim_loc_out_write">
+                  <obj_property name="ElementShortName">vconv_xlim_loc_out_write</obj_property>
+                  <obj_property name="ObjectShortName">vconv_xlim_loc_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Loop_Border_proc_U0_group">
+         <obj_property name="label">Loop_Border_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Loop_Border_proc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="width_group">
+               <obj_property name="label">width(width_c165_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/width_blk_n">
+                  <obj_property name="ElementShortName">width_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">width_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/width_dout">
+                  <obj_property name="ElementShortName">width_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">width_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/width_empty_n">
+                  <obj_property name="ElementShortName">width_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">width_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/width_read">
+                  <obj_property name="ElementShortName">width_read</obj_property>
+                  <obj_property name="ObjectShortName">width_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="height_group">
+               <obj_property name="label">height(height_c167_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/height_blk_n">
+                  <obj_property name="ElementShortName">height_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">height_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/height_dout">
+                  <obj_property name="ElementShortName">height_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">height_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/height_empty_n">
+                  <obj_property name="ElementShortName">height_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">height_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/height_read">
+                  <obj_property name="ElementShortName">height_read</obj_property>
+                  <obj_property name="ObjectShortName">height_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="vconv_xlim_loc_group">
+               <obj_property name="label">vconv_xlim_loc(vconv_xlim_loc_c168_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/vconv_xlim_loc_blk_n">
+                  <obj_property name="ElementShortName">vconv_xlim_loc_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">vconv_xlim_loc_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/vconv_xlim_loc_dout">
+                  <obj_property name="ElementShortName">vconv_xlim_loc_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">vconv_xlim_loc_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/vconv_xlim_loc_empty_n">
+                  <obj_property name="ElementShortName">vconv_xlim_loc_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">vconv_xlim_loc_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/vconv_xlim_loc_read">
+                  <obj_property name="ElementShortName">vconv_xlim_loc_read</obj_property>
+                  <obj_property name="ObjectShortName">vconv_xlim_loc_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="vconv_V_group">
+               <obj_property name="label">vconv_V(vconv_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/vconv_V_blk_n">
+                  <obj_property name="ElementShortName">vconv_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">vconv_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/vconv_V_dout">
+                  <obj_property name="ElementShortName">vconv_V_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">vconv_V_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/vconv_V_empty_n">
+                  <obj_property name="ElementShortName">vconv_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">vconv_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/vconv_V_read">
+                  <obj_property name="ElementShortName">vconv_V_read</obj_property>
+                  <obj_property name="ObjectShortName">vconv_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_Border_proc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_filter11x11_strm_top/AESL_inst_filter11x11_strm/Loop_Border_proc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_Border_proc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>
