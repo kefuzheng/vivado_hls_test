@@ -42,6 +42,11 @@
 			<location>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.tcls</location>
 		</link>
 		<link>
+			<name>source/apint_arith.c</name>
+			<type>1</type>
+			<location>/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/demo4/apint_arith/apint_arith.c</location>
+		</link>
+		<link>
 			<name>source/convolution.cpp</name>
 			<type>1</type>
 			<location>/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/convolution.cpp</location>
