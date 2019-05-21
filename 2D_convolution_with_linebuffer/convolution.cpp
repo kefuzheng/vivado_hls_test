@@ -6,7 +6,7 @@ Device: All
 # Revision History: Oct 1, 2014 - initial release
                                                 
 *******************************************************************************
-© Copyright 2008 – 2012 Xilinx, Inc. All rights reserved. 
+ï¿½ Copyright 2008 ï¿½ 2012 Xilinx, Inc. All rights reserved. 
 
 This file contains confidential and proprietary information of Xilinx, Inc. and 
 is protected under U.S. and international copyright and other intellectual 
@@ -185,7 +185,6 @@ static void convolution_strm(int width, int height,
     VConvH:for(int col = 0; col < height; col++) {
         VConvW:for(int row = 0; row < vconv_xlim; row++) {
 #pragma HLS DEPENDENCE variable=linebuf inter false
-#pragma HLS PIPELINE
             T in_val = hconv.read();
             // Reset pixel value on-the-fly - eliminates an O(height*width) loop
             T out_val = 0;
