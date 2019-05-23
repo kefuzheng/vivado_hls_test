@@ -67,7 +67,7 @@ entry:2  %width_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %width)
 entry:3  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %width_out, i32 %width_read)
 
 ]]></Node>
-<StgValue><ssdm name="write_ln264"/></StgValue>
+<StgValue><ssdm name="write_ln263"/></StgValue>
 </operation>
 
 <operation id="6" st_id="1" stage="1" lat="1">
@@ -97,7 +97,7 @@ entry:4  call void (...)* @_ssdm_op_SpecInterface(i32* %width_out1, [8 x i8]* @a
 entry:5  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %width_out1, i32 %width_read)
 
 ]]></Node>
-<StgValue><ssdm name="write_ln264"/></StgValue>
+<StgValue><ssdm name="write_ln263"/></StgValue>
 </operation>
 
 <operation id="8" st_id="1" stage="1" lat="1">
@@ -127,7 +127,7 @@ entry:6  call void (...)* @_ssdm_op_SpecInterface(i32* %height_out, [8 x i8]* @a
 entry:7  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %height_out, i32 %height_read)
 
 ]]></Node>
-<StgValue><ssdm name="write_ln264"/></StgValue>
+<StgValue><ssdm name="write_ln263"/></StgValue>
 </operation>
 
 <operation id="10" st_id="1" stage="1" lat="1">
@@ -157,7 +157,7 @@ entry:8  call void (...)* @_ssdm_op_SpecInterface(i32* %height_out2, [8 x i8]* @
 entry:9  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %height_out2, i32 %height_read)
 
 ]]></Node>
-<StgValue><ssdm name="write_ln264"/></StgValue>
+<StgValue><ssdm name="write_ln263"/></StgValue>
 </operation>
 
 <operation id="12" st_id="1" stage="1" lat="1">
@@ -172,7 +172,7 @@ entry:9  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %height_out2, i32 %height_r
 entry:10  ret void
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln264"/></StgValue>
+<StgValue><ssdm name="ret_ln263"/></StgValue>
 </operation>
 </state>
 </state_list>

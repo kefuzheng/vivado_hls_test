@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'filter11x11_strm_ent'
 ================================================================
-* Date:           Tue May 21 08:04:36 2019
+* Date:           Thu May 23 07:29:21 2019
 
-* Version:        2019.2.0 (Build 2547110 on Sun May 19 23:20:49 MDT 2019)
+* Version:        2019.2.0 (Build 2548284 on Tue May 21 04:25:56 EDT 2019)
 * Project:        proj_2D_convolution_with_linebuffer
 * Solution:       solution1
 * Product family: zynq
@@ -76,16 +76,16 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 2.91>
 ST_1 : Operation 2 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %width_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 2 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%height_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %height)" [convolution.cpp:264]   --->   Operation 3 'read' 'height_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%width_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %width)" [convolution.cpp:264]   --->   Operation 4 'read' 'width_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %width_out, i32 %width_read)" [convolution.cpp:264]   --->   Operation 5 'write' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%height_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %height)" [convolution.cpp:263]   --->   Operation 3 'read' 'height_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%width_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %width)" [convolution.cpp:263]   --->   Operation 4 'read' 'width_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %width_out, i32 %width_read)" [convolution.cpp:263]   --->   Operation 5 'write' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %width_out1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 6 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %width_out1, i32 %width_read)" [convolution.cpp:264]   --->   Operation 7 'write' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 7 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %width_out1, i32 %width_read)" [convolution.cpp:263]   --->   Operation 7 'write' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %height_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %height_out, i32 %height_read)" [convolution.cpp:264]   --->   Operation 9 'write' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 9 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %height_out, i32 %height_read)" [convolution.cpp:263]   --->   Operation 9 'write' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %height_out2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 10 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %height_out2, i32 %height_read)" [convolution.cpp:264]   --->   Operation 11 'write' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "ret void" [convolution.cpp:264]   --->   Operation 12 'ret' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %height_out2, i32 %height_read)" [convolution.cpp:263]   --->   Operation 11 'write' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "ret void" [convolution.cpp:263]   --->   Operation 12 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -114,14 +114,14 @@ Port [ height_out2]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0
 specinterface_ln0 (specinterface) [ 00]
 height_read       (read         ) [ 00]
 width_read        (read         ) [ 00]
-write_ln264       (write        ) [ 00]
+write_ln263       (write        ) [ 00]
 specinterface_ln0 (specinterface) [ 00]
-write_ln264       (write        ) [ 00]
+write_ln263       (write        ) [ 00]
 specinterface_ln0 (specinterface) [ 00]
-write_ln264       (write        ) [ 00]
+write_ln263       (write        ) [ 00]
 specinterface_ln0 (specinterface) [ 00]
-write_ln264       (write        ) [ 00]
-ret_ln264         (ret          ) [ 00]
+write_ln263       (write        ) [ 00]
+ret_ln263         (ret          ) [ 00]
 </LifeTime>
 
 <model>
@@ -286,7 +286,7 @@ ret_ln264         (ret          ) [ 00]
 </bind>
 </comp>
 
-<comp id="42" class="1004" name="write_ln264_write_fu_42">
+<comp id="42" class="1004" name="write_ln263_write_fu_42">
 <pin_list>
 <pin id="43" dir="0" index="0" bw="0" slack="0"/>
 <pin id="44" dir="0" index="1" bw="32" slack="0"/>
@@ -295,11 +295,11 @@ ret_ln264         (ret          ) [ 00]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln264/1 "/>
+<opset="write_ln263/1 "/>
 </bind>
 </comp>
 
-<comp id="50" class="1004" name="write_ln264_write_fu_50">
+<comp id="50" class="1004" name="write_ln263_write_fu_50">
 <pin_list>
 <pin id="51" dir="0" index="0" bw="0" slack="0"/>
 <pin id="52" dir="0" index="1" bw="32" slack="0"/>
@@ -308,11 +308,11 @@ ret_ln264         (ret          ) [ 00]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln264/1 "/>
+<opset="write_ln263/1 "/>
 </bind>
 </comp>
 
-<comp id="58" class="1004" name="write_ln264_write_fu_58">
+<comp id="58" class="1004" name="write_ln263_write_fu_58">
 <pin_list>
 <pin id="59" dir="0" index="0" bw="0" slack="0"/>
 <pin id="60" dir="0" index="1" bw="32" slack="0"/>
@@ -321,11 +321,11 @@ ret_ln264         (ret          ) [ 00]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln264/1 "/>
+<opset="write_ln263/1 "/>
 </bind>
 </comp>
 
-<comp id="66" class="1004" name="write_ln264_write_fu_66">
+<comp id="66" class="1004" name="write_ln263_write_fu_66">
 <pin_list>
 <pin id="67" dir="0" index="0" bw="0" slack="0"/>
 <pin id="68" dir="0" index="1" bw="32" slack="0"/>
@@ -334,7 +334,7 @@ ret_ln264         (ret          ) [ 00]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln264/1 "/>
+<opset="write_ln263/1 "/>
 </bind>
 </comp>
 
@@ -402,10 +402,10 @@ ret_ln264         (ret          ) [ 00]
 |   read   |  height_read_read_fu_30 |
 |          |  width_read_read_fu_36  |
 |----------|-------------------------|
-|          | write_ln264_write_fu_42 |
-|   write  | write_ln264_write_fu_50 |
-|          | write_ln264_write_fu_58 |
-|          | write_ln264_write_fu_66 |
+|          | write_ln263_write_fu_42 |
+|   write  | write_ln263_write_fu_50 |
+|          | write_ln263_write_fu_58 |
+|          | write_ln263_write_fu_66 |
 |----------|-------------------------|
 |   Total  |                         |
 |----------|-------------------------|

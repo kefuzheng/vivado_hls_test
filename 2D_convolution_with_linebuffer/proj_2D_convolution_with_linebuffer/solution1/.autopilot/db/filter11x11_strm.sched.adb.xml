@@ -59,7 +59,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="15" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="16" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
 codeRepl:0  %height_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %height)
 
@@ -74,7 +74,7 @@ codeRepl:0  %height_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %height)
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="16" bw="32" op_0_bw="32" op_1_bw="32">
+<Node id="17" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
 codeRepl:1  %width_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %width)
 
@@ -89,12 +89,12 @@ codeRepl:1  %width_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %width)
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="32" op_0_bw="64">
+<Node id="18" bw="32" op_0_bw="64">
 <![CDATA[
-codeRepl:2  %vconv_xlim_loc_c168 = alloca i32, align 4
+codeRepl:2  %vconv_xlim_loc_c65 = alloca i32, align 4
 
 ]]></Node>
-<StgValue><ssdm name="vconv_xlim_loc_c168"/></StgValue>
+<StgValue><ssdm name="vconv_xlim_loc_c65"/></StgValue>
 </operation>
 
 <operation id="12" st_id="1" stage="1" lat="1">
@@ -104,12 +104,12 @@ codeRepl:2  %vconv_xlim_loc_c168 = alloca i32, align 4
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="18" bw="32" op_0_bw="64">
+<Node id="19" bw="32" op_0_bw="64">
 <![CDATA[
-codeRepl:3  %height_c167 = alloca i32, align 4
+codeRepl:3  %height_c64 = alloca i32, align 4
 
 ]]></Node>
-<StgValue><ssdm name="height_c167"/></StgValue>
+<StgValue><ssdm name="height_c64"/></StgValue>
 </operation>
 
 <operation id="13" st_id="1" stage="1" lat="1">
@@ -119,7 +119,7 @@ codeRepl:3  %height_c167 = alloca i32, align 4
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="32" op_0_bw="64">
+<Node id="20" bw="32" op_0_bw="64">
 <![CDATA[
 codeRepl:4  %vconv_xlim_loc_c = alloca i32, align 4
 
@@ -134,12 +134,12 @@ codeRepl:4  %vconv_xlim_loc_c = alloca i32, align 4
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="20" bw="32" op_0_bw="64">
+<Node id="21" bw="32" op_0_bw="64">
 <![CDATA[
-codeRepl:5  %height_c166 = alloca i32, align 4
+codeRepl:5  %height_c63 = alloca i32, align 4
 
 ]]></Node>
-<StgValue><ssdm name="height_c166"/></StgValue>
+<StgValue><ssdm name="height_c63"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -149,12 +149,12 @@ codeRepl:5  %height_c166 = alloca i32, align 4
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="32" op_0_bw="64">
+<Node id="22" bw="32" op_0_bw="64">
 <![CDATA[
-codeRepl:6  %width_c165 = alloca i32, align 4
+codeRepl:6  %width_c62 = alloca i32, align 4
 
 ]]></Node>
-<StgValue><ssdm name="width_c165"/></StgValue>
+<StgValue><ssdm name="width_c62"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -164,12 +164,12 @@ codeRepl:6  %width_c165 = alloca i32, align 4
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="22" bw="32" op_0_bw="64">
+<Node id="23" bw="32" op_0_bw="64">
 <![CDATA[
-codeRepl:7  %height_c164 = alloca i32, align 4
+codeRepl:7  %height_c61 = alloca i32, align 4
 
 ]]></Node>
-<StgValue><ssdm name="height_c164"/></StgValue>
+<StgValue><ssdm name="height_c61"/></StgValue>
 </operation>
 
 <operation id="17" st_id="1" stage="1" lat="1">
@@ -179,7 +179,7 @@ codeRepl:7  %height_c164 = alloca i32, align 4
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="23" bw="32" op_0_bw="64">
+<Node id="24" bw="32" op_0_bw="64">
 <![CDATA[
 codeRepl:8  %height_c = alloca i32, align 4
 
@@ -194,12 +194,12 @@ codeRepl:8  %height_c = alloca i32, align 4
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="32" op_0_bw="64">
+<Node id="25" bw="32" op_0_bw="64">
 <![CDATA[
-codeRepl:9  %width_c163 = alloca i32, align 4
+codeRepl:9  %width_c60 = alloca i32, align 4
 
 ]]></Node>
-<StgValue><ssdm name="width_c163"/></StgValue>
+<StgValue><ssdm name="width_c60"/></StgValue>
 </operation>
 
 <operation id="19" st_id="1" stage="1" lat="1">
@@ -209,7 +209,7 @@ codeRepl:9  %width_c163 = alloca i32, align 4
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="25" bw="32" op_0_bw="64">
+<Node id="26" bw="32" op_0_bw="64">
 <![CDATA[
 codeRepl:10  %width_c = alloca i32, align 4
 
@@ -224,7 +224,7 @@ codeRepl:10  %width_c = alloca i32, align 4
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="31" bw="32" op_0_bw="64">
+<Node id="32" bw="32" op_0_bw="64">
 <![CDATA[
 codeRepl:16  %hconv_V = alloca i32, align 4
 
@@ -239,7 +239,7 @@ codeRepl:16  %hconv_V = alloca i32, align 4
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="34" bw="32" op_0_bw="64">
+<Node id="35" bw="32" op_0_bw="64">
 <![CDATA[
 codeRepl:19  %vconv_V = alloca i32, align 4
 
@@ -254,12 +254,12 @@ codeRepl:19  %vconv_V = alloca i32, align 4
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="48" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32">
+<Node id="49" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32">
 <![CDATA[
-codeRepl:33  call fastcc void @filter11x11_strm.ent(i32 %width_read, i32 %height_read, i32* %width_c, i32* %width_c163, i32* %height_c, i32* %height_c164)
+codeRepl:33  call fastcc void @filter11x11_strm.ent(i32 %width_read, i32 %height_read, i32* %width_c, i32* %width_c60, i32* %height_c, i32* %height_c61)
 
 ]]></Node>
-<StgValue><ssdm name="call_ln264"/></StgValue>
+<StgValue><ssdm name="call_ln263"/></StgValue>
 </operation>
 </state>
 
@@ -272,9 +272,9 @@ codeRepl:33  call fastcc void @filter11x11_strm.ent(i32 %width_read, i32 %height
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="55" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0" op_7_bw="0">
+<Node id="56" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-codeRepl:40  call fastcc void @Block__proc(i32* nocapture %width_c, i32* nocapture %height_c, i32* %width_c165, i32* %height_c166, i32* %vconv_xlim_loc_c)
+codeRepl:40  call fastcc void @Block__proc(i32* nocapture %width_c, i32* nocapture %height_c, i32* %width_c62, i32* %height_c63, i32* %vconv_xlim_loc_c)
 
 ]]></Node>
 <StgValue><ssdm name="call_ln143"/></StgValue>
@@ -287,9 +287,9 @@ codeRepl:40  call fastcc void @Block__proc(i32* nocapture %width_c, i32* nocaptu
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="56" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
+<Node id="57" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-codeRepl:41  call fastcc void @Loop_HConvH_proc6(i32* nocapture %height_c164, i32* nocapture %width_c163, i32* %src_V, i32* %hconv_V)
+codeRepl:41  call fastcc void @Loop_HConvH_proc6(i32* nocapture %height_c61, i32* nocapture %width_c60, i32* %src_V, i32* %hconv_V)
 
 ]]></Node>
 <StgValue><ssdm name="call_ln143"/></StgValue>
@@ -305,9 +305,9 @@ codeRepl:41  call fastcc void @Loop_HConvH_proc6(i32* nocapture %height_c164, i3
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="55" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0" op_7_bw="0">
+<Node id="56" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-codeRepl:40  call fastcc void @Block__proc(i32* nocapture %width_c, i32* nocapture %height_c, i32* %width_c165, i32* %height_c166, i32* %vconv_xlim_loc_c)
+codeRepl:40  call fastcc void @Block__proc(i32* nocapture %width_c, i32* nocapture %height_c, i32* %width_c62, i32* %height_c63, i32* %vconv_xlim_loc_c)
 
 ]]></Node>
 <StgValue><ssdm name="call_ln143"/></StgValue>
@@ -320,9 +320,9 @@ codeRepl:40  call fastcc void @Block__proc(i32* nocapture %width_c, i32* nocaptu
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="56" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
+<Node id="57" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="0">
 <![CDATA[
-codeRepl:41  call fastcc void @Loop_HConvH_proc6(i32* nocapture %height_c164, i32* nocapture %width_c163, i32* %src_V, i32* %hconv_V)
+codeRepl:41  call fastcc void @Loop_HConvH_proc6(i32* nocapture %height_c61, i32* nocapture %width_c60, i32* %src_V, i32* %hconv_V)
 
 ]]></Node>
 <StgValue><ssdm name="call_ln143"/></StgValue>
@@ -338,9 +338,9 @@ codeRepl:41  call fastcc void @Loop_HConvH_proc6(i32* nocapture %height_c164, i3
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="0" op_18_bw="0" op_19_bw="0">
+<Node id="62" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="10" op_18_bw="0" op_19_bw="0" op_20_bw="0">
 <![CDATA[
-codeRepl:46  call fastcc void @Loop_VConvH_proc(i32* nocapture %height_c166, i32* nocapture %vconv_xlim_loc_c, i32* %hconv_V, i32* %vconv_V, i32* %height_c167, i32* %vconv_xlim_loc_c168)
+codeRepl:46  call fastcc void @Loop_VConvH_proc(i32* nocapture %height_c63, i32* nocapture %vconv_xlim_loc_c, i32* %hconv_V, i32* %vconv_V, i32* %height_c64, i32* %vconv_xlim_loc_c65)
 
 ]]></Node>
 <StgValue><ssdm name="call_ln143"/></StgValue>
@@ -356,9 +356,9 @@ codeRepl:46  call fastcc void @Loop_VConvH_proc(i32* nocapture %height_c166, i32
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="0" op_18_bw="0" op_19_bw="0">
+<Node id="62" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="10" op_18_bw="0" op_19_bw="0" op_20_bw="0">
 <![CDATA[
-codeRepl:46  call fastcc void @Loop_VConvH_proc(i32* nocapture %height_c166, i32* nocapture %vconv_xlim_loc_c, i32* %hconv_V, i32* %vconv_V, i32* %height_c167, i32* %vconv_xlim_loc_c168)
+codeRepl:46  call fastcc void @Loop_VConvH_proc(i32* nocapture %height_c63, i32* nocapture %vconv_xlim_loc_c, i32* %hconv_V, i32* %vconv_V, i32* %height_c64, i32* %vconv_xlim_loc_c65)
 
 ]]></Node>
 <StgValue><ssdm name="call_ln143"/></StgValue>
@@ -374,9 +374,9 @@ codeRepl:46  call fastcc void @Loop_VConvH_proc(i32* nocapture %height_c166, i32
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="62" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0" op_7_bw="0">
+<Node id="63" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-codeRepl:47  call fastcc void @Loop_Border_proc(i32* nocapture %width_c165, i32* nocapture %height_c167, i32* %dst_V, i32* nocapture %vconv_xlim_loc_c168, i32* %vconv_V)
+codeRepl:47  call fastcc void @Loop_Border_proc(i32* nocapture %width_c62, i32* nocapture %height_c64, i32* %dst_V, i32* nocapture %vconv_xlim_loc_c65, i32* %vconv_V)
 
 ]]></Node>
 <StgValue><ssdm name="call_ln143"/></StgValue>
@@ -392,9 +392,9 @@ codeRepl:47  call fastcc void @Loop_Border_proc(i32* nocapture %width_c165, i32*
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="62" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0" op_7_bw="0">
+<Node id="63" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0" op_7_bw="0">
 <![CDATA[
-codeRepl:47  call fastcc void @Loop_Border_proc(i32* nocapture %width_c165, i32* nocapture %height_c167, i32* %dst_V, i32* nocapture %vconv_xlim_loc_c168, i32* %vconv_V)
+codeRepl:47  call fastcc void @Loop_Border_proc(i32* nocapture %width_c62, i32* nocapture %height_c64, i32* %dst_V, i32* nocapture %vconv_xlim_loc_c65, i32* %vconv_V)
 
 ]]></Node>
 <StgValue><ssdm name="call_ln143"/></StgValue>
@@ -410,12 +410,12 @@ codeRepl:47  call fastcc void @Loop_Border_proc(i32* nocapture %width_c165, i32*
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="26" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<Node id="27" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
 <![CDATA[
 codeRepl:11  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str1) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specdataflowpipeline_ln264"/></StgValue>
+<StgValue><ssdm name="specdataflowpipeline_ln263"/></StgValue>
 </operation>
 
 <operation id="32" st_id="8" stage="1" lat="1">
@@ -425,7 +425,7 @@ codeRepl:11  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="27" bw="0" op_0_bw="0" op_1_bw="32">
+<Node id="28" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
 codeRepl:12  call void (...)* @_ssdm_op_SpecBitsMap(i32 %width), !map !43
 
@@ -440,7 +440,7 @@ codeRepl:12  call void (...)* @_ssdm_op_SpecBitsMap(i32 %width), !map !43
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="28" bw="0" op_0_bw="0" op_1_bw="32">
+<Node id="29" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
 codeRepl:13  call void (...)* @_ssdm_op_SpecBitsMap(i32 %height), !map !49
 
@@ -455,7 +455,7 @@ codeRepl:13  call void (...)* @_ssdm_op_SpecBitsMap(i32 %height), !map !49
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="29" bw="0" op_0_bw="0" op_1_bw="32">
+<Node id="30" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
 codeRepl:14  call void (...)* @_ssdm_op_SpecBitsMap(i32* %src_V), !map !53
 
@@ -470,7 +470,7 @@ codeRepl:14  call void (...)* @_ssdm_op_SpecBitsMap(i32* %src_V), !map !53
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="30" bw="0" op_0_bw="0" op_1_bw="32">
+<Node id="31" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
 codeRepl:15  call void (...)* @_ssdm_op_SpecBitsMap(i32* %dst_V), !map !59
 
@@ -485,7 +485,7 @@ codeRepl:15  call void (...)* @_ssdm_op_SpecBitsMap(i32* %dst_V), !map !59
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
+<Node id="33" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
 <![CDATA[
 codeRepl:17  %empty = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @hconv_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32* %hconv_V, i32* %hconv_V)
 
@@ -500,7 +500,7 @@ codeRepl:17  %empty = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @hconv_OC_
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="33" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="34" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
 codeRepl:18  call void (...)* @_ssdm_op_SpecInterface(i32* %hconv_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
@@ -515,7 +515,7 @@ codeRepl:18  call void (...)* @_ssdm_op_SpecInterface(i32* %hconv_V, [8 x i8]* @
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="35" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
+<Node id="36" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
 <![CDATA[
 codeRepl:20  %empty_4 = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @vconv_OC_V_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32* %vconv_V, i32* %vconv_V)
 
@@ -530,7 +530,7 @@ codeRepl:20  %empty_4 = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @vconv_O
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="36" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="37" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
 codeRepl:21  call void (...)* @_ssdm_op_SpecInterface(i32* %vconv_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
@@ -545,7 +545,7 @@ codeRepl:21  call void (...)* @_ssdm_op_SpecInterface(i32* %vconv_V, [8 x i8]* @
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="37" bw="0" op_0_bw="0" op_1_bw="0">
+<Node id="38" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
 codeRepl:22  call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @filter11x11_strm_str) nounwind
 
@@ -560,12 +560,12 @@ codeRepl:22  call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @filter11x11_st
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="38" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="39" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
 codeRepl:23  call void (...)* @_ssdm_op_SpecInterface(i32* %src_V, [5 x i8]* @p_str5, i32 1, i32 1, [5 x i8]* @p_str6, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specinterface_ln261"/></StgValue>
+<StgValue><ssdm name="specinterface_ln260"/></StgValue>
 </operation>
 
 <operation id="42" st_id="8" stage="1" lat="1">
@@ -575,12 +575,12 @@ codeRepl:23  call void (...)* @_ssdm_op_SpecInterface(i32* %src_V, [5 x i8]* @p_
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="40" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
 codeRepl:24  call void (...)* @_ssdm_op_SpecInterface(i32* %dst_V, [5 x i8]* @p_str5, i32 1, i32 1, [5 x i8]* @p_str6, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
 
 ]]></Node>
-<StgValue><ssdm name="specinterface_ln262"/></StgValue>
+<StgValue><ssdm name="specinterface_ln261"/></StgValue>
 </operation>
 
 <operation id="43" st_id="8" stage="1" lat="1">
@@ -590,7 +590,7 @@ codeRepl:24  call void (...)* @_ssdm_op_SpecInterface(i32* %dst_V, [5 x i8]* @p_
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
+<Node id="41" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
 <![CDATA[
 codeRepl:25  %empty_5 = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @width_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %width_c, i32* %width_c)
 
@@ -605,7 +605,7 @@ codeRepl:25  %empty_5 = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @width_c
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="42" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
 codeRepl:26  call void (...)* @_ssdm_op_SpecInterface(i32* %width_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
@@ -620,9 +620,9 @@ codeRepl:26  call void (...)* @_ssdm_op_SpecInterface(i32* %width_c, [8 x i8]* @
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
+<Node id="43" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
 <![CDATA[
-codeRepl:27  %empty_6 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @width_c163_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %width_c163, i32* %width_c163)
+codeRepl:27  %empty_6 = call i32 (...)* @_ssdm_op_SpecChannel([10 x i8]* @width_c60_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %width_c60, i32* %width_c60)
 
 ]]></Node>
 <StgValue><ssdm name="empty_6"/></StgValue>
@@ -635,9 +635,9 @@ codeRepl:27  %empty_6 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @width_
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="43" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="44" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-codeRepl:28  call void (...)* @_ssdm_op_SpecInterface(i32* %width_c163, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+codeRepl:28  call void (...)* @_ssdm_op_SpecInterface(i32* %width_c60, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln143"/></StgValue>
@@ -650,7 +650,7 @@ codeRepl:28  call void (...)* @_ssdm_op_SpecInterface(i32* %width_c163, [8 x i8]
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="44" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
+<Node id="45" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
 <![CDATA[
 codeRepl:29  %empty_7 = call i32 (...)* @_ssdm_op_SpecChannel([9 x i8]* @height_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %height_c, i32* %height_c)
 
@@ -665,7 +665,7 @@ codeRepl:29  %empty_7 = call i32 (...)* @_ssdm_op_SpecChannel([9 x i8]* @height_
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="45" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="46" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
 codeRepl:30  call void (...)* @_ssdm_op_SpecInterface(i32* %height_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
@@ -680,9 +680,9 @@ codeRepl:30  call void (...)* @_ssdm_op_SpecInterface(i32* %height_c, [8 x i8]* 
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="46" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
+<Node id="47" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
 <![CDATA[
-codeRepl:31  %empty_8 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @height_c164_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %height_c164, i32* %height_c164)
+codeRepl:31  %empty_8 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @height_c61_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %height_c61, i32* %height_c61)
 
 ]]></Node>
 <StgValue><ssdm name="empty_8"/></StgValue>
@@ -695,9 +695,9 @@ codeRepl:31  %empty_8 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @height
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="47" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="48" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-codeRepl:32  call void (...)* @_ssdm_op_SpecInterface(i32* %height_c164, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+codeRepl:32  call void (...)* @_ssdm_op_SpecInterface(i32* %height_c61, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln143"/></StgValue>
@@ -710,9 +710,9 @@ codeRepl:32  call void (...)* @_ssdm_op_SpecInterface(i32* %height_c164, [8 x i8
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="49" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
+<Node id="50" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
 <![CDATA[
-codeRepl:34  %empty_9 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @width_c165_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 3, i32 0, i32* %width_c165, i32* %width_c165)
+codeRepl:34  %empty_9 = call i32 (...)* @_ssdm_op_SpecChannel([10 x i8]* @width_c62_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 3, i32 0, i32* %width_c62, i32* %width_c62)
 
 ]]></Node>
 <StgValue><ssdm name="empty_9"/></StgValue>
@@ -725,9 +725,9 @@ codeRepl:34  %empty_9 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @width_
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="50" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="51" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-codeRepl:35  call void (...)* @_ssdm_op_SpecInterface(i32* %width_c165, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+codeRepl:35  call void (...)* @_ssdm_op_SpecInterface(i32* %width_c62, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln143"/></StgValue>
@@ -740,9 +740,9 @@ codeRepl:35  call void (...)* @_ssdm_op_SpecInterface(i32* %width_c165, [8 x i8]
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="51" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
+<Node id="52" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
 <![CDATA[
-codeRepl:36  %empty_10 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @height_c166_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %height_c166, i32* %height_c166)
+codeRepl:36  %empty_10 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @height_c63_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %height_c63, i32* %height_c63)
 
 ]]></Node>
 <StgValue><ssdm name="empty_10"/></StgValue>
@@ -755,9 +755,9 @@ codeRepl:36  %empty_10 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @heigh
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="52" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="53" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-codeRepl:37  call void (...)* @_ssdm_op_SpecInterface(i32* %height_c166, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+codeRepl:37  call void (...)* @_ssdm_op_SpecInterface(i32* %height_c63, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln143"/></StgValue>
@@ -770,7 +770,7 @@ codeRepl:37  call void (...)* @_ssdm_op_SpecInterface(i32* %height_c166, [8 x i8
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="53" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
+<Node id="54" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
 <![CDATA[
 codeRepl:38  %empty_11 = call i32 (...)* @_ssdm_op_SpecChannel([17 x i8]* @vconv_xlim_OC_loc_c_s, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %vconv_xlim_loc_c, i32* %vconv_xlim_loc_c)
 
@@ -785,7 +785,7 @@ codeRepl:38  %empty_11 = call i32 (...)* @_ssdm_op_SpecChannel([17 x i8]* @vconv
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="54" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="55" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
 codeRepl:39  call void (...)* @_ssdm_op_SpecInterface(i32* %vconv_xlim_loc_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
@@ -800,9 +800,9 @@ codeRepl:39  call void (...)* @_ssdm_op_SpecInterface(i32* %vconv_xlim_loc_c, [8
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="57" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
+<Node id="58" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
 <![CDATA[
-codeRepl:42  %empty_12 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @height_c167_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %height_c167, i32* %height_c167)
+codeRepl:42  %empty_12 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @height_c64_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %height_c64, i32* %height_c64)
 
 ]]></Node>
 <StgValue><ssdm name="empty_12"/></StgValue>
@@ -815,9 +815,9 @@ codeRepl:42  %empty_12 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @heigh
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="58" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="59" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-codeRepl:43  call void (...)* @_ssdm_op_SpecInterface(i32* %height_c167, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+codeRepl:43  call void (...)* @_ssdm_op_SpecInterface(i32* %height_c64, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln143"/></StgValue>
@@ -830,9 +830,9 @@ codeRepl:43  call void (...)* @_ssdm_op_SpecInterface(i32* %height_c167, [8 x i8
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="59" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
+<Node id="60" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="32" op_7_bw="32" op_8_bw="32">
 <![CDATA[
-codeRepl:44  %empty_13 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @vconv_xlim_OC_loc_c1, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %vconv_xlim_loc_c168, i32* %vconv_xlim_loc_c168)
+codeRepl:44  %empty_13 = call i32 (...)* @_ssdm_op_SpecChannel([19 x i8]* @vconv_xlim_OC_loc_c6, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %vconv_xlim_loc_c65, i32* %vconv_xlim_loc_c65)
 
 ]]></Node>
 <StgValue><ssdm name="empty_13"/></StgValue>
@@ -845,9 +845,9 @@ codeRepl:44  %empty_13 = call i32 (...)* @_ssdm_op_SpecChannel([20 x i8]* @vconv
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="60" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<Node id="61" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-codeRepl:45  call void (...)* @_ssdm_op_SpecInterface(i32* %vconv_xlim_loc_c168, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+codeRepl:45  call void (...)* @_ssdm_op_SpecInterface(i32* %vconv_xlim_loc_c65, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -860,12 +860,12 @@ codeRepl:45  call void (...)* @_ssdm_op_SpecInterface(i32* %vconv_xlim_loc_c168,
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="63" bw="0">
+<Node id="64" bw="0">
 <![CDATA[
 codeRepl:48  ret void
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln274"/></StgValue>
+<StgValue><ssdm name="ret_ln273"/></StgValue>
 </operation>
 </state>
 </state_list>

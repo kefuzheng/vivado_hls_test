@@ -59,13 +59,13 @@ set NewPortList {[
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "14", "35", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "14", "28", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44"],
 		"CDFG" : "filter11x11_strm",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "Dataflow", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "1",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "23", "EstimateLatencyMax" : "2070627",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "15", "EstimateLatencyMax" : "162727239",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -76,7 +76,7 @@ set RtlHierarchyInfo {[
 			{"ID" : "1", "Name" : "filter11x11_strm_ent_U0", "ReadyCount" : "filter11x11_strm_ent_U0_ap_ready_count"},
 			{"ID" : "3", "Name" : "Loop_HConvH_proc6_U0", "ReadyCount" : "Loop_HConvH_proc6_U0_ap_ready_count"}],
 		"OutputProcess" : [
-			{"ID" : "35", "Name" : "Loop_Border_proc_U0"}],
+			{"ID" : "28", "Name" : "Loop_Border_proc_U0"}],
 		"Port" : [
 			{"Name" : "width", "Type" : "None", "Direction" : "I"},
 			{"Name" : "height", "Type" : "None", "Direction" : "I"},
@@ -85,7 +85,7 @@ set RtlHierarchyInfo {[
 					{"ID" : "3", "SubInstance" : "Loop_HConvH_proc6_U0", "Port" : "src_V"}]},
 			{"Name" : "dst_V", "Type" : "Axis", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "35", "SubInstance" : "Loop_Border_proc_U0", "Port" : "dst_V"}]},
+					{"ID" : "28", "SubInstance" : "Loop_Border_proc_U0", "Port" : "dst_V"}]},
 			{"Name" : "linebuf_0", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
 					{"ID" : "14", "SubInstance" : "Loop_VConvH_proc_U0", "Port" : "linebuf_0"}]},
@@ -115,7 +115,10 @@ set RtlHierarchyInfo {[
 					{"ID" : "14", "SubInstance" : "Loop_VConvH_proc_U0", "Port" : "linebuf_8"}]},
 			{"Name" : "linebuf_9", "Type" : "Memory", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "14", "SubInstance" : "Loop_VConvH_proc_U0", "Port" : "linebuf_9"}]}]},
+					{"ID" : "14", "SubInstance" : "Loop_VConvH_proc_U0", "Port" : "linebuf_9"}]},
+			{"Name" : "filt11_coeff", "Type" : "Memory", "Direction" : "I",
+				"SubConnect" : [
+					{"ID" : "14", "SubInstance" : "Loop_VConvH_proc_U0", "Port" : "filt11_coeff"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.filter11x11_strm_ent_U0", "Parent" : "0",
 		"CDFG" : "filter11x11_strm_ent",
 		"Protocol" : "ap_ctrl_hs",
@@ -132,16 +135,16 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "width", "Type" : "None", "Direction" : "I"},
 			{"Name" : "height", "Type" : "None", "Direction" : "I"},
-			{"Name" : "width_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "2", "DependentChan" : "38",
+			{"Name" : "width_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "2", "DependentChan" : "31",
 				"BlockSignal" : [
 					{"Name" : "width_out_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "width_out1", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "3", "DependentChan" : "39",
+			{"Name" : "width_out1", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "3", "DependentChan" : "32",
 				"BlockSignal" : [
 					{"Name" : "width_out1_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "height_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "2", "DependentChan" : "40",
+			{"Name" : "height_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "2", "DependentChan" : "33",
 				"BlockSignal" : [
 					{"Name" : "height_out_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "height_out2", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "3", "DependentChan" : "41",
+			{"Name" : "height_out2", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "3", "DependentChan" : "34",
 				"BlockSignal" : [
 					{"Name" : "height_out2_blk_n", "Type" : "RtlSignal"}]}]},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Block_proc_U0", "Parent" : "0",
@@ -160,19 +163,19 @@ set RtlHierarchyInfo {[
 		"StartSource" : "1",
 		"StartFifo" : "start_for_Block_proc_U0_U",
 		"Port" : [
-			{"Name" : "width", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "38",
+			{"Name" : "width", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "31",
 				"BlockSignal" : [
 					{"Name" : "width_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "height", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "40",
+			{"Name" : "height", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "33",
 				"BlockSignal" : [
 					{"Name" : "height_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "width_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "35", "DependentChan" : "42",
+			{"Name" : "width_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "28", "DependentChan" : "35",
 				"BlockSignal" : [
 					{"Name" : "width_out_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "height_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "14", "DependentChan" : "43",
+			{"Name" : "height_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "14", "DependentChan" : "36",
 				"BlockSignal" : [
 					{"Name" : "height_out_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "vconv_xlim_out_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "14", "DependentChan" : "44",
+			{"Name" : "vconv_xlim_out_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "14", "DependentChan" : "37",
 				"BlockSignal" : [
 					{"Name" : "vconv_xlim_out_out_blk_n", "Type" : "RtlSignal"}]}]},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Loop_HConvH_proc6_U0", "Parent" : "0", "Child" : ["4", "5", "6", "7", "8", "9", "10", "11", "12", "13"],
@@ -189,16 +192,16 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "1",
 		"HasNonBlockingOperation" : "0",
 		"Port" : [
-			{"Name" : "height", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "41",
+			{"Name" : "height", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "34",
 				"BlockSignal" : [
 					{"Name" : "height_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "width", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "39",
+			{"Name" : "width", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "1", "DependentChan" : "32",
 				"BlockSignal" : [
 					{"Name" : "width_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "src_V", "Type" : "Axis", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "src_V_TDATA_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "hconv_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "14", "DependentChan" : "45",
+			{"Name" : "hconv_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "14", "DependentChan" : "38",
 				"BlockSignal" : [
 					{"Name" : "hconv_V_blk_n", "Type" : "RtlSignal"}]}]},
 	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_HConvH_proc6_U0.filter11x11_strm_mul_32ns_32ns_64_3_1_U12", "Parent" : "3"},
@@ -211,13 +214,13 @@ set RtlHierarchyInfo {[
 	{"ID" : "11", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_HConvH_proc6_U0.filter11x11_strm_mul_11ns_32s_32_3_1_U19", "Parent" : "3"},
 	{"ID" : "12", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_HConvH_proc6_U0.filter11x11_strm_mul_10ns_32s_32_3_1_U20", "Parent" : "3"},
 	{"ID" : "13", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_HConvH_proc6_U0.filter11x11_strm_mul_10ns_32s_32_3_1_U21", "Parent" : "3"},
-	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0", "Parent" : "0", "Child" : ["15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34"],
+	{"ID" : "14", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0", "Parent" : "0", "Child" : ["15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27"],
 		"CDFG" : "Loop_VConvH_proc",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "5", "EstimateLatencyMax" : "2059825",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "1", "EstimateLatencyMax" : "162727228",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -226,44 +229,23 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"StartSource" : "3",
 		"StartFifo" : "start_for_Loop_VConvH_proc_U0_U",
-		"DependenceCheck" : [
-			{"FromInitialState" : "ap_enable_state6_pp0_iter1_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter1", "FromInitialOperation" : "ap_enable_operation_53", "FromInitialSV" : "5", "FromFinalState" : "ap_enable_state7_pp0_iter2_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter2", "FromFinalOperation" : "ap_enable_operation_71", "FromFinalSV" : "6", "FromAddress" : "linebuf_1_address0", "FromType" : "R", "ToInitialState" : "ap_enable_state8_pp0_iter3_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter3", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter4", "ToInitialOperation" : "ap_enable_operation_85", "ToInitialSV" : "7", "ToFinalState" : "ap_enable_state8_pp0_iter3_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter3", "ToFinalOperation" : "ap_enable_operation_85", "ToFinalSV" : "7", "ToAddress" : "linebuf_1_address1", "ToType" : "W", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "WAR"},
-			{"FromInitialState" : "ap_enable_state6_pp0_iter1_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter1", "FromInitialOperation" : "ap_enable_operation_55", "FromInitialSV" : "5", "FromFinalState" : "ap_enable_state7_pp0_iter2_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter2", "FromFinalOperation" : "ap_enable_operation_72", "FromFinalSV" : "6", "FromAddress" : "linebuf_2_address0", "FromType" : "R", "ToInitialState" : "ap_enable_state8_pp0_iter3_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter3", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter4", "ToInitialOperation" : "ap_enable_operation_86", "ToInitialSV" : "7", "ToFinalState" : "ap_enable_state8_pp0_iter3_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter3", "ToFinalOperation" : "ap_enable_operation_86", "ToFinalSV" : "7", "ToAddress" : "linebuf_2_address1", "ToType" : "W", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "WAR"},
-			{"FromInitialState" : "ap_enable_state6_pp0_iter1_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter1", "FromInitialOperation" : "ap_enable_operation_57", "FromInitialSV" : "5", "FromFinalState" : "ap_enable_state7_pp0_iter2_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter2", "FromFinalOperation" : "ap_enable_operation_73", "FromFinalSV" : "6", "FromAddress" : "linebuf_3_address0", "FromType" : "R", "ToInitialState" : "ap_enable_state8_pp0_iter3_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter3", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter4", "ToInitialOperation" : "ap_enable_operation_88", "ToInitialSV" : "7", "ToFinalState" : "ap_enable_state8_pp0_iter3_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter3", "ToFinalOperation" : "ap_enable_operation_88", "ToFinalSV" : "7", "ToAddress" : "linebuf_3_address1", "ToType" : "W", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "WAR"},
-			{"FromInitialState" : "ap_enable_state6_pp0_iter1_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter1", "FromInitialOperation" : "ap_enable_operation_59", "FromInitialSV" : "5", "FromFinalState" : "ap_enable_state7_pp0_iter2_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter2", "FromFinalOperation" : "ap_enable_operation_74", "FromFinalSV" : "6", "FromAddress" : "linebuf_4_address0", "FromType" : "R", "ToInitialState" : "ap_enable_state8_pp0_iter3_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter3", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter4", "ToInitialOperation" : "ap_enable_operation_90", "ToInitialSV" : "7", "ToFinalState" : "ap_enable_state8_pp0_iter3_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter3", "ToFinalOperation" : "ap_enable_operation_90", "ToFinalSV" : "7", "ToAddress" : "linebuf_4_address1", "ToType" : "W", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "WAR"},
-			{"FromInitialState" : "ap_enable_state6_pp0_iter1_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter1", "FromInitialOperation" : "ap_enable_operation_61", "FromInitialSV" : "5", "FromFinalState" : "ap_enable_state7_pp0_iter2_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter2", "FromFinalOperation" : "ap_enable_operation_75", "FromFinalSV" : "6", "FromAddress" : "linebuf_5_address0", "FromType" : "R", "ToInitialState" : "ap_enable_state8_pp0_iter3_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter3", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter4", "ToInitialOperation" : "ap_enable_operation_91", "ToInitialSV" : "7", "ToFinalState" : "ap_enable_state8_pp0_iter3_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter3", "ToFinalOperation" : "ap_enable_operation_91", "ToFinalSV" : "7", "ToAddress" : "linebuf_5_address1", "ToType" : "W", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "WAR"},
-			{"FromInitialState" : "ap_enable_state6_pp0_iter1_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter1", "FromInitialOperation" : "ap_enable_operation_63", "FromInitialSV" : "5", "FromFinalState" : "ap_enable_state7_pp0_iter2_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter2", "FromFinalOperation" : "ap_enable_operation_76", "FromFinalSV" : "6", "FromAddress" : "linebuf_6_address0", "FromType" : "R", "ToInitialState" : "ap_enable_state8_pp0_iter3_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter3", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter4", "ToInitialOperation" : "ap_enable_operation_92", "ToInitialSV" : "7", "ToFinalState" : "ap_enable_state8_pp0_iter3_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter3", "ToFinalOperation" : "ap_enable_operation_92", "ToFinalSV" : "7", "ToAddress" : "linebuf_6_address1", "ToType" : "W", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "WAR"},
-			{"FromInitialState" : "ap_enable_state6_pp0_iter1_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter1", "FromInitialOperation" : "ap_enable_operation_65", "FromInitialSV" : "5", "FromFinalState" : "ap_enable_state7_pp0_iter2_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter2", "FromFinalOperation" : "ap_enable_operation_77", "FromFinalSV" : "6", "FromAddress" : "linebuf_7_address0", "FromType" : "R", "ToInitialState" : "ap_enable_state8_pp0_iter3_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter3", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter4", "ToInitialOperation" : "ap_enable_operation_94", "ToInitialSV" : "7", "ToFinalState" : "ap_enable_state8_pp0_iter3_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter3", "ToFinalOperation" : "ap_enable_operation_94", "ToFinalSV" : "7", "ToAddress" : "linebuf_7_address1", "ToType" : "W", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "WAR"},
-			{"FromInitialState" : "ap_enable_state6_pp0_iter1_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter1", "FromInitialOperation" : "ap_enable_operation_67", "FromInitialSV" : "5", "FromFinalState" : "ap_enable_state7_pp0_iter2_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter2", "FromFinalOperation" : "ap_enable_operation_78", "FromFinalSV" : "6", "FromAddress" : "linebuf_8_address0", "FromType" : "R", "ToInitialState" : "ap_enable_state8_pp0_iter3_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter3", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter4", "ToInitialOperation" : "ap_enable_operation_96", "ToInitialSV" : "7", "ToFinalState" : "ap_enable_state8_pp0_iter3_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter3", "ToFinalOperation" : "ap_enable_operation_96", "ToFinalSV" : "7", "ToAddress" : "linebuf_8_address1", "ToType" : "W", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "WAR"},
-			{"FromInitialState" : "ap_enable_state6_pp0_iter1_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter1", "FromInitialOperation" : "ap_enable_operation_69", "FromInitialSV" : "5", "FromFinalState" : "ap_enable_state7_pp0_iter2_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter2", "FromFinalOperation" : "ap_enable_operation_79", "FromFinalSV" : "6", "FromAddress" : "linebuf_9_address0", "FromType" : "R", "ToInitialState" : "ap_enable_state7_pp0_iter2_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter2", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter3", "ToInitialOperation" : "ap_enable_operation_80", "ToInitialSV" : "6", "ToFinalState" : "ap_enable_state7_pp0_iter2_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter2", "ToFinalOperation" : "ap_enable_operation_80", "ToFinalSV" : "6", "ToAddress" : "linebuf_9_address1", "ToType" : "W", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "WAR"},
-			{"FromInitialState" : "ap_enable_state7_pp0_iter2_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter2", "FromInitialOperation" : "ap_enable_operation_80", "FromInitialSV" : "6", "FromFinalState" : "ap_enable_state7_pp0_iter2_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter2", "FromFinalOperation" : "ap_enable_operation_80", "FromFinalSV" : "6", "FromAddress" : "linebuf_9_address1", "FromType" : "W", "ToInitialState" : "ap_enable_state6_pp0_iter1_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter1", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter2", "ToInitialOperation" : "ap_enable_operation_69", "ToInitialSV" : "5", "ToFinalState" : "ap_enable_state7_pp0_iter2_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter2", "ToFinalOperation" : "ap_enable_operation_79", "ToFinalSV" : "6", "ToAddress" : "linebuf_9_address0", "ToType" : "R", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "RAW", "StateEnableSignalListForFifoShift" : ["ap_enable_state6_pp0_iter1_stage0", "ap_enable_state7_pp0_iter2_stage0"]},
-			{"FromInitialState" : "ap_enable_state7_pp0_iter2_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter2", "FromInitialOperation" : "ap_enable_operation_70", "FromInitialSV" : "6", "FromFinalState" : "ap_enable_state8_pp0_iter3_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter3", "FromFinalOperation" : "ap_enable_operation_81", "FromFinalSV" : "7", "FromAddress" : "linebuf_0_address0", "FromType" : "R", "ToInitialState" : "ap_enable_state8_pp0_iter3_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter3", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter4", "ToInitialOperation" : "ap_enable_operation_83", "ToInitialSV" : "7", "ToFinalState" : "ap_enable_state8_pp0_iter3_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter3", "ToFinalOperation" : "ap_enable_operation_83", "ToFinalSV" : "7", "ToAddress" : "linebuf_0_address1", "ToType" : "W", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "WAR"},
-			{"FromInitialState" : "ap_enable_state8_pp0_iter3_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter3", "FromInitialOperation" : "ap_enable_operation_83", "FromInitialSV" : "7", "FromFinalState" : "ap_enable_state8_pp0_iter3_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter3", "FromFinalOperation" : "ap_enable_operation_83", "FromFinalSV" : "7", "FromAddress" : "linebuf_0_address1", "FromType" : "W", "ToInitialState" : "ap_enable_state7_pp0_iter2_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter2", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter3", "ToInitialOperation" : "ap_enable_operation_70", "ToInitialSV" : "6", "ToFinalState" : "ap_enable_state8_pp0_iter3_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter3", "ToFinalOperation" : "ap_enable_operation_81", "ToFinalSV" : "7", "ToAddress" : "linebuf_0_address0", "ToType" : "R", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "RAW", "StateEnableSignalListForFifoShift" : ["ap_enable_state7_pp0_iter2_stage0", "ap_enable_state8_pp0_iter3_stage0"]},
-			{"FromInitialState" : "ap_enable_state8_pp0_iter3_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter3", "FromInitialOperation" : "ap_enable_operation_85", "FromInitialSV" : "7", "FromFinalState" : "ap_enable_state8_pp0_iter3_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter3", "FromFinalOperation" : "ap_enable_operation_85", "FromFinalSV" : "7", "FromAddress" : "linebuf_1_address1", "FromType" : "W", "ToInitialState" : "ap_enable_state6_pp0_iter1_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter1", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter2", "ToInitialOperation" : "ap_enable_operation_53", "ToInitialSV" : "5", "ToFinalState" : "ap_enable_state7_pp0_iter2_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter2", "ToFinalOperation" : "ap_enable_operation_71", "ToFinalSV" : "6", "ToAddress" : "linebuf_1_address0", "ToType" : "R", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "RAW", "StateEnableSignalListForFifoShift" : ["ap_enable_state6_pp0_iter1_stage0", "ap_enable_state7_pp0_iter2_stage0", "ap_enable_state8_pp0_iter3_stage0"]},
-			{"FromInitialState" : "ap_enable_state8_pp0_iter3_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter3", "FromInitialOperation" : "ap_enable_operation_86", "FromInitialSV" : "7", "FromFinalState" : "ap_enable_state8_pp0_iter3_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter3", "FromFinalOperation" : "ap_enable_operation_86", "FromFinalSV" : "7", "FromAddress" : "linebuf_2_address1", "FromType" : "W", "ToInitialState" : "ap_enable_state6_pp0_iter1_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter1", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter2", "ToInitialOperation" : "ap_enable_operation_55", "ToInitialSV" : "5", "ToFinalState" : "ap_enable_state7_pp0_iter2_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter2", "ToFinalOperation" : "ap_enable_operation_72", "ToFinalSV" : "6", "ToAddress" : "linebuf_2_address0", "ToType" : "R", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "RAW", "StateEnableSignalListForFifoShift" : ["ap_enable_state6_pp0_iter1_stage0", "ap_enable_state7_pp0_iter2_stage0", "ap_enable_state8_pp0_iter3_stage0"]},
-			{"FromInitialState" : "ap_enable_state8_pp0_iter3_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter3", "FromInitialOperation" : "ap_enable_operation_88", "FromInitialSV" : "7", "FromFinalState" : "ap_enable_state8_pp0_iter3_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter3", "FromFinalOperation" : "ap_enable_operation_88", "FromFinalSV" : "7", "FromAddress" : "linebuf_3_address1", "FromType" : "W", "ToInitialState" : "ap_enable_state6_pp0_iter1_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter1", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter2", "ToInitialOperation" : "ap_enable_operation_57", "ToInitialSV" : "5", "ToFinalState" : "ap_enable_state7_pp0_iter2_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter2", "ToFinalOperation" : "ap_enable_operation_73", "ToFinalSV" : "6", "ToAddress" : "linebuf_3_address0", "ToType" : "R", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "RAW", "StateEnableSignalListForFifoShift" : ["ap_enable_state6_pp0_iter1_stage0", "ap_enable_state7_pp0_iter2_stage0", "ap_enable_state8_pp0_iter3_stage0"]},
-			{"FromInitialState" : "ap_enable_state8_pp0_iter3_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter3", "FromInitialOperation" : "ap_enable_operation_90", "FromInitialSV" : "7", "FromFinalState" : "ap_enable_state8_pp0_iter3_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter3", "FromFinalOperation" : "ap_enable_operation_90", "FromFinalSV" : "7", "FromAddress" : "linebuf_4_address1", "FromType" : "W", "ToInitialState" : "ap_enable_state6_pp0_iter1_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter1", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter2", "ToInitialOperation" : "ap_enable_operation_59", "ToInitialSV" : "5", "ToFinalState" : "ap_enable_state7_pp0_iter2_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter2", "ToFinalOperation" : "ap_enable_operation_74", "ToFinalSV" : "6", "ToAddress" : "linebuf_4_address0", "ToType" : "R", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "RAW", "StateEnableSignalListForFifoShift" : ["ap_enable_state6_pp0_iter1_stage0", "ap_enable_state7_pp0_iter2_stage0", "ap_enable_state8_pp0_iter3_stage0"]},
-			{"FromInitialState" : "ap_enable_state8_pp0_iter3_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter3", "FromInitialOperation" : "ap_enable_operation_91", "FromInitialSV" : "7", "FromFinalState" : "ap_enable_state8_pp0_iter3_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter3", "FromFinalOperation" : "ap_enable_operation_91", "FromFinalSV" : "7", "FromAddress" : "linebuf_5_address1", "FromType" : "W", "ToInitialState" : "ap_enable_state6_pp0_iter1_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter1", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter2", "ToInitialOperation" : "ap_enable_operation_61", "ToInitialSV" : "5", "ToFinalState" : "ap_enable_state7_pp0_iter2_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter2", "ToFinalOperation" : "ap_enable_operation_75", "ToFinalSV" : "6", "ToAddress" : "linebuf_5_address0", "ToType" : "R", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "RAW", "StateEnableSignalListForFifoShift" : ["ap_enable_state6_pp0_iter1_stage0", "ap_enable_state7_pp0_iter2_stage0", "ap_enable_state8_pp0_iter3_stage0"]},
-			{"FromInitialState" : "ap_enable_state8_pp0_iter3_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter3", "FromInitialOperation" : "ap_enable_operation_92", "FromInitialSV" : "7", "FromFinalState" : "ap_enable_state8_pp0_iter3_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter3", "FromFinalOperation" : "ap_enable_operation_92", "FromFinalSV" : "7", "FromAddress" : "linebuf_6_address1", "FromType" : "W", "ToInitialState" : "ap_enable_state6_pp0_iter1_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter1", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter2", "ToInitialOperation" : "ap_enable_operation_63", "ToInitialSV" : "5", "ToFinalState" : "ap_enable_state7_pp0_iter2_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter2", "ToFinalOperation" : "ap_enable_operation_76", "ToFinalSV" : "6", "ToAddress" : "linebuf_6_address0", "ToType" : "R", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "RAW", "StateEnableSignalListForFifoShift" : ["ap_enable_state6_pp0_iter1_stage0", "ap_enable_state7_pp0_iter2_stage0", "ap_enable_state8_pp0_iter3_stage0"]},
-			{"FromInitialState" : "ap_enable_state8_pp0_iter3_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter3", "FromInitialOperation" : "ap_enable_operation_94", "FromInitialSV" : "7", "FromFinalState" : "ap_enable_state8_pp0_iter3_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter3", "FromFinalOperation" : "ap_enable_operation_94", "FromFinalSV" : "7", "FromAddress" : "linebuf_7_address1", "FromType" : "W", "ToInitialState" : "ap_enable_state6_pp0_iter1_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter1", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter2", "ToInitialOperation" : "ap_enable_operation_65", "ToInitialSV" : "5", "ToFinalState" : "ap_enable_state7_pp0_iter2_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter2", "ToFinalOperation" : "ap_enable_operation_77", "ToFinalSV" : "6", "ToAddress" : "linebuf_7_address0", "ToType" : "R", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "RAW", "StateEnableSignalListForFifoShift" : ["ap_enable_state6_pp0_iter1_stage0", "ap_enable_state7_pp0_iter2_stage0", "ap_enable_state8_pp0_iter3_stage0"]},
-			{"FromInitialState" : "ap_enable_state8_pp0_iter3_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter3", "FromInitialOperation" : "ap_enable_operation_96", "FromInitialSV" : "7", "FromFinalState" : "ap_enable_state8_pp0_iter3_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter3", "FromFinalOperation" : "ap_enable_operation_96", "FromFinalSV" : "7", "FromAddress" : "linebuf_8_address1", "FromType" : "W", "ToInitialState" : "ap_enable_state6_pp0_iter1_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter1", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter2", "ToInitialOperation" : "ap_enable_operation_67", "ToInitialSV" : "5", "ToFinalState" : "ap_enable_state7_pp0_iter2_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter2", "ToFinalOperation" : "ap_enable_operation_78", "ToFinalSV" : "6", "ToAddress" : "linebuf_8_address0", "ToType" : "R", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "11", "II" : "1", "Pragma" : "(convolution.cpp:187:1)", "Type" : "RAW", "StateEnableSignalListForFifoShift" : ["ap_enable_state6_pp0_iter1_stage0", "ap_enable_state7_pp0_iter2_stage0", "ap_enable_state8_pp0_iter3_stage0"]}],
 		"Port" : [
-			{"Name" : "height", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "2", "DependentChan" : "43",
+			{"Name" : "height", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "2", "DependentChan" : "36",
 				"BlockSignal" : [
 					{"Name" : "height_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "vconv_xlim_loc", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "2", "DependentChan" : "44",
+			{"Name" : "vconv_xlim_loc", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "2", "DependentChan" : "37",
 				"BlockSignal" : [
 					{"Name" : "vconv_xlim_loc_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "hconv_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "3", "DependentChan" : "45",
+			{"Name" : "hconv_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "3", "DependentChan" : "38",
 				"BlockSignal" : [
 					{"Name" : "hconv_V_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "vconv_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "35", "DependentChan" : "46",
+			{"Name" : "vconv_V", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "28", "DependentChan" : "39",
 				"BlockSignal" : [
 					{"Name" : "vconv_V_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "height_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "35", "DependentChan" : "47",
+			{"Name" : "height_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "28", "DependentChan" : "40",
 				"BlockSignal" : [
 					{"Name" : "height_out_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "vconv_xlim_loc_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "35", "DependentChan" : "48",
+			{"Name" : "vconv_xlim_loc_out", "Type" : "Fifo", "Direction" : "O", "DependentProc" : "28", "DependentChan" : "41",
 				"BlockSignal" : [
 					{"Name" : "vconv_xlim_loc_out_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "linebuf_0", "Type" : "Memory", "Direction" : "IO"},
@@ -275,7 +257,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "linebuf_6", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "linebuf_7", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "linebuf_8", "Type" : "Memory", "Direction" : "IO"},
-			{"Name" : "linebuf_9", "Type" : "Memory", "Direction" : "IO"}]},
+			{"Name" : "linebuf_9", "Type" : "Memory", "Direction" : "IO"},
+			{"Name" : "filt11_coeff", "Type" : "Memory", "Direction" : "I"}]},
 	{"ID" : "15", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.linebuf_0_U", "Parent" : "14"},
 	{"ID" : "16", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.linebuf_1_U", "Parent" : "14"},
 	{"ID" : "17", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.linebuf_2_U", "Parent" : "14"},
@@ -286,17 +269,10 @@ set RtlHierarchyInfo {[
 	{"ID" : "22", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.linebuf_7_U", "Parent" : "14"},
 	{"ID" : "23", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.linebuf_8_U", "Parent" : "14"},
 	{"ID" : "24", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.linebuf_9_U", "Parent" : "14"},
-	{"ID" : "25", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.filter11x11_strm_mul_32ns_32ns_64_3_1_U30", "Parent" : "14"},
-	{"ID" : "26", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.filter11x11_strm_mul_8ns_32s_32_3_1_U31", "Parent" : "14"},
-	{"ID" : "27", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.filter11x11_strm_mul_10ns_32s_32_3_1_U32", "Parent" : "14"},
-	{"ID" : "28", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.filter11x11_strm_mul_11ns_32s_32_3_1_U33", "Parent" : "14"},
-	{"ID" : "29", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.filter11x11_strm_mul_11ns_32s_32_3_1_U34", "Parent" : "14"},
-	{"ID" : "30", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.filter11x11_strm_mul_10ns_32s_32_3_1_U35", "Parent" : "14"},
-	{"ID" : "31", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.filter11x11_strm_mul_8ns_32s_32_3_1_U36", "Parent" : "14"},
-	{"ID" : "32", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.filter11x11_strm_mul_11ns_32s_32_3_1_U37", "Parent" : "14"},
-	{"ID" : "33", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.filter11x11_strm_mul_10ns_32s_32_3_1_U38", "Parent" : "14"},
-	{"ID" : "34", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.filter11x11_strm_mul_10ns_32s_32_3_1_U39", "Parent" : "14"},
-	{"ID" : "35", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Loop_Border_proc_U0", "Parent" : "0", "Child" : ["36", "37"],
+	{"ID" : "25", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.filt11_coeff_U", "Parent" : "14"},
+	{"ID" : "26", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.filter11x11_strm_mux_104_32_1_1_U30", "Parent" : "14"},
+	{"ID" : "27", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_VConvH_proc_U0.filter11x11_strm_mul_32s_10ns_32_3_1_U31", "Parent" : "14"},
+	{"ID" : "28", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.Loop_Border_proc_U0", "Parent" : "0", "Child" : ["29", "30"],
 		"CDFG" : "Loop_Border_proc",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1",
@@ -312,37 +288,37 @@ set RtlHierarchyInfo {[
 		"StartSource" : "2",
 		"StartFifo" : "start_for_Loop_Border_proc_U0_U",
 		"Port" : [
-			{"Name" : "width", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "2", "DependentChan" : "42",
+			{"Name" : "width", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "2", "DependentChan" : "35",
 				"BlockSignal" : [
 					{"Name" : "width_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "height", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "14", "DependentChan" : "47",
+			{"Name" : "height", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "14", "DependentChan" : "40",
 				"BlockSignal" : [
 					{"Name" : "height_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "dst_V", "Type" : "Axis", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "dst_V_TDATA_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "vconv_xlim_loc", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "14", "DependentChan" : "48",
+			{"Name" : "vconv_xlim_loc", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "14", "DependentChan" : "41",
 				"BlockSignal" : [
 					{"Name" : "vconv_xlim_loc_blk_n", "Type" : "RtlSignal"}]},
-			{"Name" : "vconv_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "14", "DependentChan" : "46",
+			{"Name" : "vconv_V", "Type" : "Fifo", "Direction" : "I", "DependentProc" : "14", "DependentChan" : "39",
 				"BlockSignal" : [
 					{"Name" : "vconv_V_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "36", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_Border_proc_U0.borderbuf_U", "Parent" : "35"},
-	{"ID" : "37", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_Border_proc_U0.filter11x11_strm_mul_32ns_32ns_64_3_1_U47", "Parent" : "35"},
-	{"ID" : "38", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.width_c_U", "Parent" : "0"},
-	{"ID" : "39", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.width_c163_U", "Parent" : "0"},
-	{"ID" : "40", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.height_c_U", "Parent" : "0"},
-	{"ID" : "41", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.height_c164_U", "Parent" : "0"},
-	{"ID" : "42", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.width_c165_U", "Parent" : "0"},
-	{"ID" : "43", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.height_c166_U", "Parent" : "0"},
-	{"ID" : "44", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.vconv_xlim_loc_c_U", "Parent" : "0"},
-	{"ID" : "45", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hconv_V_U", "Parent" : "0"},
-	{"ID" : "46", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.vconv_V_U", "Parent" : "0"},
-	{"ID" : "47", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.height_c167_U", "Parent" : "0"},
-	{"ID" : "48", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.vconv_xlim_loc_c168_U", "Parent" : "0"},
-	{"ID" : "49", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_Block_proc_U0_U", "Parent" : "0"},
-	{"ID" : "50", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_Loop_Border_proc_U0_U", "Parent" : "0"},
-	{"ID" : "51", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_Loop_VConvH_proc_U0_U", "Parent" : "0"}]}
+	{"ID" : "29", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_Border_proc_U0.borderbuf_U", "Parent" : "28"},
+	{"ID" : "30", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.Loop_Border_proc_U0.filter11x11_strm_mul_32ns_32ns_64_3_1_U42", "Parent" : "28"},
+	{"ID" : "31", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.width_c_U", "Parent" : "0"},
+	{"ID" : "32", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.width_c60_U", "Parent" : "0"},
+	{"ID" : "33", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.height_c_U", "Parent" : "0"},
+	{"ID" : "34", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.height_c61_U", "Parent" : "0"},
+	{"ID" : "35", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.width_c62_U", "Parent" : "0"},
+	{"ID" : "36", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.height_c63_U", "Parent" : "0"},
+	{"ID" : "37", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.vconv_xlim_loc_c_U", "Parent" : "0"},
+	{"ID" : "38", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hconv_V_U", "Parent" : "0"},
+	{"ID" : "39", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.vconv_V_U", "Parent" : "0"},
+	{"ID" : "40", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.height_c64_U", "Parent" : "0"},
+	{"ID" : "41", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.vconv_xlim_loc_c65_U", "Parent" : "0"},
+	{"ID" : "42", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_Block_proc_U0_U", "Parent" : "0"},
+	{"ID" : "43", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_Loop_Border_proc_U0_U", "Parent" : "0"},
+	{"ID" : "44", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.start_for_Loop_VConvH_proc_U0_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -360,7 +336,8 @@ set ArgLastReadFirstWriteLatency {
 		linebuf_6 {Type IO LastRead -1 FirstWrite -1}
 		linebuf_7 {Type IO LastRead -1 FirstWrite -1}
 		linebuf_8 {Type IO LastRead -1 FirstWrite -1}
-		linebuf_9 {Type IO LastRead -1 FirstWrite -1}}
+		linebuf_9 {Type IO LastRead -1 FirstWrite -1}
+		filt11_coeff {Type I LastRead -1 FirstWrite -1}}
 	filter11x11_strm_ent {
 		width {Type I LastRead 0 FirstWrite -1}
 		height {Type I LastRead 0 FirstWrite -1}
@@ -382,8 +359,8 @@ set ArgLastReadFirstWriteLatency {
 	Loop_VConvH_proc {
 		height {Type I LastRead 0 FirstWrite -1}
 		vconv_xlim_loc {Type I LastRead 0 FirstWrite -1}
-		hconv_V {Type I LastRead 5 FirstWrite -1}
-		vconv_V {Type O LastRead -1 FirstWrite 14}
+		hconv_V {Type I LastRead 2 FirstWrite -1}
+		vconv_V {Type O LastRead -1 FirstWrite 3}
 		height_out {Type O LastRead -1 FirstWrite 0}
 		vconv_xlim_loc_out {Type O LastRead -1 FirstWrite 0}
 		linebuf_0 {Type IO LastRead -1 FirstWrite -1}
@@ -395,7 +372,8 @@ set ArgLastReadFirstWriteLatency {
 		linebuf_6 {Type IO LastRead -1 FirstWrite -1}
 		linebuf_7 {Type IO LastRead -1 FirstWrite -1}
 		linebuf_8 {Type IO LastRead -1 FirstWrite -1}
-		linebuf_9 {Type IO LastRead -1 FirstWrite -1}}
+		linebuf_9 {Type IO LastRead -1 FirstWrite -1}
+		filt11_coeff {Type I LastRead -1 FirstWrite -1}}
 	Loop_Border_proc {
 		width {Type I LastRead 0 FirstWrite -1}
 		height {Type I LastRead 0 FirstWrite -1}
@@ -406,8 +384,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "23", "Max" : "2070627"}
-	, {"Name" : "Interval", "Min" : "6", "Max" : "2070613"}
+	{"Name" : "Latency", "Min" : "15", "Max" : "162727239"}
+	, {"Name" : "Interval", "Min" : "6", "Max" : "162727229"}
 ]}
 
 set PipelineEnableSignalInfo {[

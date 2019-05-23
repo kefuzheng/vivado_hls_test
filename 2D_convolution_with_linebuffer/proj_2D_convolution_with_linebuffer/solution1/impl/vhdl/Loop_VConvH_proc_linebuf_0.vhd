@@ -17,11 +17,9 @@ entity Loop_VConvH_proc_linebuf_0_ram is
     port (
           addr0     : in std_logic_vector(AWIDTH-1 downto 0); 
           ce0       : in std_logic; 
+          d0        : in std_logic_vector(DWIDTH-1 downto 0); 
+          we0       : in std_logic; 
           q0        : out std_logic_vector(DWIDTH-1 downto 0);
-          addr1     : in std_logic_vector(AWIDTH-1 downto 0); 
-          ce1       : in std_logic; 
-          d1        : in std_logic_vector(DWIDTH-1 downto 0); 
-          we1       : in std_logic; 
           clk        : in std_logic 
     ); 
 end entity; 
@@ -58,17 +56,8 @@ begin
     if (clk'event and clk = '1') then
         if (ce0 = '1') then 
             q0 <= ram(CONV_INTEGER(addr0_tmp));
-        end if;
-    end if;
-end process;
-
-
-p_memory_access_1: process (clk)  
-begin 
-    if (clk'event and clk = '1') then
-        if (ce1 = '1') then 
-            if (we1 = '1') then 
-                ram(CONV_INTEGER(addr1)) := d1; 
+            if (we0 = '1') then 
+                ram(CONV_INTEGER(addr0_tmp)) := d0; 
             end if;
         end if;
     end if;
@@ -90,11 +79,9 @@ entity Loop_VConvH_proc_linebuf_0 is
         clk : IN STD_LOGIC;
         address0 : IN STD_LOGIC_VECTOR(AddressWidth - 1 DOWNTO 0);
         ce0 : IN STD_LOGIC;
-        q0 : OUT STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0);
-        address1 : IN STD_LOGIC_VECTOR(AddressWidth - 1 DOWNTO 0);
-        ce1 : IN STD_LOGIC;
-        we1 : IN STD_LOGIC;
-        d1 : IN STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0));
+        we0 : IN STD_LOGIC;
+        d0 : IN STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0);
+        q0 : OUT STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0));
 end entity;
 
 architecture arch of Loop_VConvH_proc_linebuf_0 is
@@ -103,11 +90,9 @@ architecture arch of Loop_VConvH_proc_linebuf_0 is
             clk : IN STD_LOGIC;
             addr0 : IN STD_LOGIC_VECTOR;
             ce0 : IN STD_LOGIC;
-            q0 : OUT STD_LOGIC_VECTOR;
-            addr1 : IN STD_LOGIC_VECTOR;
-            ce1 : IN STD_LOGIC;
-            we1 : IN STD_LOGIC;
-            d1 : IN STD_LOGIC_VECTOR);
+            we0 : IN STD_LOGIC;
+            d0 : IN STD_LOGIC_VECTOR;
+            q0 : OUT STD_LOGIC_VECTOR);
     end component;
 
 
@@ -118,11 +103,9 @@ begin
         clk => clk,
         addr0 => address0,
         ce0 => ce0,
-        q0 => q0,
-        addr1 => address1,
-        ce1 => ce1,
-        we1 => we1,
-        d1 => d1);
+        we0 => we0,
+        d0 => d0,
+        q0 => q0);
 
 end architecture;
 

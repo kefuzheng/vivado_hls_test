@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Loop_HConvH_proc6'" level="0">
-<item name = "Date">Tue May 21 08:04:36 2019
+<item name = "Date">Thu May 23 07:29:22 2019
 </item>
-<item name = "Version">2019.2.0 (Build 2547110 on Sun May 19 23:20:49 MDT 2019)</item>
+<item name = "Version">2019.2.0 (Build 2548284 on Tue May 21 04:25:56 EDT 2019)</item>
 <item name = "Project">proj_2D_convolution_with_linebuffer</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>

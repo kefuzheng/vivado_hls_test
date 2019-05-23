@@ -1,54 +1,54 @@
-INFO-FLOW: Workspace /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1 opened at Tue May 21 08:04:21 IST 2019
+INFO-FLOW: Workspace /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1 opened at Thu May 23 07:29:10 IST 2019
 Execute     set_part xc7z020clg484-1 
 Execute       ap_part_info -name xc7z020clg484-1 -data single -quiet 
-Command       ap_part_info done; 1.87 sec.
+Command       ap_part_info done; 6.16 sec.
 Execute       ap_part_info -name xc7z020clg484-1 -data info 
 Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
 Execute         get_default_platform 
 Execute         license_isbetapart xc7z020 
 Command         license_isbetapart done; error code: 1; 
 Execute         open_platform DefaultPlatform 
-Execute         import_lib /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/zynq/zynq 
-Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/xilinx.lib 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/plb46.lib 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/fsl.lib 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/axi4.lib 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/maxi.lib 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/saxilite.lib 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/dsp48.lib 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/ip/dds_compiler.lib 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/ip/xfft.lib 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/ip/xfir.lib 
-Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/xilinx.hlp 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/target_info.tcl 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/maxi.hlp 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/saxilite.hlp 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/dsp48.hlp 
-Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/xilinx.hlp 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/target_info.tcl 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/maxi.hlp 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/saxilite.hlp 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/dsp48.hlp 
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/zynq/zynq.gen 
-Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/xilinx.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/plb46.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/fsl.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/axi4.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/saxilite.gen 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/maxi.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/ip/dds_compiler.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/ip/util.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/ip/xfft.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/ip/xfir.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/dsp48.gen 
-Command           ap_source done; 0.14 sec.
+Execute         import_lib /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/zynq/zynq 
+Execute           source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/xilinx.lib 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/plb46.lib 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/fsl.lib 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/axi4.lib 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/maxi.lib 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/saxilite.lib 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/dsp48.lib 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/ip/dds_compiler.lib 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/ip/xfft.lib 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/ip/xfir.lib 
+Execute           source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/target_info.tcl 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute           source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/target_info.tcl 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/zynq/zynq.gen 
+Execute           source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/xilinx.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/plb46.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/fsl.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/axi4.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/maxi.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/ip/util.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/ip/xfft.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/ip/xfir.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.15 sec.
 Command         ap_source done; 0.15 sec.
 Execute         ap_part_info -data single -name xc7z020-clg484-1 
 Execute         ap_part_info -name xc7z020-clg484-1 -data resources 
@@ -57,25 +57,25 @@ Execute         ap_part_info -name xc7z020-clg484-1 -data info
 Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info 
 Execute         config_chip_info -quiet -speed slow 
-Command       add_library done; 0.29 sec.
+Command       add_library done; 0.26 sec.
 Execute       add_library xilinx/zynq/zynq_fpv6 
 Execute         get_default_platform 
 Execute         open_platform DefaultPlatform 
-Execute         import_lib /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/zynq/zynq_fpv6 
-Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/xilinx_fp.lib 
-Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/xilinx_fp.hlp 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/xilinx.hlp 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/target_info.tcl 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute                 source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/maxi.hlp 
-Execute                 source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/saxilite.hlp 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/dsp48.hlp 
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/xilinx_fp.gen 
+Execute         import_lib /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/target_info.tcl 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/xilinx_fp.gen 
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
 Execute       ap_part_info -name xc7z020-clg484-1 -data info 
 Execute       get_default_platform 
-Command     set_part done; 2.26 sec.
+Command     set_part done; 6.54 sec.
 Execute     create_clock -period 6.66 
 Execute       config_clock -quiet -name default -period 6.66 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.66ns.
@@ -91,7 +91,7 @@ Execute       ap_part_info -name xc7z020-clg484-1 -data info
 Execute       source run_sim.tcl 
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-Command     csim_design done; 2.24 sec.
+Command     csim_design done; 2.36 sec.
 Execute     csynth_design 
 Execute       get_config_compile -dump_cfg 
 Execute       get_config_compile -effort 
@@ -116,34 +116,35 @@ Execute         is_encrypted convolution.cpp
 Execute         ap_part_info -name xc7z020-clg484-1 -data info 
 INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
-Execute         clang  -fno-limit-debug-info -gcc-toolchain "/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "convolution.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/autopilot" -I "/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp" 
-INFO-FLOW: exec /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E convolution.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/autopilot -I /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp
-Command         clang done; 2.03 sec.
+Execute         clang  -fno-limit-debug-info -gcc-toolchain "/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "convolution.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/autopilot" -I "/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp" 
+INFO-FLOW: exec /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E convolution.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/autopilot -I /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp
+Command         clang done; 0.28 sec.
 Execute         tidy_31 xilinx-xfmat-array-geometry /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp std=gnu++98 
-INFO-FLOW: exec /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command         tidy_31 done; 0.17 sec.
+INFO-FLOW: exec /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command         tidy_31 done; 0.24 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
-Execute         clang -syntaxcheck -src /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/autopilot" -I "/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp"  -o "/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/useless.bc"  
-INFO-FLOW: exec /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/autopilot -I /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/useless.bc
-Command         clang done; 1.81 sec.
-INFO-FLOW: Done: GCC PP time: 4 seconds per iteration
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
-Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute         clang -syntaxcheck -src /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/autopilot" -I "/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp"  -o "/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/autopilot -I /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/useless.bc
+INFO-FLOW: Done: GCC PP time: 0.6 seconds per iteration
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute           source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/tps/tcl/tcllib1.11.1/try/try.tcl 
 Execute         list_core -type functional_unit 
 Execute         tidy_31 xilinx-systemc-detector /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp std=gnu++98 -directive=/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/.systemc_flag 
-INFO-FLOW: exec /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: exec /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
 Execute         tidy_31 xilinx-directive2pragma /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp std=gnu++98 -directive=/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/all.directive.json 
-INFO-FLOW: exec /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: exec /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
 Execute         get_config_dataflow -strict_mode 
-Execute         ap_eval exec -ignorestderr /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/xilinx-dataflow-lawyer.convolution.pp.0.cpp.diag.yml /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/xilinx-dataflow-lawyer.convolution.pp.0.cpp.out.log 2> /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/xilinx-dataflow-lawyer.convolution.pp.0.cpp.err.log 
+Execute         ap_eval exec -ignorestderr /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/xilinx-dataflow-lawyer.convolution.pp.0.cpp.diag.yml /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/xilinx-dataflow-lawyer.convolution.pp.0.cpp.out.log 2> /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/xilinx-dataflow-lawyer.convolution.pp.0.cpp.err.log 
+Command         ap_eval done; 0.11 sec.
 Execute         tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp std=gnu++98 
-Execute           ap_eval exec -ignorestderr /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/tidy-3.1.convolution.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/tidy-3.1.convolution.pp.0.cpp.out.log 2> /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/tidy-3.1.convolution.pp.0.cpp.err.log 
-Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
-Execute           ap_eval exec -ignorestderr /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/xilinx-legacy-rewriter.convolution.pp.0.cpp.out.log 2> /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/xilinx-legacy-rewriter.convolution.pp.0.cpp.err.log 
-Command         tidy_31 done; 0.16 sec.
+Execute           ap_eval exec -ignorestderr /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/tidy-3.1.convolution.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/tidy-3.1.convolution.pp.0.cpp.out.log 2> /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/tidy-3.1.convolution.pp.0.cpp.err.log 
+Execute           source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute           ap_eval exec -ignorestderr /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/xilinx-legacy-rewriter.convolution.pp.0.cpp.out.log 2> /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/xilinx-legacy-rewriter.convolution.pp.0.cpp.err.log 
+Command           ap_eval done; 0.12 sec.
+Command         tidy_31 done; 0.19 sec.
 INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 0.3 seconds per iteration
 INFO-FLOW: Pragma Handling...
 WARNING: [HLS 200-41] Resource core 'AXI4M' on port '&src' is deprecated. Please use the interface directive to specify the AXI interface.
@@ -152,85 +153,80 @@ WARNING: [HLS 200-41] Resource core 'AXI4LiteS' on port '0' is deprecated. Pleas
 WARNING: [HLS 200-41] Resource core 'AXI4LiteS' on port '&width' is deprecated. Please use the interface directive to specify the AXI interface.
 WARNING: [HLS 200-41] Resource core 'AXI4LiteS' on port '&height' is deprecated. Please use the interface directive to specify the AXI interface.
 Execute         tidy_31 xilinx-ssdm-intrinsics-arguments /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pragma.1.cpp std=gnu++98 
-INFO-FLOW: exec /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: exec /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
 Execute         ap_part_info -name xc7z020-clg484-1 -data info 
 INFO-FLOW: Processing labels
-Execute         clang -src /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/autopilot" -I "/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.bc" 
-INFO-FLOW: exec /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/autopilot -I /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.bc
-Command         clang done; 1.78 sec.
+Execute         clang -src /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/autopilot" -I "/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.bc" 
+INFO-FLOW: exec /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/autopilot -I /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.bc
+Command         clang done; 0.11 sec.
 INFO-FLOW: Linking Debug ...
-Execute         llvm-ld /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.g.bc -hls-opt -except-internalize filter11x11_strm -L/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/lib -lhlsm -lhlsmc++ -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.g 
-Command         llvm-ld done; 0.98 sec.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 883.141 ; gain = 192.000 ; free physical = 173 ; free virtual = 7294
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 883.141 ; gain = 192.000 ; free physical = 173 ; free virtual = 7294
+Execute         llvm-ld /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/convolution.g.bc -hls-opt -except-internalize filter11x11_strm -L/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/lib -lhlsm -lhlsmc++ -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.g 
+Command         llvm-ld done; 0.13 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 816.336 ; gain = 128.000 ; free physical = 616 ; free virtual = 6035
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 816.336 ; gain = 128.000 ; free physical = 615 ; free virtual = 6035
 Execute         get_config_sdx -target 
 Execute         opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute           cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 Execute           transform -promote-dbg-pointer /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.pp.bc -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.pp.0.bc -f 
-Execute           llvm-ld /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/lnx64/lib -lfloatconversion -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.g.0 
-Command           llvm-ld done; 0.91 sec.
+Execute           llvm-ld /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.pp.0.bc -disable-opt -L/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/lib -lfloatconversion -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.g.0 
 INFO-FLOW: Running Standard Transforms...
 Execute           transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top filter11x11_strm -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.g.0.bc -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [XFORM 203-603] Inlining function 'convolution_strm<unsigned int, 11>' into 'filter11x11_strm' (convolution.cpp:271).
-Command           transform done; 0.48 sec.
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 883.141 ; gain = 192.000 ; free physical = 160 ; free virtual = 7291
+INFO: [XFORM 203-603] Inlining function 'convolution_strm<unsigned int, 11>' into 'filter11x11_strm' (convolution.cpp:270).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 816.336 ; gain = 128.000 ; free physical = 610 ; free virtual = 6035
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute           transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.g.1.bc -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.g.2.prechk.bc -f 
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute           transform -syn-check /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 883.141 ; gain = 192.000 ; free physical = 158 ; free virtual = 7291
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 816.336 ; gain = 128.000 ; free physical = 616 ; free virtual = 6036
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.g.1.bc to /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
 Execute           transform -hls -tmp /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.o.1.bc -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.o.1.tmp.bc -f 
 INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'HConvW' (convolution.cpp:169) in function 'filter11x11_strm' for pipelining.
-INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VConvW' (convolution.cpp:186) in function 'filter11x11_strm' for pipelining.
 INFO: [HLS 200-489] Unrolling loop 'HConv' (convolution.cpp:174) in function 'filter11x11_strm' completely with a factor of 11.
-INFO: [HLS 200-489] Unrolling loop 'VConv' (convolution.cpp:192) in function 'filter11x11_strm' completely with a factor of 11.
 INFO: [XFORM 203-102] Partitioning array 'hwin' (convolution.cpp:149) automatically.
 INFO: [XFORM 203-101] Partitioning array 'linebuf'  in dimension 1 completely.
 INFO: [XFORM 203-721] Changing loop 'Loop_HConvH_proc' (convolution.cpp:168) to a process function for dataflow in function 'filter11x11_strm'.
 INFO: [XFORM 203-721] Changing loop 'Loop_VConvH_proc' (convolution.cpp:185) to a process function for dataflow in function 'filter11x11_strm'.
-INFO: [XFORM 203-721] Changing loop 'Loop_Border_proc' (convolution.cpp:204) to a process function for dataflow in function 'filter11x11_strm'.
+INFO: [XFORM 203-721] Changing loop 'Loop_Border_proc' (convolution.cpp:203) to a process function for dataflow in function 'filter11x11_strm'.
 INFO: [XFORM 203-712] Applying dataflow to function 'filter11x11_strm', detected/extracted 5 process function(s): 
 	 'filter11x11_strm.entry7'
 	 'Block__proc'
 	 'Loop_HConvH_proc6'
 	 'Loop_VConvH_proc'
 	 'Loop_Border_proc'.
-Command           transform done; 0.28 sec.
+Command           transform done; 0.29 sec.
 INFO-FLOW: Presyn 2...
 Execute           transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (convolution.cpp:226:17) to (convolution.cpp:205:36) in function 'Loop_Border_proc'... converting 4 basic blocks.
-INFO: [XFORM 203-11] Balancing expressions in function 'Loop_VConvH_proc' (convolution.cpp:185:51)...12 expression(s) balanced.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (convolution.cpp:191:47) to (convolution.cpp:194:17) in function 'Loop_VConvH_proc'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (convolution.cpp:225:17) to (convolution.cpp:204:36) in function 'Loop_Border_proc'... converting 4 basic blocks.
 INFO: [XFORM 203-11] Balancing expressions in function 'Loop_HConvH_proc6' (convolution.cpp:168:46)...12 expression(s) balanced.
-Command           transform done; 0.19 sec.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 883.141 ; gain = 192.000 ; free physical = 137 ; free virtual = 7272
+Command           transform done; 0.21 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 816.336 ; gain = 128.000 ; free physical = 609 ; free virtual = 6016
 INFO-FLOW: Building ssdm...
 Execute           transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.o.2.bc -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-INFO: [XFORM 203-541] Flattening a loop nest 'VConvH' (convolution.cpp:185:51) in function 'Loop_VConvH_proc'.
 INFO: [XFORM 203-541] Flattening a loop nest 'HConvH' (convolution.cpp:168:51) in function 'Loop_HConvH_proc6'.
-INFO: [XFORM 203-541] Flattening a loop nest 'Border' (convolution.cpp:204:46) in function 'Loop_Border_proc'.
-WARNING: [XFORM 203-631] Renaming function 'filter11x11_strm.entry7' to 'filter11x11_strm.ent' (convolution.cpp:264:1)
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf.9'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf.8'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Border' (convolution.cpp:203:46) in function 'Loop_Border_proc'.
+WARNING: [XFORM 203-631] Renaming function 'filter11x11_strm.entry7' to 'filter11x11_strm.ent' (convolution.cpp:263:1)
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf.7'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf.6'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf.9'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf.3'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf.2'.
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf.1'.
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf.0'.
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf.5'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf.8'.
 WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf.4'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf.3'.
-WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf.2'.
-INFO: [HLS 200-472] Inferring partial write operation for 'linebuf.0' (convolution.cpp:196:21)
-INFO: [HLS 200-472] Inferring partial write operation for 'borderbuf' (convolution.cpp:213:21)
-Command           transform done; 0.42 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 883.141 ; gain = 192.000 ; free physical = 157 ; free virtual = 7237
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf.6'.
+INFO: [HLS 200-472] Inferring partial write operation for 'linebuf.0' (convolution.cpp:195:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'borderbuf' (convolution.cpp:212:21)
+Command           transform done; 0.44 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 880.336 ; gain = 192.000 ; free physical = 582 ; free virtual = 5981
 INFO-FLOW: Finish building internal data model.
-Command         opt_and_import_c done; 2.41 sec.
-Command       elaborate done; 9.6 sec.
+Command         opt_and_import_c done; 1.2 sec.
+Command       elaborate done; 2.55 sec.
 Execute       autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -298,8 +294,8 @@ Execute         set_default_model filter11x11_strm.ent
 Execute         schedule -model filter11x11_strm.ent 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command         schedule done; 0.11 sec.
-INFO: [HLS 200-111]  Elapsed time: 15.08 seconds; current allocated memory: 163.255 MB.
+Command         schedule done; 0.14 sec.
+INFO: [HLS 200-111]  Elapsed time: 12.88 seconds; current allocated memory: 210.221 MB.
 Execute         syn_report -verbosereport -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm_ent.verbose.sched.rpt 
 Execute         db_write -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm_ent.sched.adb -f 
 INFO-FLOW: Finish scheduling filter11x11_strm.ent.
@@ -311,7 +307,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 163.347 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 210.313 MB.
 Execute         syn_report -verbosereport -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm_ent.verbose.bind.rpt 
 Execute         db_write -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm_ent.bind.adb -f 
 INFO-FLOW: Finish binding filter11x11_strm.ent.
@@ -323,7 +319,7 @@ Execute         schedule -model Block__proc
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
 Command         schedule done; 0.12 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 163.395 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 210.362 MB.
 Execute         syn_report -verbosereport -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Block_proc.verbose.sched.rpt 
 Execute         db_write -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Block_proc.sched.adb -f 
 INFO-FLOW: Finish scheduling Block__proc.
@@ -335,7 +331,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 163.488 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 210.454 MB.
 Execute         syn_report -verbosereport -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Block_proc.verbose.bind.rpt 
 Execute         db_write -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Block_proc.bind.adb -f 
 INFO-FLOW: Finish binding Block__proc.
@@ -349,7 +345,7 @@ INFO: [SCHED 204-61] Pipelining loop 'HConvH_HConvW'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 8.
 INFO: [SCHED 204-11] Finished scheduling.
 Command         schedule done; 0.31 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 164.150 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 211.132 MB.
 Execute         syn_report -verbosereport -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_HConvH_proc6.verbose.sched.rpt 
 Execute         db_write -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_HConvH_proc6.sched.adb -f 
 INFO-FLOW: Finish scheduling Loop_HConvH_proc6.
@@ -361,7 +357,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 164.608 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 211.590 MB.
 Execute         syn_report -verbosereport -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_HConvH_proc6.verbose.bind.rpt 
 Execute         db_write -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_HConvH_proc6.bind.adb -f 
 INFO-FLOW: Finish binding Loop_HConvH_proc6.
@@ -371,12 +367,11 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute         set_default_model Loop_VConvH_proc 
 Execute         schedule -model Loop_VConvH_proc 
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'VConvH_VConvW'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 11.
 INFO: [SCHED 204-11] Finished scheduling.
-Command         schedule done; 0.39 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.49 seconds; current allocated memory: 165.244 MB.
+Command         schedule done; 0.2 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 211.984 MB.
 Execute         syn_report -verbosereport -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_VConvH_proc.verbose.sched.rpt 
+INFO: [HLS 200-434] Only 0 loops out of a total 3 loops have been pipelined in this design.
 Execute         db_write -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_VConvH_proc.sched.adb -f 
 INFO-FLOW: Finish scheduling Loop_VConvH_proc.
 Execute         set_default_model Loop_VConvH_proc 
@@ -387,9 +382,8 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 165.809 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 212.463 MB.
 Execute         syn_report -verbosereport -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_VConvH_proc.verbose.bind.rpt 
-Command         syn_report done; 0.11 sec.
 Execute         db_write -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_VConvH_proc.bind.adb -f 
 INFO-FLOW: Finish binding Loop_VConvH_proc.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -402,14 +396,14 @@ INFO: [SCHED 204-61] Pipelining loop 'Border_L'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
 WARNING: [SCHED 204-21] Estimated clock period (7.061ns) exceeds the target (target clock period: 6.66ns, clock uncertainty: 0.8325ns, effective delay budget: 5.8275ns).
 WARNING: [SCHED 204-21] The critical path in module 'Loop_Border_proc' consists of the following:
-	'phi' operation ('j') with incoming values : ('j', convolution.cpp:205->convolution.cpp:271) [28]  (0 ns)
-	'icmp' operation ('icmp_ln205', convolution.cpp:205->convolution.cpp:271) [36]  (2.47 ns)
-	'select' operation ('select_ln204', convolution.cpp:204->convolution.cpp:271) [45]  (0.692 ns)
-	'icmp' operation ('icmp_ln211', convolution.cpp:211->convolution.cpp:271) [58]  (2.47 ns)
+	'phi' operation ('j') with incoming values : ('j', convolution.cpp:204->convolution.cpp:270) [28]  (0 ns)
+	'icmp' operation ('icmp_ln204', convolution.cpp:204->convolution.cpp:270) [36]  (2.47 ns)
+	'select' operation ('select_ln203', convolution.cpp:203->convolution.cpp:270) [45]  (0.692 ns)
+	'icmp' operation ('icmp_ln210', convolution.cpp:210->convolution.cpp:270) [58]  (2.47 ns)
 	blocking operation 1.42 ns on control path)
 INFO: [SCHED 204-11] Finished scheduling.
-Command         schedule done; 0.18 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 166.143 MB.
+Command         schedule done; 0.24 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 212.793 MB.
 Execute         syn_report -verbosereport -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_Border_proc.verbose.sched.rpt 
 Execute         db_write -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_Border_proc.sched.adb -f 
 INFO-FLOW: Finish scheduling Loop_Border_proc.
@@ -421,7 +415,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 166.552 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 213.166 MB.
 Execute         syn_report -verbosereport -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_Border_proc.verbose.bind.rpt 
 Execute         db_write -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_Border_proc.bind.adb -f 
 INFO-FLOW: Finish binding Loop_Border_proc.
@@ -432,7 +426,7 @@ Execute         set_default_model filter11x11_strm
 Execute         schedule -model filter11x11_strm 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 166.725 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 213.339 MB.
 Execute         syn_report -verbosereport -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.verbose.sched.rpt 
 Execute         db_write -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.sched.adb -f 
 INFO-FLOW: Finish scheduling filter11x11_strm.
@@ -444,10 +438,10 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command         bind done; 0.28 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 167.163 MB.
+Command         bind done; 0.2 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 213.727 MB.
 Execute         syn_report -verbosereport -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.verbose.bind.rpt 
-Command         syn_report done; 0.17 sec.
+Command         syn_report done; 0.15 sec.
 Execute         db_write -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.bind.adb -f 
 INFO-FLOW: Finish binding filter11x11_strm.
 Execute         get_model_list filter11x11_strm -filter all-wo-channel 
@@ -466,7 +460,7 @@ Execute         get_config_rtl -module_prefix
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model filter11x11_strm.ent -vendor xilinx -mg_file /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm_ent.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'filter11x11_strm_ent'.
-INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 167.448 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 213.982 MB.
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.rtl_wrap.cfg.tcl 
 Execute         gen_rtl filter11x11_strm.ent -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/systemc/filter11x11_strm_ent -synmodules filter11x11_strm.ent Block__proc Loop_HConvH_proc6 Loop_VConvH_proc Loop_Border_proc filter11x11_strm 
 Execute         gen_rtl filter11x11_strm.ent -style xilinx -f -lang vhdl -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/vhdl/filter11x11_strm_ent 
@@ -483,7 +477,7 @@ Execute         get_config_rtl -module_prefix
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model Block__proc -vendor xilinx -mg_file /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Block_proc.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_proc'.
-INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 167.871 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 214.420 MB.
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.rtl_wrap.cfg.tcl 
 Execute         gen_rtl Block__proc -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/systemc/Block_proc -synmodules filter11x11_strm.ent Block__proc Loop_HConvH_proc6 Loop_VConvH_proc Loop_Border_proc filter11x11_strm 
 Execute         gen_rtl Block__proc -style xilinx -f -lang vhdl -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/vhdl/Block_proc 
@@ -504,7 +498,7 @@ INFO: [RTGEN 206-100] Generating core module 'filter11x11_strm_mul_11ns_32s_32_3
 INFO: [RTGEN 206-100] Generating core module 'filter11x11_strm_mul_32ns_32ns_64_3_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'filter11x11_strm_mul_8ns_32s_32_3_1': 2 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_HConvH_proc6'.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 169.021 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 215.571 MB.
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.rtl_wrap.cfg.tcl 
 Execute         gen_rtl Loop_HConvH_proc6 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/systemc/Loop_HConvH_proc6 -synmodules filter11x11_strm.ent Block__proc Loop_HConvH_proc6 Loop_VConvH_proc Loop_Border_proc filter11x11_strm 
 Execute         gen_rtl Loop_HConvH_proc6 -style xilinx -f -lang vhdl -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/vhdl/Loop_HConvH_proc6 
@@ -512,6 +506,7 @@ Execute         gen_rtl Loop_HConvH_proc6 -style xilinx -f -lang vlog -o /home/k
 Execute         syn_report -csynth -model Loop_HConvH_proc6 -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/report/Loop_HConvH_proc6_csynth.rpt 
 Execute         syn_report -rtlxml -model Loop_HConvH_proc6 -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/report/Loop_HConvH_proc6_csynth.xml 
 Execute         syn_report -verbosereport -model Loop_HConvH_proc6 -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_HConvH_proc6.verbose.rpt 
+Command         syn_report done; 0.11 sec.
 Execute         db_write -model Loop_HConvH_proc6 -f -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_HConvH_proc6.adb 
 Execute         gen_tb_info Loop_HConvH_proc6 -p /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_HConvH_proc6 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -520,12 +515,10 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute         get_config_rtl -module_prefix 
 Execute         get_config_rtl -module_auto_prefix 
 Execute         create_rtl_model Loop_VConvH_proc -vendor xilinx -mg_file /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_VConvH_proc.compgen.tcl 
-INFO: [RTGEN 206-100] Generating core module 'filter11x11_strm_mul_10ns_32s_32_3_1': 4 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'filter11x11_strm_mul_11ns_32s_32_3_1': 3 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'filter11x11_strm_mul_32ns_32ns_64_3_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'filter11x11_strm_mul_8ns_32s_32_3_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'filter11x11_strm_mul_32s_10ns_32_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'filter11x11_strm_mux_104_32_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_VConvH_proc'.
-INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 171.830 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 217.874 MB.
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.rtl_wrap.cfg.tcl 
 Execute         gen_rtl Loop_VConvH_proc -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/systemc/Loop_VConvH_proc -synmodules filter11x11_strm.ent Block__proc Loop_HConvH_proc6 Loop_VConvH_proc Loop_Border_proc filter11x11_strm 
 Execute         gen_rtl Loop_VConvH_proc -style xilinx -f -lang vhdl -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/vhdl/Loop_VConvH_proc 
@@ -533,7 +526,6 @@ Execute         gen_rtl Loop_VConvH_proc -style xilinx -f -lang vlog -o /home/ke
 Execute         syn_report -csynth -model Loop_VConvH_proc -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/report/Loop_VConvH_proc_csynth.rpt 
 Execute         syn_report -rtlxml -model Loop_VConvH_proc -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/report/Loop_VConvH_proc_csynth.xml 
 Execute         syn_report -verbosereport -model Loop_VConvH_proc -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_VConvH_proc.verbose.rpt 
-Command         syn_report done; 0.19 sec.
 Execute         db_write -model Loop_VConvH_proc -f -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_VConvH_proc.adb 
 Execute         gen_tb_info Loop_VConvH_proc -p /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_VConvH_proc 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -544,7 +536,7 @@ Execute         get_config_rtl -module_auto_prefix
 Execute         create_rtl_model Loop_Border_proc -vendor xilinx -mg_file /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_Border_proc.compgen.tcl 
 INFO: [RTGEN 206-100] Generating core module 'filter11x11_strm_mul_32ns_32ns_64_3_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_Border_proc'.
-INFO: [HLS 200-111]  Elapsed time: 0.52 seconds; current allocated memory: 174.414 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 220.242 MB.
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.rtl_wrap.cfg.tcl 
 Execute         gen_rtl Loop_Border_proc -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/systemc/Loop_Border_proc -synmodules filter11x11_strm.ent Block__proc Loop_HConvH_proc6 Loop_VConvH_proc Loop_Border_proc filter11x11_strm 
 Execute         gen_rtl Loop_Border_proc -style xilinx -f -lang vhdl -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/vhdl/Loop_Border_proc 
@@ -566,7 +558,7 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'filter11x11_strm/src_V' to
 INFO: [RTGEN 206-500] Setting interface mode on port 'filter11x11_strm/dst_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on function 'filter11x11_strm' to 'ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'filter11x11_strm'.
-INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 176.601 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 222.438 MB.
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.rtl_wrap.cfg.tcl 
 Execute         gen_rtl filter11x11_strm -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/systemc/filter11x11_strm -synmodules filter11x11_strm.ent Block__proc Loop_HConvH_proc6 Loop_VConvH_proc Loop_Border_proc filter11x11_strm 
 Execute         gen_rtl filter11x11_strm -istop -style xilinx -f -lang vhdl -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/vhdl/filter11x11_strm 
@@ -574,12 +566,12 @@ Execute         gen_rtl filter11x11_strm -istop -style xilinx -f -lang vlog -o /
 Execute         syn_report -csynth -model filter11x11_strm -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/report/filter11x11_strm_csynth.rpt 
 Execute         syn_report -rtlxml -model filter11x11_strm -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/syn/report/filter11x11_strm_csynth.xml 
 Execute         syn_report -verbosereport -model filter11x11_strm -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.verbose.rpt 
-Command         syn_report done; 0.2 sec.
+Command         syn_report done; 0.16 sec.
 Execute         db_write -model filter11x11_strm -f -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.adb 
 Execute         gen_tb_info filter11x11_strm -p /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm 
 Execute         export_constraint_db -f -tool general -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.constraint.tcl 
 Execute         syn_report -designview -model filter11x11_strm -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.design.xml 
-Command         syn_report done; 0.26 sec.
+Command         syn_report done; 0.21 sec.
 Execute         get_config_rtl -disable_wave_debug 
 Execute         syn_report -wcfg -model filter11x11_strm -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm_dataflow_ana.wcfg 
 Execute         syn_report -protoinst -model filter11x11_strm -o /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.protoinst 
@@ -604,8 +596,14 @@ INFO-FLOW: Found component filter11x11_strm_mul_11ns_32s_32_3_1.
 INFO-FLOW: Append model filter11x11_strm_mul_11ns_32s_32_3_1
 INFO-FLOW: Handling components in module [Loop_VConvH_proc] ... 
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_VConvH_proc.compgen.tcl 
+INFO-FLOW: Found component filter11x11_strm_mux_104_32_1_1.
+INFO-FLOW: Append model filter11x11_strm_mux_104_32_1_1
+INFO-FLOW: Found component filter11x11_strm_mul_32s_10ns_32_3_1.
+INFO-FLOW: Append model filter11x11_strm_mul_32s_10ns_32_3_1
 INFO-FLOW: Found component Loop_VConvH_proc_linebuf_0.
 INFO-FLOW: Append model Loop_VConvH_proc_linebuf_0
+INFO-FLOW: Found component Loop_VConvH_proc_filt11_coeff.
+INFO-FLOW: Append model Loop_VConvH_proc_filt11_coeff
 INFO-FLOW: Handling components in module [Loop_Border_proc] ... 
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_Border_proc.compgen.tcl 
 INFO-FLOW: Found component Loop_Border_proc_borderbuf.
@@ -647,12 +645,15 @@ INFO-FLOW: Append model Loop_VConvH_proc
 INFO-FLOW: Append model Loop_Border_proc
 INFO-FLOW: Append model filter11x11_strm
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: filter11x11_strm_mul_32ns_32ns_64_3_1 filter11x11_strm_mul_8ns_32s_32_3_1 filter11x11_strm_mul_10ns_32s_32_3_1 filter11x11_strm_mul_11ns_32s_32_3_1 Loop_VConvH_proc_linebuf_0 Loop_Border_proc_borderbuf fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d3_A fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d2_A start_for_Block_proc_U0 start_for_Loop_Border_proc_U0 start_for_Loop_VConvH_proc_U0 filter11x11_strm_ent Block_proc Loop_HConvH_proc6 Loop_VConvH_proc Loop_Border_proc filter11x11_strm
+INFO-FLOW: All models in this session: filter11x11_strm_mul_32ns_32ns_64_3_1 filter11x11_strm_mul_8ns_32s_32_3_1 filter11x11_strm_mul_10ns_32s_32_3_1 filter11x11_strm_mul_11ns_32s_32_3_1 filter11x11_strm_mux_104_32_1_1 filter11x11_strm_mul_32s_10ns_32_3_1 Loop_VConvH_proc_linebuf_0 Loop_VConvH_proc_filt11_coeff Loop_Border_proc_borderbuf fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d3_A fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d2_A start_for_Block_proc_U0 start_for_Loop_Border_proc_U0 start_for_Loop_VConvH_proc_U0 filter11x11_strm_ent Block_proc Loop_HConvH_proc6 Loop_VConvH_proc Loop_Border_proc filter11x11_strm
 INFO-FLOW: To file: write model filter11x11_strm_mul_32ns_32ns_64_3_1
 INFO-FLOW: To file: write model filter11x11_strm_mul_8ns_32s_32_3_1
 INFO-FLOW: To file: write model filter11x11_strm_mul_10ns_32s_32_3_1
 INFO-FLOW: To file: write model filter11x11_strm_mul_11ns_32s_32_3_1
+INFO-FLOW: To file: write model filter11x11_strm_mux_104_32_1_1
+INFO-FLOW: To file: write model filter11x11_strm_mul_32s_10ns_32_3_1
 INFO-FLOW: To file: write model Loop_VConvH_proc_linebuf_0
+INFO-FLOW: To file: write model Loop_VConvH_proc_filt11_coeff
 INFO-FLOW: To file: write model Loop_Border_proc_borderbuf
 INFO-FLOW: To file: write model fifo_w32_d2_A
 INFO-FLOW: To file: write model fifo_w32_d2_A
@@ -684,31 +685,31 @@ INFO-FLOW: DBG:CMD: auto_generate_csynth_design
 INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/global.setting.tcl 
 INFO-FLOW: DBG:CMD: read_platform_lib /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/global.setting.tcl
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/generic/autopilot/common.gen 
-Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/generic/autopilot/APCoreGen.gen 
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/generic/autopilot/op.gen 
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/generic/autopilot/op_simcore.gen 
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/generic/autopilot/interface.gen 
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/generic/autopilot/common.gen 
+Execute           source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/generic/autopilot/op.gen 
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/generic/autopilot/interface.gen 
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/global.setting.tcl 
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/zynq/zynq.gen 
-Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/xilinx.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/plb46.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/fsl.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/axi4.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/saxilite.gen 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/maxi.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/ip/dds_compiler.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/ip/util.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/ip/xfft.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/ip/xfir.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/dsp48.gen 
-Command           ap_source done; 0.11 sec.
-Command         ap_source done; 0.11 sec.
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/xilinx_fp.gen 
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/zynq/zynq.gen 
+Execute           source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/xilinx.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/plb46.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/fsl.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/axi4.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/maxi.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/ip/util.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/ip/xfft.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/ip/xfir.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.14 sec.
+Command         ap_source done; 0.14 sec.
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/xilinx_fp.gen 
 INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=6.660 (was NA)
 INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/global.setting.tcl 
@@ -739,11 +740,26 @@ Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 INFO: [RTMG 210-282] Generating pipelined core: 'filter11x11_strm_mul_11ns_32s_32_3_1_MulnS_3'
-Command         ap_source done; 0.17 sec.
+Command         ap_source done; 0.83 sec.
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_VConvH_proc.compgen.tcl 
+Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'filter11x11_strm_mul_32s_10ns_32_3_1_MulnS_4'
 INFO: [RTMG 210-278] Implementing memory 'Loop_VConvH_proc_linebuf_0_ram (RAM)' using block RAMs with power-on initialization.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'Loop_VConvH_proc_filt11_coeff_rom' using distributed ROMs.
+Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Command         ap_source done; 0.12 sec.
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/Loop_Border_proc.compgen.tcl 
 INFO: [RTMG 210-278] Implementing memory 'Loop_Border_proc_borderbuf_ram (RAM)' using block RAMs.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
@@ -754,19 +770,19 @@ Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet
 INFO: [RTMG 210-285] Implementing FIFO 'width_c_U(fifo_w32_d2_A)' using Shift Registers.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-285] Implementing FIFO 'width_c163_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'width_c60_U(fifo_w32_d2_A)' using Shift Registers.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 INFO: [RTMG 210-285] Implementing FIFO 'height_c_U(fifo_w32_d2_A)' using Shift Registers.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-285] Implementing FIFO 'height_c164_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'height_c61_U(fifo_w32_d2_A)' using Shift Registers.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-285] Implementing FIFO 'width_c165_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'width_c62_U(fifo_w32_d3_A)' using Shift Registers.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-285] Implementing FIFO 'height_c166_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'height_c63_U(fifo_w32_d2_A)' using Shift Registers.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 INFO: [RTMG 210-285] Implementing FIFO 'vconv_xlim_loc_c_U(fifo_w32_d2_A)' using Shift Registers.
@@ -778,10 +794,10 @@ Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet
 INFO: [RTMG 210-285] Implementing FIFO 'vconv_V_U(fifo_w32_d2_A)' using Shift Registers.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-285] Implementing FIFO 'height_c167_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'height_c64_U(fifo_w32_d2_A)' using Shift Registers.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
-INFO: [RTMG 210-285] Implementing FIFO 'vconv_xlim_loc_c168_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'vconv_xlim_loc_c65_U(fifo_w32_d2_A)' using Shift Registers.
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_Block_proc_U0_U(start_for_Block_proc_U0)' using Shift Registers.
@@ -791,33 +807,33 @@ INFO: [RTMG 210-285] Implementing FIFO 'start_for_Loop_Border_proc_U0_U(start_fo
 Execute           ap_part_info -name xc7z020-clg484-1 -data names -quiet 
 Execute           ap_part_info -name xc7z020-clg484-1 -data info -quiet 
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_Loop_VConvH_proc_U0_U(start_for_Loop_VConvH_proc_U0)' using Shift Registers.
-Command         ap_source done; 0.28 sec.
+Command         ap_source done; 0.34 sec.
 INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/global.setting.tcl 
 INFO-FLOW: DBG:CMD: read_platform_lib /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/global.setting.tcl
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/generic/autopilot/common.gen 
-Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/generic/autopilot/APCoreGen.gen 
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/generic/autopilot/op.gen 
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/generic/autopilot/op_simcore.gen 
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/generic/autopilot/interface.gen 
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/generic/autopilot/common.gen 
+Execute           source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/generic/autopilot/APCoreGen.gen 
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/generic/autopilot/op.gen 
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/generic/autopilot/op_simcore.gen 
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/generic/autopilot/interface.gen 
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/global.setting.tcl 
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/zynq/zynq.gen 
-Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/xilinx.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/plb46.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/fsl.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/axi4.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/saxilite.gen 
-Execute               source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/maxi.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/ip/dds_compiler.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/ip/util.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/ip/xfft.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/ip/xfir.gen 
-Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/dsp48.gen 
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/common/technology/xilinx/common/xilinx_fp.gen 
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/zynq/zynq.gen 
+Execute           source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/xilinx.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/plb46.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/fsl.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/axi4.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/saxilite.gen 
+Execute               source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/maxi.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/ip/util.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/ip/xfft.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/ip/xfir.gen 
+Execute             source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/dsp48.gen 
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/common/technology/xilinx/common/xilinx_fp.gen 
 INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=filter11x11_strm xml_exists=0
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.rtl_wrap.cfg.tcl 
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.rtl_wrap.cfg.tcl 
@@ -880,8 +896,8 @@ Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_lineb
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/filter11x11_strm.tbgen.tcl 
 INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=10
 INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=4
-INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=26 #gSsdmPorts=10
-Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=29 #gSsdmPorts=10
+Execute         source /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/global.setting.tcl 
 Execute         source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/global.setting.tcl 
 Execute         get_config_export -xo 
@@ -914,9 +930,9 @@ Execute         get_config_rtl -stall_sig_gen
 Execute         get_config_rtl -profile 
 INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/kernel.internal.xml
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 883.141 ; gain = 192.000 ; free physical = 128 ; free virtual = 7214
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 880.336 ; gain = 192.000 ; free physical = 593 ; free virtual = 5971
 INFO: [VHDL 208-304] Generating VHDL RTL for filter11x11_strm.
 INFO: [VLOG 209-307] Generating Verilog RTL for filter11x11_strm.
-Command       autosyn done; 6.79 sec.
-Command     csynth_design done; 16.4 sec.
+Command       autosyn done; 7.41 sec.
+Command     csynth_design done; 9.97 sec.
 Execute     cleanup_all 

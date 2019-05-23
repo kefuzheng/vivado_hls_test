@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'Block_proc'
 ================================================================
-* Date:           Tue May 21 08:04:36 2019
+* Date:           Thu May 23 07:29:21 2019
 
-* Version:        2019.2.0 (Build 2547110 on Sun May 19 23:20:49 MDT 2019)
+* Version:        2019.2.0 (Build 2548284 on Tue May 21 04:25:56 EDT 2019)
 * Project:        proj_2D_convolution_with_linebuffer
 * Solution:       solution1
 * Product family: zynq
@@ -76,7 +76,7 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 2.91>
-ST_1 : Operation 3 [1/1] (2.91ns)   --->   "%width_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %width)" [convolution.cpp:156->convolution.cpp:271]   --->   Operation 3 'read' 'width_read' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 3 [1/1] (2.91ns)   --->   "%width_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %width)" [convolution.cpp:156->convolution.cpp:270]   --->   Operation 3 'read' 'width_read' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 ST_1 : Operation 4 [1/1] (2.91ns)   --->   "%height_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %height)"   --->   Operation 4 'read' 'height_read' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 2 <SV = 1> <Delay = 5.46>
@@ -84,12 +84,12 @@ ST_2 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInter
 ST_2 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %height, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 6 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %width, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %width_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 9 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %width_out, i32 %width_read)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 9 'write' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 9 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %width_out, i32 %width_read)" [convolution.cpp:143->convolution.cpp:270]   --->   Operation 9 'write' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 ST_2 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %height_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 10 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 11 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %height_out, i32 %height_read)" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 11 'write' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_2 : Operation 12 [1/1] (2.55ns)   --->   "%vconv_xlim = add nsw i32 %width_read, -10" [convolution.cpp:156->convolution.cpp:271->convolution.cpp:143->convolution.cpp:271]   --->   Operation 12 'add' 'vconv_xlim' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 13 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %vconv_xlim_out_out, i32 %vconv_xlim)" [convolution.cpp:156->convolution.cpp:271->convolution.cpp:143->convolution.cpp:271]   --->   Operation 13 'write' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_2 : Operation 14 [1/1] (0.00ns)   --->   "ret void" [convolution.cpp:143->convolution.cpp:271]   --->   Operation 14 'ret' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %height_out, i32 %height_read)" [convolution.cpp:143->convolution.cpp:270]   --->   Operation 11 'write' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 12 [1/1] (2.55ns)   --->   "%vconv_xlim = add nsw i32 %width_read, -10" [convolution.cpp:156->convolution.cpp:270->convolution.cpp:143->convolution.cpp:270]   --->   Operation 12 'add' 'vconv_xlim' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 13 [1/1] (2.91ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %vconv_xlim_out_out, i32 %vconv_xlim)" [convolution.cpp:156->convolution.cpp:270->convolution.cpp:143->convolution.cpp:270]   --->   Operation 13 'write' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "ret void" [convolution.cpp:143->convolution.cpp:270]   --->   Operation 14 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -99,12 +99,12 @@ Target clock period: 6.66ns, clock uncertainty: 0.832ns.
 
  <State 1>: 2.91ns
 The critical path consists of the following:
-	fifo read on port 'width' (convolution.cpp:156->convolution.cpp:271) [9]  (2.91 ns)
+	fifo read on port 'width' (convolution.cpp:156->convolution.cpp:270) [9]  (2.91 ns)
 
  <State 2>: 5.47ns
 The critical path consists of the following:
-	'add' operation ('vconv_xlim', convolution.cpp:156->convolution.cpp:271->convolution.cpp:143->convolution.cpp:271) [15]  (2.55 ns)
-	fifo write on port 'vconv_xlim_out_out' (convolution.cpp:156->convolution.cpp:271->convolution.cpp:143->convolution.cpp:271) [16]  (2.91 ns)
+	'add' operation ('vconv_xlim', convolution.cpp:156->convolution.cpp:270->convolution.cpp:143->convolution.cpp:270) [15]  (2.55 ns)
+	fifo write on port 'vconv_xlim_out_out' (convolution.cpp:156->convolution.cpp:270->convolution.cpp:143->convolution.cpp:270) [16]  (2.91 ns)
 
 
 ============================================================

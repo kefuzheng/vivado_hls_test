@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'filter11x11_strm'" level="0">
-<item name = "Date">Tue May 21 08:04:40 2019
+<item name = "Date">Thu May 23 07:29:25 2019
 </item>
-<item name = "Version">2019.2.0 (Build 2547110 on Sun May 19 23:20:49 MDT 2019)</item>
+<item name = "Version">2019.2.0 (Build 2548284 on Tue May 21 04:25:56 EDT 2019)</item>
 <item name = "Project">proj_2D_convolution_with_linebuffer</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">23, 2070627, 6, 2070613, dataflow</column>
+<column name="">15, 162727239, 6, 162727229, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
@@ -32,8 +32,8 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
 <column name="Loop_HConvH_proc6_U0">Loop_HConvH_proc6, 5, 2070612, 5, 2070612, none</column>
-<column name="Loop_VConvH_proc_U0">Loop_VConvH_proc, 5, 2059825, 5, 2059825, none</column>
 <column name="Loop_Border_proc_U0">Loop_Border_proc, 5, 2070609, 5, 2070609, none</column>
+<column name="Loop_VConvH_proc_U0">Loop_VConvH_proc, 1, 162727228, 1, 162727228, none</column>
 <column name="Block_proc_U0">Block_proc, 1, 1, 1, 1, none</column>
 <column name="filter11x11_strm_ent_U0">filter11x11_strm_ent, 0, 0, 0, 0, none</column>
 </table>
@@ -54,12 +54,12 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 32, -</column>
 <column name="FIFO">0, -, 55, 484, -</column>
-<column name="Instance">44, 48, 8127, 4164, 0</column>
+<column name="Instance">44, 28, 5415, 3077, 0</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 36, -</column>
 <column name="Register">-, -, 6, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">15, 21, 7, 8, 0</specialColumn>
+<specialColumn name="Utilization (%)">15, 12, 5, 6, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -69,7 +69,7 @@
 <column name="Block_proc_U0">Block_proc, 0, 0, 68, 121, 0</column>
 <column name="Loop_Border_proc_U0">Loop_Border_proc, 4, 4, 1053, 1008, 0</column>
 <column name="Loop_HConvH_proc6_U0">Loop_HConvH_proc6, 0, 22, 3419, 1443, 0</column>
-<column name="Loop_VConvH_proc_U0">Loop_VConvH_proc, 40, 22, 3584, 1536, 0</column>
+<column name="Loop_VConvH_proc_U0">Loop_VConvH_proc, 40, 2, 872, 449, 0</column>
 <column name="filter11x11_strm_ent_U0">filter11x11_strm_ent, 0, 0, 3, 56, 0</column>
 </table>
 </item>
@@ -84,15 +84,15 @@
 <item name = "FIFO"><table name="" hasTotal="1">
 <keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
 <column name="hconv_V_U">0, 5, 0, -, 2, 32, 64</column>
-<column name="height_c164_U">0, 5, 0, -, 2, 32, 64</column>
-<column name="height_c166_U">0, 5, 0, -, 2, 32, 64</column>
-<column name="height_c167_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="height_c61_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="height_c63_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="height_c64_U">0, 5, 0, -, 2, 32, 64</column>
 <column name="height_c_U">0, 5, 0, -, 2, 32, 64</column>
 <column name="vconv_V_U">0, 5, 0, -, 2, 32, 64</column>
-<column name="vconv_xlim_loc_c168_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="vconv_xlim_loc_c65_U">0, 5, 0, -, 2, 32, 64</column>
 <column name="vconv_xlim_loc_c_U">0, 5, 0, -, 2, 32, 64</column>
-<column name="width_c163_U">0, 5, 0, -, 2, 32, 64</column>
-<column name="width_c165_U">0, 5, 0, -, 3, 32, 96</column>
+<column name="width_c60_U">0, 5, 0, -, 2, 32, 64</column>
+<column name="width_c62_U">0, 5, 0, -, 3, 32, 96</column>
 <column name="width_c_U">0, 5, 0, -, 2, 32, 64</column>
 </table>
 </item>

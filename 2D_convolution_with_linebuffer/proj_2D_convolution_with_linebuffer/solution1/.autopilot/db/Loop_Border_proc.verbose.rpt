@@ -3,9 +3,9 @@
 ================================================================
 == Vivado HLS Report for 'Loop_Border_proc'
 ================================================================
-* Date:           Tue May 21 08:04:39 2019
+* Date:           Thu May 23 07:29:24 2019
 
-* Version:        2019.2.0 (Build 2547110 on Sun May 19 23:20:49 MDT 2019)
+* Version:        2019.2.0 (Build 2548284 on Tue May 21 04:25:56 EDT 2019)
 * Project:        proj_2D_convolution_with_linebuffer
 * Solution:       solution1
 * Product family: zynq
@@ -73,7 +73,7 @@
     +-------------------------------------------+---------------------------------------+---------+-------+-----+----+-----+
     |                  Instance                 |                 Module                | BRAM_18K| DSP48E|  FF | LUT| URAM|
     +-------------------------------------------+---------------------------------------+---------+-------+-----+----+-----+
-    |filter11x11_strm_mul_32ns_32ns_64_3_1_U47  |filter11x11_strm_mul_32ns_32ns_64_3_1  |        0|      4|  166|  49|    0|
+    |filter11x11_strm_mul_32ns_32ns_64_3_1_U42  |filter11x11_strm_mul_32ns_32ns_64_3_1  |        0|      4|  166|  49|    0|
     +-------------------------------------------+---------------------------------------+---------+-------+-----+----+-----+
     |Total                                      |                                       |        0|      4|  166|  49|    0|
     +-------------------------------------------+---------------------------------------+---------+-------+-----+----+-----+
@@ -97,16 +97,16 @@
     +----------------------------------+----------+-------+---+----+------------+------------+
     |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------------------+----------+-------+---+----+------------+------------+
-    |add_ln204_1_fu_261_p2             |     +    |      0|  0|  13|          11|           1|
-    |add_ln204_fu_255_p2               |     +    |      0|  0|  71|          64|           1|
-    |add_ln208_fu_203_p2               |     +    |      0|  0|  39|          32|           4|
-    |add_ln218_fu_193_p2               |     +    |      0|  0|  39|          32|           5|
-    |add_ln225_fu_198_p2               |     +    |      0|  0|  39|          32|           4|
-    |add_ln228_fu_397_p2               |     +    |      0|  0|  13|          11|           4|
+    |add_ln203_1_fu_261_p2             |     +    |      0|  0|  13|          11|           1|
+    |add_ln203_fu_255_p2               |     +    |      0|  0|  71|          64|           1|
+    |add_ln207_fu_203_p2               |     +    |      0|  0|  39|          32|           4|
+    |add_ln217_fu_193_p2               |     +    |      0|  0|  39|          32|           5|
+    |add_ln224_fu_198_p2               |     +    |      0|  0|  39|          32|           4|
+    |add_ln227_fu_397_p2               |     +    |      0|  0|  13|          11|           4|
     |j_fu_343_p2                       |     +    |      0|  0|  13|          11|           1|
-    |and_ln208_1_fu_296_p2             |    and   |      0|  0|   2|           1|           1|
-    |and_ln208_fu_229_p2               |    and   |      0|  0|   2|           1|           1|
-    |and_ln225_fu_424_p2               |    and   |      0|  0|   2|           1|           1|
+    |and_ln207_1_fu_296_p2             |    and   |      0|  0|   2|           1|           1|
+    |and_ln207_fu_229_p2               |    and   |      0|  0|   2|           1|           1|
+    |and_ln224_fu_424_p2               |    and   |      0|  0|   2|           1|           1|
     |ap_block_pp0_stage0_01001         |    and   |      0|  0|   2|           1|           1|
     |ap_block_state6_pp0_stage0_iter1  |    and   |      0|  0|   2|           1|           1|
     |ap_block_state8_io                |    and   |      0|  0|   2|           1|           1|
@@ -115,34 +115,34 @@
     |dst_V_1_load_A                    |    and   |      0|  0|   2|           1|           1|
     |dst_V_1_load_B                    |    and   |      0|  0|   2|           1|           1|
     |dst_V_1_state_cmp_full            |   icmp   |      0|  0|   8|           2|           1|
-    |icmp_ln204_fu_250_p2              |   icmp   |      0|  0|  29|          64|          64|
-    |icmp_ln205_fu_245_p2              |   icmp   |      0|  0|  18|          32|          32|
-    |icmp_ln208_1_fu_218_p2            |   icmp   |      0|  0|  13|          11|           3|
-    |icmp_ln208_2_fu_224_p2            |   icmp   |      0|  0|  18|          32|          32|
-    |icmp_ln208_3_fu_279_p2            |   icmp   |      0|  0|  13|          11|           1|
-    |icmp_ln208_4_fu_285_p2            |   icmp   |      0|  0|  13|          11|           3|
-    |icmp_ln208_5_fu_291_p2            |   icmp   |      0|  0|  18|          32|          32|
-    |icmp_ln208_fu_212_p2              |   icmp   |      0|  0|  13|          11|           1|
-    |icmp_ln211_fu_328_p2              |   icmp   |      0|  0|  18|          32|          32|
-    |icmp_ln215_fu_367_p2              |   icmp   |      0|  0|  13|          11|           1|
-    |icmp_ln218_fu_333_p2              |   icmp   |      0|  0|  18|          32|          32|
-    |icmp_ln223_fu_413_p2              |   icmp   |      0|  0|  13|          11|           3|
-    |icmp_ln225_fu_338_p2              |   icmp   |      0|  0|  18|          32|          32|
+    |icmp_ln203_fu_250_p2              |   icmp   |      0|  0|  29|          64|          64|
+    |icmp_ln204_fu_245_p2              |   icmp   |      0|  0|  18|          32|          32|
+    |icmp_ln207_1_fu_218_p2            |   icmp   |      0|  0|  13|          11|           3|
+    |icmp_ln207_2_fu_224_p2            |   icmp   |      0|  0|  18|          32|          32|
+    |icmp_ln207_3_fu_279_p2            |   icmp   |      0|  0|  13|          11|           1|
+    |icmp_ln207_4_fu_285_p2            |   icmp   |      0|  0|  13|          11|           3|
+    |icmp_ln207_5_fu_291_p2            |   icmp   |      0|  0|  18|          32|          32|
+    |icmp_ln207_fu_212_p2              |   icmp   |      0|  0|  13|          11|           1|
+    |icmp_ln210_fu_328_p2              |   icmp   |      0|  0|  18|          32|          32|
+    |icmp_ln214_fu_367_p2              |   icmp   |      0|  0|  13|          11|           1|
+    |icmp_ln217_fu_333_p2              |   icmp   |      0|  0|  18|          32|          32|
+    |icmp_ln222_fu_413_p2              |   icmp   |      0|  0|  13|          11|           3|
+    |icmp_ln224_fu_338_p2              |   icmp   |      0|  0|  18|          32|          32|
     |ap_block_pp0_stage0_11001         |    or    |      0|  0|   2|           1|           1|
     |ap_block_state1                   |    or    |      0|  0|   2|           1|           1|
     |ap_block_state10                  |    or    |      0|  0|   2|           1|           1|
-    |or_ln208_1_fu_302_p2              |    or    |      0|  0|   2|           1|           1|
-    |or_ln208_fu_235_p2                |    or    |      0|  0|   2|           1|           1|
+    |or_ln207_1_fu_302_p2              |    or    |      0|  0|   2|           1|           1|
+    |or_ln207_fu_235_p2                |    or    |      0|  0|   2|           1|           1|
     |l_edge_pix_fu_380_p3              |  select  |      0|  0|  32|           1|          32|
     |pix_out_10_fu_437_p3              |  select  |      0|  0|  32|           1|          32|
     |pix_out_8_fu_429_p3               |  select  |      0|  0|  32|           1|          32|
-    |select_ln204_1_fu_308_p3          |  select  |      0|  0|   2|           1|           1|
-    |select_ln204_2_fu_320_p3          |  select  |      0|  0|  11|           1|          11|
-    |select_ln204_fu_271_p3            |  select  |      0|  0|  11|           1|          11|
-    |select_ln215_fu_372_p3            |  select  |      0|  0|  32|           1|          32|
+    |select_ln203_1_fu_308_p3          |  select  |      0|  0|   2|           1|           1|
+    |select_ln203_2_fu_320_p3          |  select  |      0|  0|  11|           1|          11|
+    |select_ln203_fu_271_p3            |  select  |      0|  0|  11|           1|          11|
+    |select_ln214_fu_372_p3            |  select  |      0|  0|  32|           1|          32|
     |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
     |ap_enable_reg_pp0_iter1           |    xor   |      0|  0|   2|           2|           1|
-    |xor_ln223_fu_418_p2               |    xor   |      0|  0|   2|           1|           2|
+    |xor_ln222_fu_418_p2               |    xor   |      0|  0|   2|           1|           2|
     +----------------------------------+----------+-------+---+----+------------+------------+
     |Total                             |          |      0|  0| 638|         543|         460|
     +----------------------------------+----------+-------+---+----+------------+------------+
@@ -173,9 +173,9 @@
     +----------------------------------+----+----+-----+-----------+
     |               Name               | FF | LUT| Bits| Const Bits|
     +----------------------------------+----+----+-----+-----------+
-    |add_ln208_reg_505                 |  32|   0|   32|          0|
-    |add_ln218_reg_495                 |  32|   0|   32|          0|
-    |add_ln225_reg_500                 |  32|   0|   32|          0|
+    |add_ln207_reg_505                 |  32|   0|   32|          0|
+    |add_ln217_reg_495                 |  32|   0|   32|          0|
+    |add_ln224_reg_500                 |  32|   0|   32|          0|
     |ap_CS_fsm                         |   6|   0|    6|          0|
     |ap_done_reg                       |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter0           |   1|   0|    1|          0|
@@ -191,26 +191,26 @@
     |dst_V_1_state                     |   2|   0|    2|          0|
     |height_read_reg_474               |  32|   0|   32|          0|
     |i6_0_i_i_i_reg_159                |  11|   0|   11|          0|
-    |icmp_ln204_reg_516                |   1|   0|    1|          0|
-    |icmp_ln211_reg_542                |   1|   0|    1|          0|
-    |icmp_ln218_reg_546                |   1|   0|    1|          0|
-    |icmp_ln218_reg_546_pp0_iter1_reg  |   1|   0|    1|          0|
-    |icmp_ln225_reg_551                |   1|   0|    1|          0|
+    |icmp_ln203_reg_516                |   1|   0|    1|          0|
+    |icmp_ln210_reg_542                |   1|   0|    1|          0|
+    |icmp_ln217_reg_546                |   1|   0|    1|          0|
+    |icmp_ln217_reg_546_pp0_iter1_reg  |   1|   0|    1|          0|
+    |icmp_ln224_reg_551                |   1|   0|    1|          0|
     |indvar_flatten_reg_148            |  64|   0|   64|          0|
     |j_0_i_i_i_reg_170                 |  11|   0|   11|          0|
     |pix_out_1_fu_86                   |  32|   0|   32|          0|
     |pix_out_fu_82                     |  32|   0|   32|          0|
     |r_edge_pix_fu_78                  |  32|   0|   32|          0|
-    |select_ln204_1_reg_533            |   1|   0|    1|          0|
-    |select_ln204_reg_525              |  11|   0|   11|          0|
+    |select_ln203_1_reg_533            |   1|   0|    1|          0|
+    |select_ln203_reg_525              |  11|   0|   11|          0|
     |tmp_reg_561                       |  32|   0|   32|          0|
     |vconv_xlim_loc_read_reg_480       |  32|   0|   32|          0|
     |width_read_reg_466                |  32|   0|   32|          0|
-    |icmp_ln204_reg_516                |  64|  32|    1|          0|
-    |icmp_ln211_reg_542                |  64|  32|    1|          0|
-    |icmp_ln225_reg_551                |  64|  32|    1|          0|
-    |select_ln204_1_reg_533            |  64|  32|    1|          0|
-    |select_ln204_reg_525              |  64|  32|   11|          0|
+    |icmp_ln203_reg_516                |  64|  32|    1|          0|
+    |icmp_ln210_reg_542                |  64|  32|    1|          0|
+    |icmp_ln224_reg_551                |  64|  32|    1|          0|
+    |select_ln203_1_reg_533            |  64|  32|    1|          0|
+    |select_ln203_reg_525              |  64|  32|   11|          0|
     +----------------------------------+----+----+-----+-----------+
     |Total                             | 887| 160|  582|          0|
     +----------------------------------+----+----+-----+-----------+
@@ -300,18 +300,18 @@ State 1 <SV = 0> <Delay = 3.25>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%r_edge_pix = alloca i32"   --->   Operation 11 'alloca' 'r_edge_pix' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%pix_out = alloca i32"   --->   Operation 12 'alloca' 'pix_out' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%pix_out_1 = alloca i32"   --->   Operation 13 'alloca' 'pix_out_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (3.25ns)   --->   "%borderbuf = alloca [1910 x i32], align 16" [convolution.cpp:158->convolution.cpp:271]   --->   Operation 14 'alloca' 'borderbuf' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1910> <RAM>
-ST_1 : Operation 15 [1/1] (2.91ns)   --->   "%width_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %width)" [convolution.cpp:225->convolution.cpp:271]   --->   Operation 15 'read' 'width_read' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_1 : Operation 16 [1/1] (2.91ns)   --->   "%height_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %height)" [convolution.cpp:208->convolution.cpp:271]   --->   Operation 16 'read' 'height_read' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 14 [1/1] (3.25ns)   --->   "%borderbuf = alloca [1910 x i32], align 16" [convolution.cpp:158->convolution.cpp:270]   --->   Operation 14 'alloca' 'borderbuf' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1910> <RAM>
+ST_1 : Operation 15 [1/1] (2.91ns)   --->   "%width_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %width)" [convolution.cpp:224->convolution.cpp:270]   --->   Operation 15 'read' 'width_read' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 16 [1/1] (2.91ns)   --->   "%height_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %height)" [convolution.cpp:207->convolution.cpp:270]   --->   Operation 16 'read' 'height_read' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 ST_1 : Operation 17 [1/1] (2.91ns)   --->   "%vconv_xlim_loc_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %vconv_xlim_loc)"   --->   Operation 17 'read' 'vconv_xlim_loc_read' <Predicate = true> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 2 <SV = 1> <Delay = 5.74>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%cast = zext i32 %height_read to i64" [convolution.cpp:208->convolution.cpp:271]   --->   Operation 18 'zext' 'cast' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%cast1 = zext i32 %width_read to i64" [convolution.cpp:225->convolution.cpp:271]   --->   Operation 19 'zext' 'cast1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 20 [3/3] (5.74ns)   --->   "%bound = mul i64 %cast1, %cast" [convolution.cpp:225->convolution.cpp:271]   --->   Operation 20 'mul' 'bound' <Predicate = true> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%cast = zext i32 %height_read to i64" [convolution.cpp:207->convolution.cpp:270]   --->   Operation 18 'zext' 'cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%cast1 = zext i32 %width_read to i64" [convolution.cpp:224->convolution.cpp:270]   --->   Operation 19 'zext' 'cast1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [3/3] (5.74ns)   --->   "%bound = mul i64 %cast1, %cast" [convolution.cpp:224->convolution.cpp:270]   --->   Operation 20 'mul' 'bound' <Predicate = true> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 
 State 3 <SV = 2> <Delay = 5.74>
-ST_3 : Operation 21 [2/3] (5.74ns)   --->   "%bound = mul i64 %cast1, %cast" [convolution.cpp:225->convolution.cpp:271]   --->   Operation 21 'mul' 'bound' <Predicate = true> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 21 [2/3] (5.74ns)   --->   "%bound = mul i64 %cast1, %cast" [convolution.cpp:224->convolution.cpp:270]   --->   Operation 21 'mul' 'bound' <Predicate = true> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 
 State 4 <SV = 3> <Delay = 5.74>
 ST_4 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %dst_V, [5 x i8]* @p_str5, i32 1, i32 1, [5 x i8]* @p_str6, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 22 'specinterface' <Predicate = true> <Delay = 0.00>
@@ -319,87 +319,87 @@ ST_4 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInte
 ST_4 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %height, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 24 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %width, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 25 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %vconv_xlim_loc, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 26 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 27 [1/1] (2.55ns)   --->   "%add_ln218 = add nsw i32 %width_read, -11" [convolution.cpp:218->convolution.cpp:271]   --->   Operation 27 'add' 'add_ln218' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 28 [1/1] (2.55ns)   --->   "%add_ln225 = add nsw i32 %width_read, -6" [convolution.cpp:225->convolution.cpp:271]   --->   Operation 28 'add' 'add_ln225' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 29 [1/1] (2.55ns)   --->   "%add_ln208 = add nsw i32 %height_read, -5" [convolution.cpp:208->convolution.cpp:271]   --->   Operation 29 'add' 'add_ln208' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 30 [1/3] (5.74ns)   --->   "%bound = mul i64 %cast1, %cast" [convolution.cpp:225->convolution.cpp:271]   --->   Operation 30 'mul' 'bound' <Predicate = true> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 31 [1/1] (1.76ns)   --->   "br label %0" [convolution.cpp:204->convolution.cpp:271]   --->   Operation 31 'br' <Predicate = true> <Delay = 1.76>
+ST_4 : Operation 27 [1/1] (2.55ns)   --->   "%add_ln217 = add nsw i32 %width_read, -11" [convolution.cpp:217->convolution.cpp:270]   --->   Operation 27 'add' 'add_ln217' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 28 [1/1] (2.55ns)   --->   "%add_ln224 = add nsw i32 %width_read, -6" [convolution.cpp:224->convolution.cpp:270]   --->   Operation 28 'add' 'add_ln224' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 29 [1/1] (2.55ns)   --->   "%add_ln207 = add nsw i32 %height_read, -5" [convolution.cpp:207->convolution.cpp:270]   --->   Operation 29 'add' 'add_ln207' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 30 [1/3] (5.74ns)   --->   "%bound = mul i64 %cast1, %cast" [convolution.cpp:224->convolution.cpp:270]   --->   Operation 30 'mul' 'bound' <Predicate = true> <Delay = 5.74> <Core = "MulnS">   --->   Core 17 'MulnS' <Latency = 2> <II = 1> <Delay = 5.74> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 31 [1/1] (1.76ns)   --->   "br label %0" [convolution.cpp:203->convolution.cpp:270]   --->   Operation 31 'br' <Predicate = true> <Delay = 1.76>
 
 State 5 <SV = 4> <Delay = 7.06>
-ST_5 : Operation 32 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i64 [ 0, %entry ], [ %add_ln204, %hls_label_0_end ]" [convolution.cpp:204->convolution.cpp:271]   --->   Operation 32 'phi' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 33 [1/1] (0.00ns)   --->   "%i6_0_i_i_i = phi i11 [ 0, %entry ], [ %select_ln204_2, %hls_label_0_end ]" [convolution.cpp:204->convolution.cpp:271]   --->   Operation 33 'phi' 'i6_0_i_i_i' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 32 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i64 [ 0, %entry ], [ %add_ln203, %hls_label_0_end ]" [convolution.cpp:203->convolution.cpp:270]   --->   Operation 32 'phi' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 33 [1/1] (0.00ns)   --->   "%i6_0_i_i_i = phi i11 [ 0, %entry ], [ %select_ln203_2, %hls_label_0_end ]" [convolution.cpp:203->convolution.cpp:270]   --->   Operation 33 'phi' 'i6_0_i_i_i' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 34 [1/1] (0.00ns)   --->   "%j_0_i_i_i = phi i11 [ 0, %entry ], [ %j, %hls_label_0_end ]"   --->   Operation 34 'phi' 'j_0_i_i_i' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 35 [1/1] (0.00ns)   --->   "%zext_ln204_1 = zext i11 %i6_0_i_i_i to i32" [convolution.cpp:204->convolution.cpp:271]   --->   Operation 35 'zext' 'zext_ln204_1' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 36 [1/1] (1.88ns)   --->   "%icmp_ln208 = icmp eq i11 %i6_0_i_i_i, 0" [convolution.cpp:208->convolution.cpp:271]   --->   Operation 36 'icmp' 'icmp_ln208' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 37 [1/1] (1.88ns)   --->   "%icmp_ln208_1 = icmp ugt i11 %i6_0_i_i_i, 5" [convolution.cpp:208->convolution.cpp:271]   --->   Operation 37 'icmp' 'icmp_ln208_1' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 38 [1/1] (2.47ns)   --->   "%icmp_ln208_2 = icmp slt i32 %zext_ln204_1, %add_ln208" [convolution.cpp:208->convolution.cpp:271]   --->   Operation 38 'icmp' 'icmp_ln208_2' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node or_ln208)   --->   "%and_ln208 = and i1 %icmp_ln208_2, %icmp_ln208_1" [convolution.cpp:208->convolution.cpp:271]   --->   Operation 39 'and' 'and_ln208' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 40 [1/1] (0.97ns) (out node of the LUT)   --->   "%or_ln208 = or i1 %icmp_ln208, %and_ln208" [convolution.cpp:208->convolution.cpp:271]   --->   Operation 40 'or' 'or_ln208' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%zext_ln205 = zext i11 %j_0_i_i_i to i32" [convolution.cpp:205->convolution.cpp:271]   --->   Operation 41 'zext' 'zext_ln205' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 42 [1/1] (2.47ns)   --->   "%icmp_ln205 = icmp slt i32 %zext_ln205, %width_read" [convolution.cpp:205->convolution.cpp:271]   --->   Operation 42 'icmp' 'icmp_ln205' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 43 [1/1] (2.77ns)   --->   "%icmp_ln204 = icmp eq i64 %indvar_flatten, %bound" [convolution.cpp:204->convolution.cpp:271]   --->   Operation 43 'icmp' 'icmp_ln204' <Predicate = true> <Delay = 2.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 44 [1/1] (3.52ns)   --->   "%add_ln204 = add i64 %indvar_flatten, 1" [convolution.cpp:204->convolution.cpp:271]   --->   Operation 44 'add' 'add_ln204' <Predicate = true> <Delay = 3.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 45 [1/1] (0.00ns)   --->   "br i1 %icmp_ln204, label %.exit, label %hls_label_0_begin" [convolution.cpp:204->convolution.cpp:271]   --->   Operation 45 'br' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 46 [1/1] (1.63ns)   --->   "%add_ln204_1 = add i11 %i6_0_i_i_i, 1" [convolution.cpp:204->convolution.cpp:271]   --->   Operation 46 'add' 'add_ln204_1' <Predicate = (!icmp_ln204)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%zext_ln204 = zext i11 %add_ln204_1 to i32" [convolution.cpp:204->convolution.cpp:271]   --->   Operation 47 'zext' 'zext_ln204' <Predicate = (!icmp_ln204)> <Delay = 0.00>
-ST_5 : Operation 48 [1/1] (0.69ns)   --->   "%select_ln204 = select i1 %icmp_ln205, i11 %j_0_i_i_i, i11 0" [convolution.cpp:204->convolution.cpp:271]   --->   Operation 48 'select' 'select_ln204' <Predicate = (!icmp_ln204)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_5 : Operation 49 [1/1] (1.88ns)   --->   "%icmp_ln208_3 = icmp eq i11 %add_ln204_1, 0" [convolution.cpp:208->convolution.cpp:271]   --->   Operation 49 'icmp' 'icmp_ln208_3' <Predicate = (!icmp_ln204)> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 50 [1/1] (1.88ns)   --->   "%icmp_ln208_4 = icmp ugt i11 %add_ln204_1, 5" [convolution.cpp:208->convolution.cpp:271]   --->   Operation 50 'icmp' 'icmp_ln208_4' <Predicate = (!icmp_ln204)> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 51 [1/1] (2.47ns)   --->   "%icmp_ln208_5 = icmp slt i32 %zext_ln204, %add_ln208" [convolution.cpp:208->convolution.cpp:271]   --->   Operation 51 'icmp' 'icmp_ln208_5' <Predicate = (!icmp_ln204)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 52 [1/1] (0.00ns) (grouped into LUT with out node select_ln204_1)   --->   "%and_ln208_1 = and i1 %icmp_ln208_5, %icmp_ln208_4" [convolution.cpp:208->convolution.cpp:271]   --->   Operation 52 'and' 'and_ln208_1' <Predicate = (!icmp_ln204)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 53 [1/1] (0.00ns) (grouped into LUT with out node select_ln204_1)   --->   "%or_ln208_1 = or i1 %icmp_ln208_3, %and_ln208_1" [convolution.cpp:208->convolution.cpp:271]   --->   Operation 53 'or' 'or_ln208_1' <Predicate = (!icmp_ln204)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 54 [1/1] (0.99ns) (out node of the LUT)   --->   "%select_ln204_1 = select i1 %icmp_ln205, i1 %or_ln208, i1 %or_ln208_1" [convolution.cpp:204->convolution.cpp:271]   --->   Operation 54 'select' 'select_ln204_1' <Predicate = (!icmp_ln204)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%zext_ln204_2 = zext i11 %select_ln204 to i32" [convolution.cpp:204->convolution.cpp:271]   --->   Operation 55 'zext' 'zext_ln204_2' <Predicate = (!icmp_ln204)> <Delay = 0.00>
-ST_5 : Operation 56 [1/1] (0.69ns)   --->   "%select_ln204_2 = select i1 %icmp_ln205, i11 %i6_0_i_i_i, i11 %add_ln204_1" [convolution.cpp:204->convolution.cpp:271]   --->   Operation 56 'select' 'select_ln204_2' <Predicate = (!icmp_ln204)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_5 : Operation 57 [1/1] (0.00ns)   --->   "br i1 %select_ln204_1, label %._crit_edge6.i.i.i, label %hls_label_0_end" [convolution.cpp:208->convolution.cpp:271]   --->   Operation 57 'br' <Predicate = (!icmp_ln204)> <Delay = 0.00>
-ST_5 : Operation 58 [1/1] (2.47ns)   --->   "%icmp_ln211 = icmp slt i32 %zext_ln204_2, %vconv_xlim_loc_read" [convolution.cpp:211->convolution.cpp:271]   --->   Operation 58 'icmp' 'icmp_ln211' <Predicate = (!icmp_ln204 & select_ln204_1)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 59 [1/1] (0.00ns)   --->   "br i1 %icmp_ln211, label %1, label %._crit_edge9.i.i.i" [convolution.cpp:211->convolution.cpp:271]   --->   Operation 59 'br' <Predicate = (!icmp_ln204 & select_ln204_1)> <Delay = 0.00>
-ST_5 : Operation 60 [1/1] (2.47ns)   --->   "%icmp_ln218 = icmp eq i32 %zext_ln204_2, %add_ln218" [convolution.cpp:218->convolution.cpp:271]   --->   Operation 60 'icmp' 'icmp_ln218' <Predicate = (!icmp_ln204 & select_ln204_1)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 61 [1/1] (2.47ns)   --->   "%icmp_ln225 = icmp slt i32 %zext_ln204_2, %add_ln225" [convolution.cpp:225->convolution.cpp:271]   --->   Operation 61 'icmp' 'icmp_ln225' <Predicate = (!icmp_ln204)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 62 [1/1] (1.63ns)   --->   "%j = add i11 %select_ln204, 1" [convolution.cpp:205->convolution.cpp:271]   --->   Operation 62 'add' 'j' <Predicate = (!icmp_ln204)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 35 [1/1] (0.00ns)   --->   "%zext_ln203_1 = zext i11 %i6_0_i_i_i to i32" [convolution.cpp:203->convolution.cpp:270]   --->   Operation 35 'zext' 'zext_ln203_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 36 [1/1] (1.88ns)   --->   "%icmp_ln207 = icmp eq i11 %i6_0_i_i_i, 0" [convolution.cpp:207->convolution.cpp:270]   --->   Operation 36 'icmp' 'icmp_ln207' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 37 [1/1] (1.88ns)   --->   "%icmp_ln207_1 = icmp ugt i11 %i6_0_i_i_i, 5" [convolution.cpp:207->convolution.cpp:270]   --->   Operation 37 'icmp' 'icmp_ln207_1' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 38 [1/1] (2.47ns)   --->   "%icmp_ln207_2 = icmp slt i32 %zext_ln203_1, %add_ln207" [convolution.cpp:207->convolution.cpp:270]   --->   Operation 38 'icmp' 'icmp_ln207_2' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node or_ln207)   --->   "%and_ln207 = and i1 %icmp_ln207_2, %icmp_ln207_1" [convolution.cpp:207->convolution.cpp:270]   --->   Operation 39 'and' 'and_ln207' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 40 [1/1] (0.97ns) (out node of the LUT)   --->   "%or_ln207 = or i1 %icmp_ln207, %and_ln207" [convolution.cpp:207->convolution.cpp:270]   --->   Operation 40 'or' 'or_ln207' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%zext_ln204 = zext i11 %j_0_i_i_i to i32" [convolution.cpp:204->convolution.cpp:270]   --->   Operation 41 'zext' 'zext_ln204' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 42 [1/1] (2.47ns)   --->   "%icmp_ln204 = icmp slt i32 %zext_ln204, %width_read" [convolution.cpp:204->convolution.cpp:270]   --->   Operation 42 'icmp' 'icmp_ln204' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 43 [1/1] (2.77ns)   --->   "%icmp_ln203 = icmp eq i64 %indvar_flatten, %bound" [convolution.cpp:203->convolution.cpp:270]   --->   Operation 43 'icmp' 'icmp_ln203' <Predicate = true> <Delay = 2.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 44 [1/1] (3.52ns)   --->   "%add_ln203 = add i64 %indvar_flatten, 1" [convolution.cpp:203->convolution.cpp:270]   --->   Operation 44 'add' 'add_ln203' <Predicate = true> <Delay = 3.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 45 [1/1] (0.00ns)   --->   "br i1 %icmp_ln203, label %.exit, label %hls_label_0_begin" [convolution.cpp:203->convolution.cpp:270]   --->   Operation 45 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 46 [1/1] (1.63ns)   --->   "%add_ln203_1 = add i11 %i6_0_i_i_i, 1" [convolution.cpp:203->convolution.cpp:270]   --->   Operation 46 'add' 'add_ln203_1' <Predicate = (!icmp_ln203)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%zext_ln203 = zext i11 %add_ln203_1 to i32" [convolution.cpp:203->convolution.cpp:270]   --->   Operation 47 'zext' 'zext_ln203' <Predicate = (!icmp_ln203)> <Delay = 0.00>
+ST_5 : Operation 48 [1/1] (0.69ns)   --->   "%select_ln203 = select i1 %icmp_ln204, i11 %j_0_i_i_i, i11 0" [convolution.cpp:203->convolution.cpp:270]   --->   Operation 48 'select' 'select_ln203' <Predicate = (!icmp_ln203)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 49 [1/1] (1.88ns)   --->   "%icmp_ln207_3 = icmp eq i11 %add_ln203_1, 0" [convolution.cpp:207->convolution.cpp:270]   --->   Operation 49 'icmp' 'icmp_ln207_3' <Predicate = (!icmp_ln203)> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 50 [1/1] (1.88ns)   --->   "%icmp_ln207_4 = icmp ugt i11 %add_ln203_1, 5" [convolution.cpp:207->convolution.cpp:270]   --->   Operation 50 'icmp' 'icmp_ln207_4' <Predicate = (!icmp_ln203)> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 51 [1/1] (2.47ns)   --->   "%icmp_ln207_5 = icmp slt i32 %zext_ln203, %add_ln207" [convolution.cpp:207->convolution.cpp:270]   --->   Operation 51 'icmp' 'icmp_ln207_5' <Predicate = (!icmp_ln203)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 52 [1/1] (0.00ns) (grouped into LUT with out node select_ln203_1)   --->   "%and_ln207_1 = and i1 %icmp_ln207_5, %icmp_ln207_4" [convolution.cpp:207->convolution.cpp:270]   --->   Operation 52 'and' 'and_ln207_1' <Predicate = (!icmp_ln203)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 53 [1/1] (0.00ns) (grouped into LUT with out node select_ln203_1)   --->   "%or_ln207_1 = or i1 %icmp_ln207_3, %and_ln207_1" [convolution.cpp:207->convolution.cpp:270]   --->   Operation 53 'or' 'or_ln207_1' <Predicate = (!icmp_ln203)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 54 [1/1] (0.99ns) (out node of the LUT)   --->   "%select_ln203_1 = select i1 %icmp_ln204, i1 %or_ln207, i1 %or_ln207_1" [convolution.cpp:203->convolution.cpp:270]   --->   Operation 54 'select' 'select_ln203_1' <Predicate = (!icmp_ln203)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%zext_ln203_2 = zext i11 %select_ln203 to i32" [convolution.cpp:203->convolution.cpp:270]   --->   Operation 55 'zext' 'zext_ln203_2' <Predicate = (!icmp_ln203)> <Delay = 0.00>
+ST_5 : Operation 56 [1/1] (0.69ns)   --->   "%select_ln203_2 = select i1 %icmp_ln204, i11 %i6_0_i_i_i, i11 %add_ln203_1" [convolution.cpp:203->convolution.cpp:270]   --->   Operation 56 'select' 'select_ln203_2' <Predicate = (!icmp_ln203)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "br i1 %select_ln203_1, label %._crit_edge6.i.i.i, label %hls_label_0_end" [convolution.cpp:207->convolution.cpp:270]   --->   Operation 57 'br' <Predicate = (!icmp_ln203)> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (2.47ns)   --->   "%icmp_ln210 = icmp slt i32 %zext_ln203_2, %vconv_xlim_loc_read" [convolution.cpp:210->convolution.cpp:270]   --->   Operation 58 'icmp' 'icmp_ln210' <Predicate = (!icmp_ln203 & select_ln203_1)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 59 [1/1] (0.00ns)   --->   "br i1 %icmp_ln210, label %1, label %._crit_edge9.i.i.i" [convolution.cpp:210->convolution.cpp:270]   --->   Operation 59 'br' <Predicate = (!icmp_ln203 & select_ln203_1)> <Delay = 0.00>
+ST_5 : Operation 60 [1/1] (2.47ns)   --->   "%icmp_ln217 = icmp eq i32 %zext_ln203_2, %add_ln217" [convolution.cpp:217->convolution.cpp:270]   --->   Operation 60 'icmp' 'icmp_ln217' <Predicate = (!icmp_ln203 & select_ln203_1)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 61 [1/1] (2.47ns)   --->   "%icmp_ln224 = icmp slt i32 %zext_ln203_2, %add_ln224" [convolution.cpp:224->convolution.cpp:270]   --->   Operation 61 'icmp' 'icmp_ln224' <Predicate = (!icmp_ln203)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 62 [1/1] (1.63ns)   --->   "%j = add i11 %select_ln203, 1" [convolution.cpp:204->convolution.cpp:270]   --->   Operation 62 'add' 'j' <Predicate = (!icmp_ln203)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 
 State 6 <SV = 5> <Delay = 2.91>
-ST_6 : Operation 63 [1/1] (2.91ns)   --->   "%tmp = call i32 @_ssdm_op_Read.ap_fifo.volatile.i32P(i32* %vconv_V)" [convolution.cpp:212->convolution.cpp:271]   --->   Operation 63 'read' 'tmp' <Predicate = (select_ln204_1 & icmp_ln211)> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_6 : Operation 64 [1/1] (0.00ns)   --->   "store i32 %tmp, i32* %r_edge_pix" [convolution.cpp:214->convolution.cpp:271]   --->   Operation 64 'store' <Predicate = (select_ln204_1 & icmp_ln211)> <Delay = 0.00>
+ST_6 : Operation 63 [1/1] (2.91ns)   --->   "%tmp = call i32 @_ssdm_op_Read.ap_fifo.volatile.i32P(i32* %vconv_V)" [convolution.cpp:211->convolution.cpp:270]   --->   Operation 63 'read' 'tmp' <Predicate = (select_ln203_1 & icmp_ln210)> <Delay = 2.91> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_6 : Operation 64 [1/1] (0.00ns)   --->   "store i32 %tmp, i32* %r_edge_pix" [convolution.cpp:213->convolution.cpp:270]   --->   Operation 64 'store' <Predicate = (select_ln203_1 & icmp_ln210)> <Delay = 0.00>
 
 State 7 <SV = 6> <Delay = 4.89>
-ST_7 : Operation 65 [1/1] (0.00ns)   --->   "%zext_ln213 = zext i11 %select_ln204 to i64" [convolution.cpp:213->convolution.cpp:271]   --->   Operation 65 'zext' 'zext_ln213' <Predicate = (select_ln204_1 & icmp_ln211)> <Delay = 0.00>
-ST_7 : Operation 66 [1/1] (0.00ns)   --->   "%borderbuf_addr = getelementptr inbounds [1910 x i32]* %borderbuf, i64 0, i64 %zext_ln213" [convolution.cpp:213->convolution.cpp:271]   --->   Operation 66 'getelementptr' 'borderbuf_addr' <Predicate = (select_ln204_1 & icmp_ln211)> <Delay = 0.00>
-ST_7 : Operation 67 [1/1] (3.25ns)   --->   "store i32 %tmp, i32* %borderbuf_addr, align 4" [convolution.cpp:213->convolution.cpp:271]   --->   Operation 67 'store' <Predicate = (select_ln204_1 & icmp_ln211)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1910> <RAM>
-ST_7 : Operation 68 [1/1] (0.00ns)   --->   "%l_edge_pix_2 = load i32* %r_edge_pix" [convolution.cpp:218->convolution.cpp:271]   --->   Operation 68 'load' 'l_edge_pix_2' <Predicate = (select_ln204_1)> <Delay = 0.00>
-ST_7 : Operation 69 [1/1] (0.00ns)   --->   "%pix_out_load = load i32* %pix_out" [convolution.cpp:218->convolution.cpp:271]   --->   Operation 69 'load' 'pix_out_load' <Predicate = (select_ln204_1 & !icmp_ln218)> <Delay = 0.00>
-ST_7 : Operation 70 [1/1] (0.00ns)   --->   "%pix_out_1_load = load i32* %pix_out_1" [convolution.cpp:215->convolution.cpp:271]   --->   Operation 70 'load' 'pix_out_1_load' <Predicate = (select_ln204_1)> <Delay = 0.00>
-ST_7 : Operation 71 [1/1] (1.88ns)   --->   "%icmp_ln215 = icmp eq i11 %select_ln204, 0" [convolution.cpp:215->convolution.cpp:271]   --->   Operation 71 'icmp' 'icmp_ln215' <Predicate = (select_ln204_1)> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 72 [1/1] (0.69ns)   --->   "%select_ln215 = select i1 %icmp_ln215, i32 %l_edge_pix_2, i32 %pix_out_1_load" [convolution.cpp:215->convolution.cpp:271]   --->   Operation 72 'select' 'select_ln215' <Predicate = (select_ln204_1)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_7 : Operation 73 [1/1] (0.69ns)   --->   "%l_edge_pix = select i1 %icmp_ln218, i32 %l_edge_pix_2, i32 %pix_out_load" [convolution.cpp:218->convolution.cpp:271]   --->   Operation 73 'select' 'l_edge_pix' <Predicate = (select_ln204_1)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_7 : Operation 74 [1/1] (0.00ns)   --->   "store i32 %select_ln215, i32* %pix_out_1" [convolution.cpp:221->convolution.cpp:271]   --->   Operation 74 'store' <Predicate = (select_ln204_1)> <Delay = 0.00>
-ST_7 : Operation 75 [1/1] (0.00ns)   --->   "store i32 %l_edge_pix, i32* %pix_out" [convolution.cpp:221->convolution.cpp:271]   --->   Operation 75 'store' <Predicate = (select_ln204_1)> <Delay = 0.00>
-ST_7 : Operation 76 [1/1] (1.63ns)   --->   "%add_ln228 = add i11 %select_ln204, -5" [convolution.cpp:228->convolution.cpp:271]   --->   Operation 76 'add' 'add_ln228' <Predicate = (!icmp_ln204)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 77 [1/1] (0.00ns)   --->   "%zext_ln228 = zext i11 %add_ln228 to i64" [convolution.cpp:228->convolution.cpp:271]   --->   Operation 77 'zext' 'zext_ln228' <Predicate = (!icmp_ln204)> <Delay = 0.00>
-ST_7 : Operation 78 [1/1] (0.00ns)   --->   "%borderbuf_addr_1 = getelementptr inbounds [1910 x i32]* %borderbuf, i64 0, i64 %zext_ln228" [convolution.cpp:228->convolution.cpp:271]   --->   Operation 78 'getelementptr' 'borderbuf_addr_1' <Predicate = (!icmp_ln204)> <Delay = 0.00>
-ST_7 : Operation 79 [2/2] (3.25ns)   --->   "%pix_out_7 = load i32* %borderbuf_addr_1, align 4" [convolution.cpp:228->convolution.cpp:271]   --->   Operation 79 'load' 'pix_out_7' <Predicate = (!icmp_ln204)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1910> <RAM>
+ST_7 : Operation 65 [1/1] (0.00ns)   --->   "%zext_ln212 = zext i11 %select_ln203 to i64" [convolution.cpp:212->convolution.cpp:270]   --->   Operation 65 'zext' 'zext_ln212' <Predicate = (select_ln203_1 & icmp_ln210)> <Delay = 0.00>
+ST_7 : Operation 66 [1/1] (0.00ns)   --->   "%borderbuf_addr = getelementptr inbounds [1910 x i32]* %borderbuf, i64 0, i64 %zext_ln212" [convolution.cpp:212->convolution.cpp:270]   --->   Operation 66 'getelementptr' 'borderbuf_addr' <Predicate = (select_ln203_1 & icmp_ln210)> <Delay = 0.00>
+ST_7 : Operation 67 [1/1] (3.25ns)   --->   "store i32 %tmp, i32* %borderbuf_addr, align 4" [convolution.cpp:212->convolution.cpp:270]   --->   Operation 67 'store' <Predicate = (select_ln203_1 & icmp_ln210)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1910> <RAM>
+ST_7 : Operation 68 [1/1] (0.00ns)   --->   "%l_edge_pix_2 = load i32* %r_edge_pix" [convolution.cpp:217->convolution.cpp:270]   --->   Operation 68 'load' 'l_edge_pix_2' <Predicate = (select_ln203_1)> <Delay = 0.00>
+ST_7 : Operation 69 [1/1] (0.00ns)   --->   "%pix_out_load = load i32* %pix_out" [convolution.cpp:217->convolution.cpp:270]   --->   Operation 69 'load' 'pix_out_load' <Predicate = (select_ln203_1 & !icmp_ln217)> <Delay = 0.00>
+ST_7 : Operation 70 [1/1] (0.00ns)   --->   "%pix_out_1_load = load i32* %pix_out_1" [convolution.cpp:214->convolution.cpp:270]   --->   Operation 70 'load' 'pix_out_1_load' <Predicate = (select_ln203_1)> <Delay = 0.00>
+ST_7 : Operation 71 [1/1] (1.88ns)   --->   "%icmp_ln214 = icmp eq i11 %select_ln203, 0" [convolution.cpp:214->convolution.cpp:270]   --->   Operation 71 'icmp' 'icmp_ln214' <Predicate = (select_ln203_1)> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 72 [1/1] (0.69ns)   --->   "%select_ln214 = select i1 %icmp_ln214, i32 %l_edge_pix_2, i32 %pix_out_1_load" [convolution.cpp:214->convolution.cpp:270]   --->   Operation 72 'select' 'select_ln214' <Predicate = (select_ln203_1)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 73 [1/1] (0.69ns)   --->   "%l_edge_pix = select i1 %icmp_ln217, i32 %l_edge_pix_2, i32 %pix_out_load" [convolution.cpp:217->convolution.cpp:270]   --->   Operation 73 'select' 'l_edge_pix' <Predicate = (select_ln203_1)> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_7 : Operation 74 [1/1] (0.00ns)   --->   "store i32 %select_ln214, i32* %pix_out_1" [convolution.cpp:220->convolution.cpp:270]   --->   Operation 74 'store' <Predicate = (select_ln203_1)> <Delay = 0.00>
+ST_7 : Operation 75 [1/1] (0.00ns)   --->   "store i32 %l_edge_pix, i32* %pix_out" [convolution.cpp:220->convolution.cpp:270]   --->   Operation 75 'store' <Predicate = (select_ln203_1)> <Delay = 0.00>
+ST_7 : Operation 76 [1/1] (1.63ns)   --->   "%add_ln227 = add i11 %select_ln203, -5" [convolution.cpp:227->convolution.cpp:270]   --->   Operation 76 'add' 'add_ln227' <Predicate = (!icmp_ln203)> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 77 [1/1] (0.00ns)   --->   "%zext_ln227 = zext i11 %add_ln227 to i64" [convolution.cpp:227->convolution.cpp:270]   --->   Operation 77 'zext' 'zext_ln227' <Predicate = (!icmp_ln203)> <Delay = 0.00>
+ST_7 : Operation 78 [1/1] (0.00ns)   --->   "%borderbuf_addr_1 = getelementptr inbounds [1910 x i32]* %borderbuf, i64 0, i64 %zext_ln227" [convolution.cpp:227->convolution.cpp:270]   --->   Operation 78 'getelementptr' 'borderbuf_addr_1' <Predicate = (!icmp_ln203)> <Delay = 0.00>
+ST_7 : Operation 79 [2/2] (3.25ns)   --->   "%pix_out_7 = load i32* %borderbuf_addr_1, align 4" [convolution.cpp:227->convolution.cpp:270]   --->   Operation 79 'load' 'pix_out_7' <Predicate = (!icmp_ln203)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1910> <RAM>
 
 State 8 <SV = 7> <Delay = 4.23>
-ST_8 : Operation 80 [1/1] (0.00ns)   --->   "%pix_out_4 = load i32* %pix_out" [convolution.cpp:225->convolution.cpp:271]   --->   Operation 80 'load' 'pix_out_4' <Predicate = (!icmp_ln204)> <Delay = 0.00>
-ST_8 : Operation 81 [1/1] (0.00ns)   --->   "%pix_out_6 = load i32* %pix_out_1" [convolution.cpp:223->convolution.cpp:271]   --->   Operation 81 'load' 'pix_out_6' <Predicate = (!icmp_ln204)> <Delay = 0.00>
-ST_8 : Operation 82 [1/1] (1.88ns)   --->   "%icmp_ln223 = icmp ult i11 %select_ln204, 6" [convolution.cpp:223->convolution.cpp:271]   --->   Operation 82 'icmp' 'icmp_ln223' <Predicate = (!icmp_ln204)> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 83 [1/2] (3.25ns)   --->   "%pix_out_7 = load i32* %borderbuf_addr_1, align 4" [convolution.cpp:228->convolution.cpp:271]   --->   Operation 83 'load' 'pix_out_7' <Predicate = (!icmp_ln204)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1910> <RAM>
-ST_8 : Operation 84 [1/1] (0.00ns) (grouped into LUT with out node pix_out_10)   --->   "%xor_ln223 = xor i1 %icmp_ln223, true" [convolution.cpp:223->convolution.cpp:271]   --->   Operation 84 'xor' 'xor_ln223' <Predicate = (!icmp_ln204)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 85 [1/1] (0.00ns) (grouped into LUT with out node pix_out_10)   --->   "%and_ln225 = and i1 %icmp_ln225, %xor_ln223" [convolution.cpp:225->convolution.cpp:271]   --->   Operation 85 'and' 'and_ln225' <Predicate = (!icmp_ln204)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 86 [1/1] (0.00ns) (grouped into LUT with out node pix_out_10)   --->   "%pix_out_8 = select i1 %and_ln225, i32 %pix_out_7, i32 %pix_out_4" [convolution.cpp:225->convolution.cpp:271]   --->   Operation 86 'select' 'pix_out_8' <Predicate = (!icmp_ln204)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_8 : Operation 87 [1/1] (0.97ns) (out node of the LUT)   --->   "%pix_out_10 = select i1 %icmp_ln223, i32 %pix_out_6, i32 %pix_out_8" [convolution.cpp:223->convolution.cpp:271]   --->   Operation 87 'select' 'pix_out_10' <Predicate = (!icmp_ln204)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_8 : Operation 88 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P(i32* %dst_V, i32 %pix_out_10)" [convolution.cpp:230->convolution.cpp:271]   --->   Operation 88 'write' <Predicate = (!icmp_ln204)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_8 : Operation 80 [1/1] (0.00ns)   --->   "%pix_out_4 = load i32* %pix_out" [convolution.cpp:224->convolution.cpp:270]   --->   Operation 80 'load' 'pix_out_4' <Predicate = (!icmp_ln203)> <Delay = 0.00>
+ST_8 : Operation 81 [1/1] (0.00ns)   --->   "%pix_out_6 = load i32* %pix_out_1" [convolution.cpp:222->convolution.cpp:270]   --->   Operation 81 'load' 'pix_out_6' <Predicate = (!icmp_ln203)> <Delay = 0.00>
+ST_8 : Operation 82 [1/1] (1.88ns)   --->   "%icmp_ln222 = icmp ult i11 %select_ln203, 6" [convolution.cpp:222->convolution.cpp:270]   --->   Operation 82 'icmp' 'icmp_ln222' <Predicate = (!icmp_ln203)> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 83 [1/2] (3.25ns)   --->   "%pix_out_7 = load i32* %borderbuf_addr_1, align 4" [convolution.cpp:227->convolution.cpp:270]   --->   Operation 83 'load' 'pix_out_7' <Predicate = (!icmp_ln203)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1910> <RAM>
+ST_8 : Operation 84 [1/1] (0.00ns) (grouped into LUT with out node pix_out_10)   --->   "%xor_ln222 = xor i1 %icmp_ln222, true" [convolution.cpp:222->convolution.cpp:270]   --->   Operation 84 'xor' 'xor_ln222' <Predicate = (!icmp_ln203)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 85 [1/1] (0.00ns) (grouped into LUT with out node pix_out_10)   --->   "%and_ln224 = and i1 %icmp_ln224, %xor_ln222" [convolution.cpp:224->convolution.cpp:270]   --->   Operation 85 'and' 'and_ln224' <Predicate = (!icmp_ln203)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 86 [1/1] (0.00ns) (grouped into LUT with out node pix_out_10)   --->   "%pix_out_8 = select i1 %and_ln224, i32 %pix_out_7, i32 %pix_out_4" [convolution.cpp:224->convolution.cpp:270]   --->   Operation 86 'select' 'pix_out_8' <Predicate = (!icmp_ln203)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 87 [1/1] (0.97ns) (out node of the LUT)   --->   "%pix_out_10 = select i1 %icmp_ln222, i32 %pix_out_6, i32 %pix_out_8" [convolution.cpp:222->convolution.cpp:270]   --->   Operation 87 'select' 'pix_out_10' <Predicate = (!icmp_ln203)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_8 : Operation 88 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P(i32* %dst_V, i32 %pix_out_10)" [convolution.cpp:229->convolution.cpp:270]   --->   Operation 88 'write' <Predicate = (!icmp_ln203)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
 
 State 9 <SV = 8> <Delay = 0.00>
-ST_9 : Operation 89 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([9 x i8]* @Border_L_str)"   --->   Operation 89 'specloopname' <Predicate = (!icmp_ln204)> <Delay = 0.00>
-ST_9 : Operation 90 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 2070601, i64 0)"   --->   Operation 90 'speclooptripcount' 'empty' <Predicate = (!icmp_ln204)> <Delay = 0.00>
-ST_9 : Operation 91 [1/1] (0.00ns)   --->   "%tmp_17_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str21)" [convolution.cpp:205->convolution.cpp:271]   --->   Operation 91 'specregionbegin' 'tmp_17_i_i' <Predicate = (!icmp_ln204)> <Delay = 0.00>
-ST_9 : Operation 92 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [convolution.cpp:207->convolution.cpp:271]   --->   Operation 92 'specpipeline' <Predicate = (!icmp_ln204)> <Delay = 0.00>
-ST_9 : Operation 93 [1/1] (0.00ns)   --->   "br label %._crit_edge9.i.i.i" [convolution.cpp:214->convolution.cpp:271]   --->   Operation 93 'br' <Predicate = (select_ln204_1 & icmp_ln211)> <Delay = 0.00>
-ST_9 : Operation 94 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [convolution.cpp:221->convolution.cpp:271]   --->   Operation 94 'br' <Predicate = (select_ln204_1)> <Delay = 0.00>
-ST_9 : Operation 95 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P(i32* %dst_V, i32 %pix_out_10)" [convolution.cpp:230->convolution.cpp:271]   --->   Operation 95 'write' <Predicate = (!icmp_ln204)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_9 : Operation 96 [1/1] (0.00ns)   --->   "%empty_16 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str21, i32 %tmp_17_i_i)" [convolution.cpp:231->convolution.cpp:271]   --->   Operation 96 'specregionend' 'empty_16' <Predicate = (!icmp_ln204)> <Delay = 0.00>
-ST_9 : Operation 97 [1/1] (0.00ns)   --->   "br label %0" [convolution.cpp:205->convolution.cpp:271]   --->   Operation 97 'br' <Predicate = (!icmp_ln204)> <Delay = 0.00>
+ST_9 : Operation 89 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([9 x i8]* @Border_L_str)"   --->   Operation 89 'specloopname' <Predicate = (!icmp_ln203)> <Delay = 0.00>
+ST_9 : Operation 90 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 0, i64 2070601, i64 0)"   --->   Operation 90 'speclooptripcount' 'empty' <Predicate = (!icmp_ln203)> <Delay = 0.00>
+ST_9 : Operation 91 [1/1] (0.00ns)   --->   "%tmp_18_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str21)" [convolution.cpp:204->convolution.cpp:270]   --->   Operation 91 'specregionbegin' 'tmp_18_i_i' <Predicate = (!icmp_ln203)> <Delay = 0.00>
+ST_9 : Operation 92 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [convolution.cpp:206->convolution.cpp:270]   --->   Operation 92 'specpipeline' <Predicate = (!icmp_ln203)> <Delay = 0.00>
+ST_9 : Operation 93 [1/1] (0.00ns)   --->   "br label %._crit_edge9.i.i.i" [convolution.cpp:213->convolution.cpp:270]   --->   Operation 93 'br' <Predicate = (select_ln203_1 & icmp_ln210)> <Delay = 0.00>
+ST_9 : Operation 94 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [convolution.cpp:220->convolution.cpp:270]   --->   Operation 94 'br' <Predicate = (select_ln203_1)> <Delay = 0.00>
+ST_9 : Operation 95 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P(i32* %dst_V, i32 %pix_out_10)" [convolution.cpp:229->convolution.cpp:270]   --->   Operation 95 'write' <Predicate = (!icmp_ln203)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_9 : Operation 96 [1/1] (0.00ns)   --->   "%empty_19 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str21, i32 %tmp_18_i_i)" [convolution.cpp:230->convolution.cpp:270]   --->   Operation 96 'specregionend' 'empty_19' <Predicate = (!icmp_ln203)> <Delay = 0.00>
+ST_9 : Operation 97 [1/1] (0.00ns)   --->   "br label %0" [convolution.cpp:204->convolution.cpp:270]   --->   Operation 97 'br' <Predicate = (!icmp_ln203)> <Delay = 0.00>
 
 State 10 <SV = 5> <Delay = 0.00>
 ST_10 : Operation 98 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 98 'ret' <Predicate = true> <Delay = 0.00>
@@ -441,75 +441,75 @@ specinterface_ln0   (specinterface    ) [ 00000000000]
 specinterface_ln0   (specinterface    ) [ 00000000000]
 specinterface_ln0   (specinterface    ) [ 00000000000]
 specinterface_ln0   (specinterface    ) [ 00000000000]
-add_ln218           (add              ) [ 00000111110]
-add_ln225           (add              ) [ 00000111110]
-add_ln208           (add              ) [ 00000111110]
+add_ln217           (add              ) [ 00000111110]
+add_ln224           (add              ) [ 00000111110]
+add_ln207           (add              ) [ 00000111110]
 bound               (mul              ) [ 00000111110]
-br_ln204            (br               ) [ 00001111110]
+br_ln203            (br               ) [ 00001111110]
 indvar_flatten      (phi              ) [ 00000100000]
 i6_0_i_i_i          (phi              ) [ 00000100000]
 j_0_i_i_i           (phi              ) [ 00000100000]
-zext_ln204_1        (zext             ) [ 00000000000]
-icmp_ln208          (icmp             ) [ 00000000000]
-icmp_ln208_1        (icmp             ) [ 00000000000]
-icmp_ln208_2        (icmp             ) [ 00000000000]
-and_ln208           (and              ) [ 00000000000]
-or_ln208            (or               ) [ 00000000000]
-zext_ln205          (zext             ) [ 00000000000]
-icmp_ln205          (icmp             ) [ 00000000000]
-icmp_ln204          (icmp             ) [ 00000111110]
-add_ln204           (add              ) [ 00001111110]
-br_ln204            (br               ) [ 00000000000]
-add_ln204_1         (add              ) [ 00000000000]
+zext_ln203_1        (zext             ) [ 00000000000]
+icmp_ln207          (icmp             ) [ 00000000000]
+icmp_ln207_1        (icmp             ) [ 00000000000]
+icmp_ln207_2        (icmp             ) [ 00000000000]
+and_ln207           (and              ) [ 00000000000]
+or_ln207            (or               ) [ 00000000000]
 zext_ln204          (zext             ) [ 00000000000]
-select_ln204        (select           ) [ 00000111100]
-icmp_ln208_3        (icmp             ) [ 00000000000]
-icmp_ln208_4        (icmp             ) [ 00000000000]
-icmp_ln208_5        (icmp             ) [ 00000000000]
-and_ln208_1         (and              ) [ 00000000000]
-or_ln208_1          (or               ) [ 00000000000]
-select_ln204_1      (select           ) [ 00000111110]
-zext_ln204_2        (zext             ) [ 00000000000]
-select_ln204_2      (select           ) [ 00001111110]
-br_ln208            (br               ) [ 00000000000]
-icmp_ln211          (icmp             ) [ 00000111110]
-br_ln211            (br               ) [ 00000000000]
-icmp_ln218          (icmp             ) [ 00000111000]
-icmp_ln225          (icmp             ) [ 00000111100]
+icmp_ln204          (icmp             ) [ 00000000000]
+icmp_ln203          (icmp             ) [ 00000111110]
+add_ln203           (add              ) [ 00001111110]
+br_ln203            (br               ) [ 00000000000]
+add_ln203_1         (add              ) [ 00000000000]
+zext_ln203          (zext             ) [ 00000000000]
+select_ln203        (select           ) [ 00000111100]
+icmp_ln207_3        (icmp             ) [ 00000000000]
+icmp_ln207_4        (icmp             ) [ 00000000000]
+icmp_ln207_5        (icmp             ) [ 00000000000]
+and_ln207_1         (and              ) [ 00000000000]
+or_ln207_1          (or               ) [ 00000000000]
+select_ln203_1      (select           ) [ 00000111110]
+zext_ln203_2        (zext             ) [ 00000000000]
+select_ln203_2      (select           ) [ 00001111110]
+br_ln207            (br               ) [ 00000000000]
+icmp_ln210          (icmp             ) [ 00000111110]
+br_ln210            (br               ) [ 00000000000]
+icmp_ln217          (icmp             ) [ 00000111000]
+icmp_ln224          (icmp             ) [ 00000111100]
 j                   (add              ) [ 00001111110]
 tmp                 (read             ) [ 00000101000]
-store_ln214         (store            ) [ 00000000000]
-zext_ln213          (zext             ) [ 00000000000]
-borderbuf_addr      (getelementptr    ) [ 00000000000]
 store_ln213         (store            ) [ 00000000000]
+zext_ln212          (zext             ) [ 00000000000]
+borderbuf_addr      (getelementptr    ) [ 00000000000]
+store_ln212         (store            ) [ 00000000000]
 l_edge_pix_2        (load             ) [ 00000000000]
 pix_out_load        (load             ) [ 00000000000]
 pix_out_1_load      (load             ) [ 00000000000]
-icmp_ln215          (icmp             ) [ 00000000000]
-select_ln215        (select           ) [ 00000000000]
+icmp_ln214          (icmp             ) [ 00000000000]
+select_ln214        (select           ) [ 00000000000]
 l_edge_pix          (select           ) [ 00000000000]
-store_ln221         (store            ) [ 00000000000]
-store_ln221         (store            ) [ 00000000000]
-add_ln228           (add              ) [ 00000000000]
-zext_ln228          (zext             ) [ 00000000000]
+store_ln220         (store            ) [ 00000000000]
+store_ln220         (store            ) [ 00000000000]
+add_ln227           (add              ) [ 00000000000]
+zext_ln227          (zext             ) [ 00000000000]
 borderbuf_addr_1    (getelementptr    ) [ 00000100100]
 pix_out_4           (load             ) [ 00000000000]
 pix_out_6           (load             ) [ 00000000000]
-icmp_ln223          (icmp             ) [ 00000000000]
+icmp_ln222          (icmp             ) [ 00000000000]
 pix_out_7           (load             ) [ 00000000000]
-xor_ln223           (xor              ) [ 00000000000]
-and_ln225           (and              ) [ 00000000000]
+xor_ln222           (xor              ) [ 00000000000]
+and_ln224           (and              ) [ 00000000000]
 pix_out_8           (select           ) [ 00000000000]
 pix_out_10          (select           ) [ 00000100010]
 specloopname_ln0    (specloopname     ) [ 00000000000]
 empty               (speclooptripcount) [ 00000000000]
-tmp_17_i_i          (specregionbegin  ) [ 00000000000]
-specpipeline_ln207  (specpipeline     ) [ 00000000000]
-br_ln214            (br               ) [ 00000000000]
-br_ln221            (br               ) [ 00000000000]
-write_ln230         (write            ) [ 00000000000]
-empty_16            (specregionend    ) [ 00000000000]
-br_ln205            (br               ) [ 00001111110]
+tmp_18_i_i          (specregionbegin  ) [ 00000000000]
+specpipeline_ln206  (specpipeline     ) [ 00000000000]
+br_ln213            (br               ) [ 00000000000]
+br_ln220            (br               ) [ 00000000000]
+write_ln229         (write            ) [ 00000000000]
+empty_19            (specregionend    ) [ 00000000000]
+br_ln204            (br               ) [ 00001111110]
 ret_ln0             (ret              ) [ 00000000000]
 </LifeTime>
 
@@ -968,7 +968,7 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln230/8 "/>
+<opset="write_ln229/8 "/>
 </bind>
 </comp>
 
@@ -998,7 +998,7 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="load(27) store(28) " fcode="load"/>
-<opset="store_ln213/7 pix_out_7/7 "/>
+<opset="store_ln212/7 pix_out_7/7 "/>
 </bind>
 </comp>
 
@@ -1121,7 +1121,7 @@ ret_ln0             (ret              ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="193" class="1004" name="add_ln218_fu_193">
+<comp id="193" class="1004" name="add_ln217_fu_193">
 <pin_list>
 <pin id="194" dir="0" index="0" bw="32" slack="3"/>
 <pin id="195" dir="0" index="1" bw="5" slack="0"/>
@@ -1129,11 +1129,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln218/4 "/>
+<opset="add_ln217/4 "/>
 </bind>
 </comp>
 
-<comp id="198" class="1004" name="add_ln225_fu_198">
+<comp id="198" class="1004" name="add_ln224_fu_198">
 <pin_list>
 <pin id="199" dir="0" index="0" bw="32" slack="3"/>
 <pin id="200" dir="0" index="1" bw="4" slack="0"/>
@@ -1141,11 +1141,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln225/4 "/>
+<opset="add_ln224/4 "/>
 </bind>
 </comp>
 
-<comp id="203" class="1004" name="add_ln208_fu_203">
+<comp id="203" class="1004" name="add_ln207_fu_203">
 <pin_list>
 <pin id="204" dir="0" index="0" bw="32" slack="3"/>
 <pin id="205" dir="0" index="1" bw="4" slack="0"/>
@@ -1153,22 +1153,22 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln208/4 "/>
+<opset="add_ln207/4 "/>
 </bind>
 </comp>
 
-<comp id="208" class="1004" name="zext_ln204_1_fu_208">
+<comp id="208" class="1004" name="zext_ln203_1_fu_208">
 <pin_list>
 <pin id="209" dir="0" index="0" bw="11" slack="0"/>
 <pin id="210" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln204_1/5 "/>
+<opset="zext_ln203_1/5 "/>
 </bind>
 </comp>
 
-<comp id="212" class="1004" name="icmp_ln208_fu_212">
+<comp id="212" class="1004" name="icmp_ln207_fu_212">
 <pin_list>
 <pin id="213" dir="0" index="0" bw="11" slack="0"/>
 <pin id="214" dir="0" index="1" bw="11" slack="0"/>
@@ -1176,11 +1176,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln208/5 "/>
+<opset="icmp_ln207/5 "/>
 </bind>
 </comp>
 
-<comp id="218" class="1004" name="icmp_ln208_1_fu_218">
+<comp id="218" class="1004" name="icmp_ln207_1_fu_218">
 <pin_list>
 <pin id="219" dir="0" index="0" bw="11" slack="0"/>
 <pin id="220" dir="0" index="1" bw="11" slack="0"/>
@@ -1188,11 +1188,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln208_1/5 "/>
+<opset="icmp_ln207_1/5 "/>
 </bind>
 </comp>
 
-<comp id="224" class="1004" name="icmp_ln208_2_fu_224">
+<comp id="224" class="1004" name="icmp_ln207_2_fu_224">
 <pin_list>
 <pin id="225" dir="0" index="0" bw="32" slack="0"/>
 <pin id="226" dir="0" index="1" bw="32" slack="1"/>
@@ -1200,11 +1200,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln208_2/5 "/>
+<opset="icmp_ln207_2/5 "/>
 </bind>
 </comp>
 
-<comp id="229" class="1004" name="and_ln208_fu_229">
+<comp id="229" class="1004" name="and_ln207_fu_229">
 <pin_list>
 <pin id="230" dir="0" index="0" bw="1" slack="0"/>
 <pin id="231" dir="0" index="1" bw="1" slack="0"/>
@@ -1212,11 +1212,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="and(23) " fcode="and"/>
-<opset="and_ln208/5 "/>
+<opset="and_ln207/5 "/>
 </bind>
 </comp>
 
-<comp id="235" class="1004" name="or_ln208_fu_235">
+<comp id="235" class="1004" name="or_ln207_fu_235">
 <pin_list>
 <pin id="236" dir="0" index="0" bw="1" slack="0"/>
 <pin id="237" dir="0" index="1" bw="1" slack="0"/>
@@ -1224,73 +1224,14 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="or(24) " fcode="or"/>
-<opset="or_ln208/5 "/>
+<opset="or_ln207/5 "/>
 </bind>
 </comp>
 
-<comp id="241" class="1004" name="zext_ln205_fu_241">
+<comp id="241" class="1004" name="zext_ln204_fu_241">
 <pin_list>
 <pin id="242" dir="0" index="0" bw="11" slack="0"/>
 <pin id="243" dir="1" index="1" bw="32" slack="0"/>
-</pin_list>
-<bind>
-<opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln205/5 "/>
-</bind>
-</comp>
-
-<comp id="245" class="1004" name="icmp_ln205_fu_245">
-<pin_list>
-<pin id="246" dir="0" index="0" bw="32" slack="0"/>
-<pin id="247" dir="0" index="1" bw="32" slack="4"/>
-<pin id="248" dir="1" index="2" bw="1" slack="0"/>
-</pin_list>
-<bind>
-<opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln205/5 "/>
-</bind>
-</comp>
-
-<comp id="250" class="1004" name="icmp_ln204_fu_250">
-<pin_list>
-<pin id="251" dir="0" index="0" bw="64" slack="0"/>
-<pin id="252" dir="0" index="1" bw="64" slack="1"/>
-<pin id="253" dir="1" index="2" bw="1" slack="2"/>
-</pin_list>
-<bind>
-<opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln204/5 "/>
-</bind>
-</comp>
-
-<comp id="255" class="1004" name="add_ln204_fu_255">
-<pin_list>
-<pin id="256" dir="0" index="0" bw="64" slack="0"/>
-<pin id="257" dir="0" index="1" bw="1" slack="0"/>
-<pin id="258" dir="1" index="2" bw="64" slack="0"/>
-</pin_list>
-<bind>
-<opcode="add(8) " fcode="add"/>
-<opset="add_ln204/5 "/>
-</bind>
-</comp>
-
-<comp id="261" class="1004" name="add_ln204_1_fu_261">
-<pin_list>
-<pin id="262" dir="0" index="0" bw="11" slack="0"/>
-<pin id="263" dir="0" index="1" bw="1" slack="0"/>
-<pin id="264" dir="1" index="2" bw="11" slack="0"/>
-</pin_list>
-<bind>
-<opcode="add(8) " fcode="add"/>
-<opset="add_ln204_1/5 "/>
-</bind>
-</comp>
-
-<comp id="267" class="1004" name="zext_ln204_fu_267">
-<pin_list>
-<pin id="268" dir="0" index="0" bw="11" slack="0"/>
-<pin id="269" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
@@ -1298,7 +1239,66 @@ ret_ln0             (ret              ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="271" class="1004" name="select_ln204_fu_271">
+<comp id="245" class="1004" name="icmp_ln204_fu_245">
+<pin_list>
+<pin id="246" dir="0" index="0" bw="32" slack="0"/>
+<pin id="247" dir="0" index="1" bw="32" slack="4"/>
+<pin id="248" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln204/5 "/>
+</bind>
+</comp>
+
+<comp id="250" class="1004" name="icmp_ln203_fu_250">
+<pin_list>
+<pin id="251" dir="0" index="0" bw="64" slack="0"/>
+<pin id="252" dir="0" index="1" bw="64" slack="1"/>
+<pin id="253" dir="1" index="2" bw="1" slack="2"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln203/5 "/>
+</bind>
+</comp>
+
+<comp id="255" class="1004" name="add_ln203_fu_255">
+<pin_list>
+<pin id="256" dir="0" index="0" bw="64" slack="0"/>
+<pin id="257" dir="0" index="1" bw="1" slack="0"/>
+<pin id="258" dir="1" index="2" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="add_ln203/5 "/>
+</bind>
+</comp>
+
+<comp id="261" class="1004" name="add_ln203_1_fu_261">
+<pin_list>
+<pin id="262" dir="0" index="0" bw="11" slack="0"/>
+<pin id="263" dir="0" index="1" bw="1" slack="0"/>
+<pin id="264" dir="1" index="2" bw="11" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="add_ln203_1/5 "/>
+</bind>
+</comp>
+
+<comp id="267" class="1004" name="zext_ln203_fu_267">
+<pin_list>
+<pin id="268" dir="0" index="0" bw="11" slack="0"/>
+<pin id="269" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="zext(34) " fcode="zext"/>
+<opset="zext_ln203/5 "/>
+</bind>
+</comp>
+
+<comp id="271" class="1004" name="select_ln203_fu_271">
 <pin_list>
 <pin id="272" dir="0" index="0" bw="1" slack="0"/>
 <pin id="273" dir="0" index="1" bw="11" slack="0"/>
@@ -1307,11 +1307,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln204/5 "/>
+<opset="select_ln203/5 "/>
 </bind>
 </comp>
 
-<comp id="279" class="1004" name="icmp_ln208_3_fu_279">
+<comp id="279" class="1004" name="icmp_ln207_3_fu_279">
 <pin_list>
 <pin id="280" dir="0" index="0" bw="11" slack="0"/>
 <pin id="281" dir="0" index="1" bw="11" slack="0"/>
@@ -1319,11 +1319,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln208_3/5 "/>
+<opset="icmp_ln207_3/5 "/>
 </bind>
 </comp>
 
-<comp id="285" class="1004" name="icmp_ln208_4_fu_285">
+<comp id="285" class="1004" name="icmp_ln207_4_fu_285">
 <pin_list>
 <pin id="286" dir="0" index="0" bw="11" slack="0"/>
 <pin id="287" dir="0" index="1" bw="11" slack="0"/>
@@ -1331,11 +1331,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln208_4/5 "/>
+<opset="icmp_ln207_4/5 "/>
 </bind>
 </comp>
 
-<comp id="291" class="1004" name="icmp_ln208_5_fu_291">
+<comp id="291" class="1004" name="icmp_ln207_5_fu_291">
 <pin_list>
 <pin id="292" dir="0" index="0" bw="32" slack="0"/>
 <pin id="293" dir="0" index="1" bw="32" slack="1"/>
@@ -1343,11 +1343,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln208_5/5 "/>
+<opset="icmp_ln207_5/5 "/>
 </bind>
 </comp>
 
-<comp id="296" class="1004" name="and_ln208_1_fu_296">
+<comp id="296" class="1004" name="and_ln207_1_fu_296">
 <pin_list>
 <pin id="297" dir="0" index="0" bw="1" slack="0"/>
 <pin id="298" dir="0" index="1" bw="1" slack="0"/>
@@ -1355,11 +1355,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="and(23) " fcode="and"/>
-<opset="and_ln208_1/5 "/>
+<opset="and_ln207_1/5 "/>
 </bind>
 </comp>
 
-<comp id="302" class="1004" name="or_ln208_1_fu_302">
+<comp id="302" class="1004" name="or_ln207_1_fu_302">
 <pin_list>
 <pin id="303" dir="0" index="0" bw="1" slack="0"/>
 <pin id="304" dir="0" index="1" bw="1" slack="0"/>
@@ -1367,11 +1367,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="or(24) " fcode="or"/>
-<opset="or_ln208_1/5 "/>
+<opset="or_ln207_1/5 "/>
 </bind>
 </comp>
 
-<comp id="308" class="1004" name="select_ln204_1_fu_308">
+<comp id="308" class="1004" name="select_ln203_1_fu_308">
 <pin_list>
 <pin id="309" dir="0" index="0" bw="1" slack="0"/>
 <pin id="310" dir="0" index="1" bw="1" slack="0"/>
@@ -1380,22 +1380,22 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln204_1/5 "/>
+<opset="select_ln203_1/5 "/>
 </bind>
 </comp>
 
-<comp id="316" class="1004" name="zext_ln204_2_fu_316">
+<comp id="316" class="1004" name="zext_ln203_2_fu_316">
 <pin_list>
 <pin id="317" dir="0" index="0" bw="11" slack="0"/>
 <pin id="318" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln204_2/5 "/>
+<opset="zext_ln203_2/5 "/>
 </bind>
 </comp>
 
-<comp id="320" class="1004" name="select_ln204_2_fu_320">
+<comp id="320" class="1004" name="select_ln203_2_fu_320">
 <pin_list>
 <pin id="321" dir="0" index="0" bw="1" slack="0"/>
 <pin id="322" dir="0" index="1" bw="11" slack="0"/>
@@ -1404,11 +1404,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln204_2/5 "/>
+<opset="select_ln203_2/5 "/>
 </bind>
 </comp>
 
-<comp id="328" class="1004" name="icmp_ln211_fu_328">
+<comp id="328" class="1004" name="icmp_ln210_fu_328">
 <pin_list>
 <pin id="329" dir="0" index="0" bw="32" slack="0"/>
 <pin id="330" dir="0" index="1" bw="32" slack="4"/>
@@ -1416,11 +1416,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln211/5 "/>
+<opset="icmp_ln210/5 "/>
 </bind>
 </comp>
 
-<comp id="333" class="1004" name="icmp_ln218_fu_333">
+<comp id="333" class="1004" name="icmp_ln217_fu_333">
 <pin_list>
 <pin id="334" dir="0" index="0" bw="32" slack="0"/>
 <pin id="335" dir="0" index="1" bw="32" slack="1"/>
@@ -1428,11 +1428,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln218/5 "/>
+<opset="icmp_ln217/5 "/>
 </bind>
 </comp>
 
-<comp id="338" class="1004" name="icmp_ln225_fu_338">
+<comp id="338" class="1004" name="icmp_ln224_fu_338">
 <pin_list>
 <pin id="339" dir="0" index="0" bw="32" slack="0"/>
 <pin id="340" dir="0" index="1" bw="32" slack="1"/>
@@ -1440,7 +1440,7 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln225/5 "/>
+<opset="icmp_ln224/5 "/>
 </bind>
 </comp>
 
@@ -1456,7 +1456,7 @@ ret_ln0             (ret              ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="349" class="1004" name="store_ln214_store_fu_349">
+<comp id="349" class="1004" name="store_ln213_store_fu_349">
 <pin_list>
 <pin id="350" dir="0" index="0" bw="32" slack="0"/>
 <pin id="351" dir="0" index="1" bw="32" slack="5"/>
@@ -1464,18 +1464,18 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln214/6 "/>
+<opset="store_ln213/6 "/>
 </bind>
 </comp>
 
-<comp id="354" class="1004" name="zext_ln213_fu_354">
+<comp id="354" class="1004" name="zext_ln212_fu_354">
 <pin_list>
 <pin id="355" dir="0" index="0" bw="11" slack="2"/>
 <pin id="356" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln213/7 "/>
+<opset="zext_ln212/7 "/>
 </bind>
 </comp>
 
@@ -1512,7 +1512,7 @@ ret_ln0             (ret              ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="367" class="1004" name="icmp_ln215_fu_367">
+<comp id="367" class="1004" name="icmp_ln214_fu_367">
 <pin_list>
 <pin id="368" dir="0" index="0" bw="11" slack="2"/>
 <pin id="369" dir="0" index="1" bw="11" slack="0"/>
@@ -1520,11 +1520,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln215/7 "/>
+<opset="icmp_ln214/7 "/>
 </bind>
 </comp>
 
-<comp id="372" class="1004" name="select_ln215_fu_372">
+<comp id="372" class="1004" name="select_ln214_fu_372">
 <pin_list>
 <pin id="373" dir="0" index="0" bw="1" slack="0"/>
 <pin id="374" dir="0" index="1" bw="32" slack="0"/>
@@ -1533,7 +1533,7 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln215/7 "/>
+<opset="select_ln214/7 "/>
 </bind>
 </comp>
 
@@ -1550,7 +1550,7 @@ ret_ln0             (ret              ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="387" class="1004" name="store_ln221_store_fu_387">
+<comp id="387" class="1004" name="store_ln220_store_fu_387">
 <pin_list>
 <pin id="388" dir="0" index="0" bw="32" slack="0"/>
 <pin id="389" dir="0" index="1" bw="32" slack="6"/>
@@ -1558,11 +1558,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln221/7 "/>
+<opset="store_ln220/7 "/>
 </bind>
 </comp>
 
-<comp id="392" class="1004" name="store_ln221_store_fu_392">
+<comp id="392" class="1004" name="store_ln220_store_fu_392">
 <pin_list>
 <pin id="393" dir="0" index="0" bw="32" slack="0"/>
 <pin id="394" dir="0" index="1" bw="32" slack="6"/>
@@ -1570,11 +1570,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln221/7 "/>
+<opset="store_ln220/7 "/>
 </bind>
 </comp>
 
-<comp id="397" class="1004" name="add_ln228_fu_397">
+<comp id="397" class="1004" name="add_ln227_fu_397">
 <pin_list>
 <pin id="398" dir="0" index="0" bw="11" slack="2"/>
 <pin id="399" dir="0" index="1" bw="4" slack="0"/>
@@ -1582,18 +1582,18 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln228/7 "/>
+<opset="add_ln227/7 "/>
 </bind>
 </comp>
 
-<comp id="402" class="1004" name="zext_ln228_fu_402">
+<comp id="402" class="1004" name="zext_ln227_fu_402">
 <pin_list>
 <pin id="403" dir="0" index="0" bw="11" slack="0"/>
 <pin id="404" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln228/7 "/>
+<opset="zext_ln227/7 "/>
 </bind>
 </comp>
 
@@ -1619,7 +1619,7 @@ ret_ln0             (ret              ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="413" class="1004" name="icmp_ln223_fu_413">
+<comp id="413" class="1004" name="icmp_ln222_fu_413">
 <pin_list>
 <pin id="414" dir="0" index="0" bw="11" slack="3"/>
 <pin id="415" dir="0" index="1" bw="11" slack="0"/>
@@ -1627,11 +1627,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln223/8 "/>
+<opset="icmp_ln222/8 "/>
 </bind>
 </comp>
 
-<comp id="418" class="1004" name="xor_ln223_fu_418">
+<comp id="418" class="1004" name="xor_ln222_fu_418">
 <pin_list>
 <pin id="419" dir="0" index="0" bw="1" slack="0"/>
 <pin id="420" dir="0" index="1" bw="1" slack="0"/>
@@ -1639,11 +1639,11 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="xor(25) " fcode="xor"/>
-<opset="xor_ln223/8 "/>
+<opset="xor_ln222/8 "/>
 </bind>
 </comp>
 
-<comp id="424" class="1004" name="and_ln225_fu_424">
+<comp id="424" class="1004" name="and_ln224_fu_424">
 <pin_list>
 <pin id="425" dir="0" index="0" bw="1" slack="3"/>
 <pin id="426" dir="0" index="1" bw="1" slack="0"/>
@@ -1651,7 +1651,7 @@ ret_ln0             (ret              ) [ 00000000000]
 </pin_list>
 <bind>
 <opcode="and(23) " fcode="and"/>
-<opset="and_ln225/8 "/>
+<opset="and_ln224/8 "/>
 </bind>
 </comp>
 
@@ -1761,33 +1761,33 @@ ret_ln0             (ret              ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="495" class="1005" name="add_ln218_reg_495">
+<comp id="495" class="1005" name="add_ln217_reg_495">
 <pin_list>
 <pin id="496" dir="0" index="0" bw="32" slack="1"/>
 <pin id="497" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
-<opset="add_ln218 "/>
+<opset="add_ln217 "/>
 </bind>
 </comp>
 
-<comp id="500" class="1005" name="add_ln225_reg_500">
+<comp id="500" class="1005" name="add_ln224_reg_500">
 <pin_list>
 <pin id="501" dir="0" index="0" bw="32" slack="1"/>
 <pin id="502" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
-<opset="add_ln225 "/>
+<opset="add_ln224 "/>
 </bind>
 </comp>
 
-<comp id="505" class="1005" name="add_ln208_reg_505">
+<comp id="505" class="1005" name="add_ln207_reg_505">
 <pin_list>
 <pin id="506" dir="0" index="0" bw="32" slack="1"/>
 <pin id="507" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
-<opset="add_ln208 "/>
+<opset="add_ln207 "/>
 </bind>
 </comp>
 
@@ -1801,83 +1801,83 @@ ret_ln0             (ret              ) [ 00000000000]
 </bind>
 </comp>
 
-<comp id="516" class="1005" name="icmp_ln204_reg_516">
+<comp id="516" class="1005" name="icmp_ln203_reg_516">
 <pin_list>
 <pin id="517" dir="0" index="0" bw="1" slack="2"/>
 <pin id="518" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln204 "/>
+<opset="icmp_ln203 "/>
 </bind>
 </comp>
 
-<comp id="520" class="1005" name="add_ln204_reg_520">
+<comp id="520" class="1005" name="add_ln203_reg_520">
 <pin_list>
 <pin id="521" dir="0" index="0" bw="64" slack="0"/>
 <pin id="522" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
-<opset="add_ln204 "/>
+<opset="add_ln203 "/>
 </bind>
 </comp>
 
-<comp id="525" class="1005" name="select_ln204_reg_525">
+<comp id="525" class="1005" name="select_ln203_reg_525">
 <pin_list>
 <pin id="526" dir="0" index="0" bw="11" slack="2"/>
 <pin id="527" dir="1" index="1" bw="11" slack="2"/>
 </pin_list>
 <bind>
-<opset="select_ln204 "/>
+<opset="select_ln203 "/>
 </bind>
 </comp>
 
-<comp id="533" class="1005" name="select_ln204_1_reg_533">
+<comp id="533" class="1005" name="select_ln203_1_reg_533">
 <pin_list>
 <pin id="534" dir="0" index="0" bw="1" slack="1"/>
 <pin id="535" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="select_ln204_1 "/>
+<opset="select_ln203_1 "/>
 </bind>
 </comp>
 
-<comp id="537" class="1005" name="select_ln204_2_reg_537">
+<comp id="537" class="1005" name="select_ln203_2_reg_537">
 <pin_list>
 <pin id="538" dir="0" index="0" bw="11" slack="0"/>
 <pin id="539" dir="1" index="1" bw="11" slack="0"/>
 </pin_list>
 <bind>
-<opset="select_ln204_2 "/>
+<opset="select_ln203_2 "/>
 </bind>
 </comp>
 
-<comp id="542" class="1005" name="icmp_ln211_reg_542">
+<comp id="542" class="1005" name="icmp_ln210_reg_542">
 <pin_list>
 <pin id="543" dir="0" index="0" bw="1" slack="1"/>
 <pin id="544" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln211 "/>
+<opset="icmp_ln210 "/>
 </bind>
 </comp>
 
-<comp id="546" class="1005" name="icmp_ln218_reg_546">
+<comp id="546" class="1005" name="icmp_ln217_reg_546">
 <pin_list>
 <pin id="547" dir="0" index="0" bw="1" slack="2"/>
 <pin id="548" dir="1" index="1" bw="1" slack="2"/>
 </pin_list>
 <bind>
-<opset="icmp_ln218 "/>
+<opset="icmp_ln217 "/>
 </bind>
 </comp>
 
-<comp id="551" class="1005" name="icmp_ln225_reg_551">
+<comp id="551" class="1005" name="icmp_ln224_reg_551">
 <pin_list>
 <pin id="552" dir="0" index="0" bw="1" slack="3"/>
 <pin id="553" dir="1" index="1" bw="1" slack="3"/>
 </pin_list>
 <bind>
-<opset="icmp_ln225 "/>
+<opset="icmp_ln224 "/>
 </bind>
 </comp>
 
@@ -2251,53 +2251,53 @@ ret_ln0             (ret              ) [ 00000000000]
 	State 3
 	State 4
 	State 5
-		zext_ln204_1 : 1
-		icmp_ln208 : 1
-		icmp_ln208_1 : 1
-		icmp_ln208_2 : 2
-		and_ln208 : 3
-		or_ln208 : 3
-		zext_ln205 : 1
-		icmp_ln205 : 2
-		icmp_ln204 : 1
-		add_ln204 : 1
-		br_ln204 : 2
-		add_ln204_1 : 1
-		zext_ln204 : 2
-		select_ln204 : 3
-		icmp_ln208_3 : 2
-		icmp_ln208_4 : 2
-		icmp_ln208_5 : 3
-		and_ln208_1 : 4
-		or_ln208_1 : 4
-		select_ln204_1 : 4
-		zext_ln204_2 : 4
-		select_ln204_2 : 3
-		br_ln208 : 5
-		icmp_ln211 : 5
-		br_ln211 : 6
-		icmp_ln218 : 5
-		icmp_ln225 : 5
+		zext_ln203_1 : 1
+		icmp_ln207 : 1
+		icmp_ln207_1 : 1
+		icmp_ln207_2 : 2
+		and_ln207 : 3
+		or_ln207 : 3
+		zext_ln204 : 1
+		icmp_ln204 : 2
+		icmp_ln203 : 1
+		add_ln203 : 1
+		br_ln203 : 2
+		add_ln203_1 : 1
+		zext_ln203 : 2
+		select_ln203 : 3
+		icmp_ln207_3 : 2
+		icmp_ln207_4 : 2
+		icmp_ln207_5 : 3
+		and_ln207_1 : 4
+		or_ln207_1 : 4
+		select_ln203_1 : 4
+		zext_ln203_2 : 4
+		select_ln203_2 : 3
+		br_ln207 : 5
+		icmp_ln210 : 5
+		br_ln210 : 6
+		icmp_ln217 : 5
+		icmp_ln224 : 5
 		j : 4
 	State 6
 	State 7
 		borderbuf_addr : 1
-		store_ln213 : 2
-		select_ln215 : 1
+		store_ln212 : 2
+		select_ln214 : 1
 		l_edge_pix : 1
-		store_ln221 : 2
-		store_ln221 : 2
-		zext_ln228 : 1
+		store_ln220 : 2
+		store_ln220 : 2
+		zext_ln227 : 1
 		borderbuf_addr_1 : 2
 		pix_out_7 : 3
 	State 8
-		xor_ln223 : 1
-		and_ln225 : 1
+		xor_ln222 : 1
+		and_ln224 : 1
 		pix_out_8 : 1
 		pix_out_10 : 2
-		write_ln230 : 3
+		write_ln229 : 3
 	State 9
-		empty_16 : 1
+		empty_19 : 1
 	State 10
 
 
@@ -2309,46 +2309,46 @@ ret_ln0             (ret              ) [ 00000000000]
 |----------|---------------------------------|---------|---------|---------|
 | Operation|         Functional Unit         |  DSP48E |    FF   |   LUT   |
 |----------|---------------------------------|---------|---------|---------|
-|          |         add_ln218_fu_193        |    0    |    0    |    39   |
-|          |         add_ln225_fu_198        |    0    |    0    |    39   |
-|          |         add_ln208_fu_203        |    0    |    0    |    39   |
-|    add   |         add_ln204_fu_255        |    0    |    0    |    71   |
-|          |        add_ln204_1_fu_261       |    0    |    0    |    13   |
+|          |         add_ln217_fu_193        |    0    |    0    |    39   |
+|          |         add_ln224_fu_198        |    0    |    0    |    39   |
+|          |         add_ln207_fu_203        |    0    |    0    |    39   |
+|    add   |         add_ln203_fu_255        |    0    |    0    |    71   |
+|          |        add_ln203_1_fu_261       |    0    |    0    |    13   |
 |          |             j_fu_343            |    0    |    0    |    13   |
-|          |         add_ln228_fu_397        |    0    |    0    |    13   |
+|          |         add_ln227_fu_397        |    0    |    0    |    13   |
 |----------|---------------------------------|---------|---------|---------|
 |    mul   |            grp_fu_187           |    4    |   166   |    49   |
 |----------|---------------------------------|---------|---------|---------|
-|          |        icmp_ln208_fu_212        |    0    |    0    |    13   |
-|          |       icmp_ln208_1_fu_218       |    0    |    0    |    13   |
-|          |       icmp_ln208_2_fu_224       |    0    |    0    |    18   |
-|          |        icmp_ln205_fu_245        |    0    |    0    |    18   |
-|          |        icmp_ln204_fu_250        |    0    |    0    |    29   |
-|          |       icmp_ln208_3_fu_279       |    0    |    0    |    13   |
-|   icmp   |       icmp_ln208_4_fu_285       |    0    |    0    |    13   |
-|          |       icmp_ln208_5_fu_291       |    0    |    0    |    18   |
-|          |        icmp_ln211_fu_328        |    0    |    0    |    18   |
-|          |        icmp_ln218_fu_333        |    0    |    0    |    18   |
-|          |        icmp_ln225_fu_338        |    0    |    0    |    18   |
-|          |        icmp_ln215_fu_367        |    0    |    0    |    13   |
-|          |        icmp_ln223_fu_413        |    0    |    0    |    13   |
+|          |        icmp_ln207_fu_212        |    0    |    0    |    13   |
+|          |       icmp_ln207_1_fu_218       |    0    |    0    |    13   |
+|          |       icmp_ln207_2_fu_224       |    0    |    0    |    18   |
+|          |        icmp_ln204_fu_245        |    0    |    0    |    18   |
+|          |        icmp_ln203_fu_250        |    0    |    0    |    29   |
+|          |       icmp_ln207_3_fu_279       |    0    |    0    |    13   |
+|   icmp   |       icmp_ln207_4_fu_285       |    0    |    0    |    13   |
+|          |       icmp_ln207_5_fu_291       |    0    |    0    |    18   |
+|          |        icmp_ln210_fu_328        |    0    |    0    |    18   |
+|          |        icmp_ln217_fu_333        |    0    |    0    |    18   |
+|          |        icmp_ln224_fu_338        |    0    |    0    |    18   |
+|          |        icmp_ln214_fu_367        |    0    |    0    |    13   |
+|          |        icmp_ln222_fu_413        |    0    |    0    |    13   |
 |----------|---------------------------------|---------|---------|---------|
-|          |       select_ln204_fu_271       |    0    |    0    |    11   |
-|          |      select_ln204_1_fu_308      |    0    |    0    |    2    |
-|          |      select_ln204_2_fu_320      |    0    |    0    |    11   |
-|  select  |       select_ln215_fu_372       |    0    |    0    |    32   |
+|          |       select_ln203_fu_271       |    0    |    0    |    11   |
+|          |      select_ln203_1_fu_308      |    0    |    0    |    2    |
+|          |      select_ln203_2_fu_320      |    0    |    0    |    11   |
+|  select  |       select_ln214_fu_372       |    0    |    0    |    32   |
 |          |        l_edge_pix_fu_380        |    0    |    0    |    32   |
 |          |         pix_out_8_fu_429        |    0    |    0    |    32   |
 |          |        pix_out_10_fu_437        |    0    |    0    |    32   |
 |----------|---------------------------------|---------|---------|---------|
-|          |         and_ln208_fu_229        |    0    |    0    |    2    |
-|    and   |        and_ln208_1_fu_296       |    0    |    0    |    2    |
-|          |         and_ln225_fu_424        |    0    |    0    |    2    |
+|          |         and_ln207_fu_229        |    0    |    0    |    2    |
+|    and   |        and_ln207_1_fu_296       |    0    |    0    |    2    |
+|          |         and_ln224_fu_424        |    0    |    0    |    2    |
 |----------|---------------------------------|---------|---------|---------|
-|    or    |         or_ln208_fu_235         |    0    |    0    |    2    |
-|          |        or_ln208_1_fu_302        |    0    |    0    |    2    |
+|    or    |         or_ln207_fu_235         |    0    |    0    |    2    |
+|          |        or_ln207_1_fu_302        |    0    |    0    |    2    |
 |----------|---------------------------------|---------|---------|---------|
-|    xor   |         xor_ln223_fu_418        |    0    |    0    |    2    |
+|    xor   |         xor_ln222_fu_418        |    0    |    0    |    2    |
 |----------|---------------------------------|---------|---------|---------|
 |          |      width_read_read_fu_94      |    0    |    0    |    0    |
 |   read   |     height_read_read_fu_100     |    0    |    0    |    0    |
@@ -2359,12 +2359,12 @@ ret_ln0             (ret              ) [ 00000000000]
 |----------|---------------------------------|---------|---------|---------|
 |          |           cast_fu_181           |    0    |    0    |    0    |
 |          |           cast1_fu_184          |    0    |    0    |    0    |
-|          |       zext_ln204_1_fu_208       |    0    |    0    |    0    |
-|   zext   |        zext_ln205_fu_241        |    0    |    0    |    0    |
-|          |        zext_ln204_fu_267        |    0    |    0    |    0    |
-|          |       zext_ln204_2_fu_316       |    0    |    0    |    0    |
-|          |        zext_ln213_fu_354        |    0    |    0    |    0    |
-|          |        zext_ln228_fu_402        |    0    |    0    |    0    |
+|          |       zext_ln203_1_fu_208       |    0    |    0    |    0    |
+|   zext   |        zext_ln204_fu_241        |    0    |    0    |    0    |
+|          |        zext_ln203_fu_267        |    0    |    0    |    0    |
+|          |       zext_ln203_2_fu_316       |    0    |    0    |    0    |
+|          |        zext_ln212_fu_354        |    0    |    0    |    0    |
+|          |        zext_ln227_fu_402        |    0    |    0    |    0    |
 |----------|---------------------------------|---------|---------|---------|
 |   Total  |                                 |    4    |   166   |   655   |
 |----------|---------------------------------|---------|---------|---------|
@@ -2382,20 +2382,20 @@ Memories:
 +---------------------------+--------+
 |                           |   FF   |
 +---------------------------+--------+
-|     add_ln204_reg_520     |   64   |
-|     add_ln208_reg_505     |   32   |
-|     add_ln218_reg_495     |   32   |
-|     add_ln225_reg_500     |   32   |
+|     add_ln203_reg_520     |   64   |
+|     add_ln207_reg_505     |   32   |
+|     add_ln217_reg_495     |   32   |
+|     add_ln224_reg_500     |   32   |
 |  borderbuf_addr_1_reg_566 |   11   |
 |       bound_reg_511       |   64   |
 |       cast1_reg_490       |   64   |
 |        cast_reg_485       |   64   |
 |    height_read_reg_474    |   32   |
 |     i6_0_i_i_i_reg_159    |   11   |
-|     icmp_ln204_reg_516    |    1   |
-|     icmp_ln211_reg_542    |    1   |
-|     icmp_ln218_reg_546    |    1   |
-|     icmp_ln225_reg_551    |    1   |
+|     icmp_ln203_reg_516    |    1   |
+|     icmp_ln210_reg_542    |    1   |
+|     icmp_ln217_reg_546    |    1   |
+|     icmp_ln224_reg_551    |    1   |
 |   indvar_flatten_reg_148  |   64   |
 |     j_0_i_i_i_reg_170     |   11   |
 |         j_reg_556         |   11   |
@@ -2403,9 +2403,9 @@ Memories:
 |     pix_out_1_reg_459     |   32   |
 |      pix_out_reg_452      |   32   |
 |     r_edge_pix_reg_446    |   32   |
-|   select_ln204_1_reg_533  |    1   |
-|   select_ln204_2_reg_537  |   11   |
-|    select_ln204_reg_525   |   11   |
+|   select_ln203_1_reg_533  |    1   |
+|   select_ln203_2_reg_537  |   11   |
+|    select_ln203_reg_525   |   11   |
 |        tmp_reg_561        |   32   |
 |vconv_xlim_loc_read_reg_480|   32   |
 |     width_read_reg_466    |   32   |

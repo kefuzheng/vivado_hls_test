@@ -59,7 +59,7 @@
     "ClockPeriod": "6.66",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "23",
+    "Latency": "15",
     "Uncertainty": "0.8325"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 6.660 [get_ports ap_clk]"]},
@@ -85,10 +85,13 @@
       "impl\/vhdl\/filter11x11_strm_mul_10ns_32s_32_3_1.vhd",
       "impl\/vhdl\/filter11x11_strm_mul_11ns_32s_32_3_1.vhd",
       "impl\/vhdl\/filter11x11_strm_mul_32ns_32ns_64_3_1.vhd",
+      "impl\/vhdl\/filter11x11_strm_mul_32s_10ns_32_3_1.vhd",
+      "impl\/vhdl\/filter11x11_strm_mux_104_32_1_1.vhd",
       "impl\/vhdl\/Loop_Border_proc.vhd",
       "impl\/vhdl\/Loop_Border_proc_borderbuf.vhd",
       "impl\/vhdl\/Loop_HConvH_proc6.vhd",
       "impl\/vhdl\/Loop_VConvH_proc.vhd",
+      "impl\/vhdl\/Loop_VConvH_proc_filt11_coeff.vhd",
       "impl\/vhdl\/Loop_VConvH_proc_linebuf_0.vhd",
       "impl\/vhdl\/start_for_Block_proc_U0.vhd",
       "impl\/vhdl\/start_for_Loop_Border_proc_U0.vhd",
@@ -104,10 +107,14 @@
       "impl\/verilog\/filter11x11_strm_mul_10ns_32s_32_3_1.v",
       "impl\/verilog\/filter11x11_strm_mul_11ns_32s_32_3_1.v",
       "impl\/verilog\/filter11x11_strm_mul_32ns_32ns_64_3_1.v",
+      "impl\/verilog\/filter11x11_strm_mul_32s_10ns_32_3_1.v",
+      "impl\/verilog\/filter11x11_strm_mux_104_32_1_1.v",
       "impl\/verilog\/Loop_Border_proc.v",
       "impl\/verilog\/Loop_Border_proc_borderbuf.v",
       "impl\/verilog\/Loop_HConvH_proc6.v",
       "impl\/verilog\/Loop_VConvH_proc.v",
+      "impl\/verilog\/Loop_VConvH_proc_filt11_coeff.v",
+      "impl\/verilog\/Loop_VConvH_proc_filt11_coeff_rom.dat",
       "impl\/verilog\/Loop_VConvH_proc_linebuf_0.v",
       "impl\/verilog\/Loop_VConvH_proc_linebuf_0_ram.dat",
       "impl\/verilog\/start_for_Block_proc_U0.v",
@@ -271,12 +278,12 @@
           "InstanceName": "Loop_HConvH_proc6_U0"
         },
         {
-          "ModuleName": "Loop_VConvH_proc",
-          "InstanceName": "Loop_VConvH_proc_U0"
-        },
-        {
           "ModuleName": "Loop_Border_proc",
           "InstanceName": "Loop_Border_proc_U0"
+        },
+        {
+          "ModuleName": "Loop_VConvH_proc",
+          "InstanceName": "Loop_VConvH_proc_U0"
         },
         {
           "ModuleName": "Block_proc",
@@ -412,12 +419,12 @@
       },
       "Loop_VConvH_proc": {
         "Latency": {
-          "LatencyBest": "5",
+          "LatencyBest": "1",
           "LatencyAvg": "",
-          "LatencyWorst": "2059825",
-          "PipelineIIMin": "5",
-          "PipelineIIMax": "2059825",
-          "PipelineII": "5 ~ 2059825",
+          "LatencyWorst": "162727228",
+          "PipelineIIMin": "1",
+          "PipelineIIMax": "162727228",
+          "PipelineII": "1 ~ 162727228",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -427,19 +434,37 @@
           "Estimate": "5.827"
         },
         "Loops": [{
-            "Name": "VConvH_VConvW",
+            "Name": "VConvH",
             "TripCount": "",
             "LatencyMin": "0",
-            "LatencyMax": "2059820",
-            "Latency": "0 ~ 2059820",
-            "PipelineII": "1",
-            "PipelineDepth": "11"
+            "LatencyMax": "162727227",
+            "Latency": "0 ~ 162727227",
+            "PipelineII": "",
+            "PipelineDepthMin": "2",
+            "PipelineDepthMax": "150813",
+            "PipelineDepth": "2 ~ 150813",
+            "Loops": [{
+                "Name": "VConvW",
+                "TripCount": "",
+                "LatencyMin": "0",
+                "LatencyMax": "150811",
+                "Latency": "0 ~ 150811",
+                "PipelineII": "",
+                "PipelineDepth": "79",
+                "Loops": [{
+                    "Name": "VConv",
+                    "TripCount": "11",
+                    "Latency": "77",
+                    "PipelineII": "",
+                    "PipelineDepth": "7"
+                  }]
+              }]
           }],
         "Area": {
           "BRAM_18K": "40",
-          "DSP48E": "22",
-          "FF": "3584",
-          "LUT": "1536",
+          "DSP48E": "2",
+          "FF": "872",
+          "LUT": "449",
           "URAM": "0"
         }
       },
@@ -478,12 +503,12 @@
       },
       "filter11x11_strm": {
         "Latency": {
-          "LatencyBest": "23",
+          "LatencyBest": "15",
           "LatencyAvg": "",
-          "LatencyWorst": "2070627",
+          "LatencyWorst": "162727239",
           "PipelineIIMin": "6",
-          "PipelineIIMax": "2070613",
-          "PipelineII": "6 ~ 2070613",
+          "PipelineIIMax": "162727229",
+          "PipelineII": "6 ~ 162727229",
           "PipelineDepth": "",
           "PipelineType": "dataflow"
         },
@@ -494,9 +519,9 @@
         },
         "Area": {
           "BRAM_18K": "44",
-          "DSP48E": "48",
-          "FF": "8188",
-          "LUT": "4716",
+          "DSP48E": "28",
+          "FF": "5476",
+          "LUT": "3629",
           "URAM": "0"
         }
       }
@@ -512,7 +537,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2019-05-21 08:04:42 IST",
+    "Time": "2019-05-23 07:29:28 IST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2.0"
   }

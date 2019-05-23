@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Loop_VConvH_proc'" level="0">
-<item name = "Date">Tue May 21 08:04:37 2019
+<item name = "Date">Thu May 23 07:29:22 2019
 </item>
-<item name = "Version">2019.2.0 (Build 2547110 on Sun May 19 23:20:49 MDT 2019)</item>
+<item name = "Version">2019.2.0 (Build 2548284 on Tue May 21 04:25:56 EDT 2019)</item>
 <item name = "Project">proj_2D_convolution_with_linebuffer</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">5, 2059825, 5, 2059825, none</column>
+<column name="">1, 162727228, 1, 162727228, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,9 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VConvH_VConvW">0, 2059820, 11, 1, 1, 0 ~ 2059811, yes</column>
+<column name="- VConvH">0, 162727227, 2 ~ 150813, -, -, 0 ~ 1079, no</column>
+<column name=" + VConvW">0, 150811, 79, -, -, 0 ~ 1909, no</column>
+<column name="  ++ VConv">77, 77, 7, -, -, 11, no</column>
 </table>
 </item>
 </section>

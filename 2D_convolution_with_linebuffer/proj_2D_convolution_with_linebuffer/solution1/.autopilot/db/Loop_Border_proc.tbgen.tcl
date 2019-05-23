@@ -107,7 +107,7 @@ set RtlHierarchyInfo {[
 				"BlockSignal" : [
 					{"Name" : "vconv_V_blk_n", "Type" : "RtlSignal"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.borderbuf_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.filter11x11_strm_mul_32ns_32ns_64_3_1_U47", "Parent" : "0"}]}
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.filter11x11_strm_mul_32ns_32ns_64_3_1_U42", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

@@ -2,7 +2,6 @@
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
     <originFiles name="convolution.cpp" path="/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/convolution.cpp"/>
-    <originFiles name="apint_arith.c" path="/wrk/xbj_vdi/kefuz/workspace/workspace_hls_test/demo4/apint_arith/apint_arith.c"/>
   </source>
   <testbench>
     <originFiles name="convolution_test.cpp" path="/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/convolution_test.cpp"/>
