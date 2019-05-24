@@ -22,7 +22,7 @@ HLS_SOURCES = ../../../../convolution_test.cpp ../../../../convolution.cpp
 
 TARGET := csim.exe
 
-AUTOPILOT_ROOT := /proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado
+AUTOPILOT_ROOT := /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD
 AUTOPILOT_MACH := lnx64
 ifdef AP_GCC_M32
   AUTOPILOT_MACH := Linux_x86
@@ -63,11 +63,9 @@ CCFLAG +=
 TOOLCHAIN += 
 
 
-IFLAG += -pg
 
 include ./Makefile.rules
 
-LD.Flags += -pg
 all: $(TARGET)
 
 
