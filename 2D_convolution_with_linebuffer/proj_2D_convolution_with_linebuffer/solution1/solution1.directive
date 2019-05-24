@@ -1,2 +1,8 @@
-<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView"/>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+  <sourceFile name="convolution.cpp">
+    <directive functionName="filter11x11_orig" label=" " functionLabel=" ">
+      <pragma name="DATAFLOW"/>
+    </directive>
+  </sourceFile>
+</AutoPilot:ProjectResources>

@@ -6,7 +6,7 @@ Device: All
 # Revision History: Oct 1, 2014 - initial release
                                                 
 *******************************************************************************
-� Copyright 2008 � 2012 Xilinx, Inc. All rights reserved. 
+��� Copyright 2008 ��� 2012 Xilinx, Inc. All rights reserved. 
 
 This file contains confidential and proprietary information of Xilinx, Inc. and 
 is protected under U.S. and international copyright and other intellectual 
@@ -244,7 +244,6 @@ void filter11x11_orig(
 #pragma HLS RESOURCE variable=height      core=AXI4LiteS metadata="-bus_bundle hls_ctrl"
 
 #pragma HLS INLINE region
-#pragma HLS DATAFLOW
 
     const data_t filt11_coeff[11] = {
             36, 111, 266, 498, 724, 821, 724, 498, 266, 111, 36
