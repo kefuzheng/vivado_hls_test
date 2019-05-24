@@ -1,5 +1,5 @@
 
-//add test message
+
 
 void foo(int* a, int* b)
 {
