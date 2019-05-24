@@ -6,8 +6,7 @@
 open_project proj_2D_convolution_with_linebuffer
 set_top filter11x11_strm
 add_files convolution.cpp
-add_files foo.cpp
-add_files -tb convolution_test.cpp -cflags "-Wno-unknown-pragmas"
+add_files -tb convolution_test.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1"
 set_part {xc7z020-clg484-1}
 create_clock -period 6.66 -name default
