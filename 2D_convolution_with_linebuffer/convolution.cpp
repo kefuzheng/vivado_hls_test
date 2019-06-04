@@ -254,7 +254,7 @@ void filter11x11_orig(
             filt11_coeff, filt11_coeff);
 }
 
-//
+//filter
 void filter11x11_strm(
         int width, int height,
         hls::stream<data_t> &src, hls::stream<data_t> &dst)
