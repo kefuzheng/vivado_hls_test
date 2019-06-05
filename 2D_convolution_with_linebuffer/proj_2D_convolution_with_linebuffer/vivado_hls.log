@@ -1,0 +1,14 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2.0 (64-bit)
+  **** SW Build 2558107 on Sun Jun  2 19:51:14 MDT 2019
+  **** IP Build 2557070 on Sun Jun  2 22:17:23 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/scripts/vivado_hls/hls.tcl -notrace
+Sourcing Tcl script '/home/kefuz/.Xilinx/Vivado/VivadoHLS_init.tcl'
+INFO: [HLS 200-10] Running '/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'kefuz' on host 'xhdengvm154063' (Linux_x86_64 version 3.10.0-693.el7.x86_64) on Tue Jun 04 14:10:22 IST 2019
+INFO: [HLS 200-10] On os "CentOS Linux release 7.4.1708 (Core) "
+INFO: [HLS 200-10] In directory '/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer'
+[2Kvivado_hls> [12C[2Kvivado_hls> s[13C[2Kvivado_hls> se[14C[2Kvivado_hls> s[13C[2Kvivado_hls> [12C[2Kvivado_hls> e[13C[2Kvivado_hls> ex[14C[2Kvivado_hls> exi[15C[2Kvivado_hls> exit[16C
+INFO: [Common 17-206] Exiting vivado_hls at Tue Jun  4 14:10:30 2019...
