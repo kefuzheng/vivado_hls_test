@@ -51,17 +51,17 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.2069011260" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include"/>
+                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/etc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/auto_cc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include/ap_sysc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include/etc"/>
+                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include"/>
                                     								
                                 </option>
                                 								
@@ -87,17 +87,17 @@
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.698318667" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include"/>
+                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/etc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/auto_cc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include/ap_sysc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include/etc"/>
+                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include"/>
                                     								
                                 </option>
                                 								
@@ -119,7 +119,7 @@
                                 								
                                 <option id="gnu.c.link.option.paths.313315891" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -133,7 +133,7 @@
                                 								
                                 <option id="gnu.cpp.link.option.paths.411159301" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -169,17 +169,17 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1592590648" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include"/>
+                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/etc"/>
                                 								
-                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/systemc/include"/>
+                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/systemc/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer"/>
                                 								
-                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/auto_cc/include"/>
-                                								
-                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include/ap_sysc"/>
-                                								
-                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include/etc"/>
+                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include"/>
                                 							
                             </option>
                             							
@@ -253,17 +253,17 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.1800325999" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include"/>
+                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/etc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/auto_cc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include/ap_sysc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include/etc"/>
+                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include"/>
                                     								
                                 </option>
                                 								
@@ -279,17 +279,17 @@
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.183735658" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include"/>
+                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/etc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/auto_cc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include/ap_sysc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include/etc"/>
+                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include"/>
                                     								
                                 </option>
                                 								
@@ -301,7 +301,7 @@
                                 								
                                 <option id="gnu.c.link.option.paths.422394709" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -315,7 +315,7 @@
                                 								
                                 <option id="gnu.cpp.link.option.paths.1456298287" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -351,17 +351,17 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1064469172" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include"/>
+                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/etc"/>
                                 								
-                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/systemc/include"/>
+                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/systemc/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer"/>
                                 								
-                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/lnx64/tools/auto_cc/include"/>
-                                								
-                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include/ap_sysc"/>
-                                								
-                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/vivado/include/etc"/>
+                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include"/>
                                 							
                             </option>
                             							
