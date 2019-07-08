@@ -1,5 +1,5 @@
 # ==============================================================
-# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2.0 (64-bit)
+# Scout HLS - High-Level Synthesis from C, C++ and OpenCL v2019.2.0 (64-bit)
 # Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
 CSIM_DESIGN = 1
@@ -7,8 +7,6 @@ CSIM_DESIGN = 1
 __SIM_FPO__ = 1
 
 __SIM_MATHHLS__ = 1
-
-__SIM_OPENCV__ = 1
 
 __SIM_FFT__ = 1
 
@@ -22,7 +20,7 @@ HLS_SOURCES = ../../../../convolution_test.cpp ../../../../convolution.cpp
 
 TARGET := csim.exe
 
-AUTOPILOT_ROOT := /proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD
+AUTOPILOT_ROOT := /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD
 AUTOPILOT_MACH := lnx64
 ifdef AP_GCC_M32
   AUTOPILOT_MACH := Linux_x86
@@ -39,15 +37,12 @@ AUTOPILOT_TECH := ${AUTOPILOT_ROOT}/common/technology
 
 IFLAG += -I "${AUTOPILOT_TOOL}/systemc/include"
 IFLAG += -I "${AUTOPILOT_ROOT}/include"
-IFLAG += -I "${AUTOPILOT_ROOT}/include/opencv"
 IFLAG += -I "${AUTOPILOT_ROOT}/include/ap_sysc"
 IFLAG += -I "${AUTOPILOT_TECH}/generic/SystemC"
 IFLAG += -I "${AUTOPILOT_TECH}/generic/SystemC/AESL_FP_comp"
 IFLAG += -I "${AUTOPILOT_TECH}/generic/SystemC/AESL_comp"
 IFLAG += -I "${AUTOPILOT_TOOL}/auto_cc/include"
 IFLAG += -D__SIM_FPO__
-
-IFLAG += -D__SIM_OPENCV__
 
 IFLAG += -D__SIM_FFT__
 

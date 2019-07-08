@@ -51,17 +51,17 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.2069011260" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/ap_sysc"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include"/>
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/etc"/>
                                     								
                                 </option>
                                 								
@@ -87,17 +87,17 @@
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.698318667" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/ap_sysc"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include"/>
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/etc"/>
                                     								
                                 </option>
                                 								
@@ -169,17 +169,17 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1592590648" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/etc"/>
-                                								
-                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/ap_sysc"/>
-                                								
                                 <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/systemc/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer"/>
                                 								
-                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include"/>
+                                <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/etc"/>
                                 							
                             </option>
                             							
@@ -253,17 +253,17 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.1800325999" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/ap_sysc"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include"/>
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/etc"/>
                                     								
                                 </option>
                                 								
@@ -279,17 +279,17 @@
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.183735658" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/etc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/ap_sysc"/>
-                                    									
                                     <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include"/>
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/etc"/>
                                     								
                                 </option>
                                 								
@@ -351,17 +351,17 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1064469172" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/etc"/>
-                                								
-                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include/ap_sysc"/>
-                                								
                                 <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/systemc/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer"/>
                                 								
-                                <listOptionValue builtIn="false" value="/proj/xhdhdstaff1/kefuz/workspace_HEAD/Rodin/HEAD/prep/rdi/scout/include"/>
+                                <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/etc"/>
                                 							
                             </option>
                             							

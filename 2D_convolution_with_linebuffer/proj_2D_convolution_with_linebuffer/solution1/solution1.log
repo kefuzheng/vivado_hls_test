@@ -402,3 +402,7 @@ INFO: [RTMG 210-285] Implementing FIFO 'height_c61_U(fifo_w32_d2_A)' using Shift
 INFO: [RTMG 210-285] Implementing FIFO 'width_c62_U(fifo_w32_d3_A)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'height_c63_U(fifo_w32_d2_A)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'vconv_xlim_loc_c_U(fifo_w32_d2_A)' using Shift Registers.
+==============================================================
+Scout HLS - High-Level Synthesis from C, C++ and OpenCL v2019.2.0 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================

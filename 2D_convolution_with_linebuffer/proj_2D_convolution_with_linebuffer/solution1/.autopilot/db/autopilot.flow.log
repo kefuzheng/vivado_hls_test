@@ -938,3 +938,126 @@ INFO: [VLOG 209-307] Generating Verilog RTL for filter11x11_strm.
 Command       autosyn done; 7.41 sec.
 Command     csynth_design done; 16.56 sec.
 Execute     cleanup_all 
+INFO-FLOW: Workspace /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1 opened at Mon Jul 08 12:03:27 IST 2019
+Execute     config_clock -quiet -name default -period 6.66 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.66ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/zynq/zynq 
+Execute       source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/common/xilinx.lib 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/plb46.lib 
+Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/fsl.lib 
+Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/axi4.lib 
+Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/maxi.lib 
+Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/common/dsp48.lib 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/ip/xfft.lib 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/ip/xfir.lib 
+Execute       source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/common/target_info.tcl 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/common/target_info.tcl 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/common/dsp48.hlp 
+Command     import_lib done; 0.13 sec.
+Execute     source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/common/xilinx.gen 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/plb46.gen 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/fsl.gen 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/axi4.gen 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/maxi.gen 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/ip/util.gen 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/ip/xfft.gen 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/ip/xfir.gen 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.19 sec.
+Command     ap_source done; 0.19 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/common/target_info.tcl 
+Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg484-1 
+Execute       ap_part_info -name xc7z020-clg484-1 -data single -quiet 
+Command       ap_part_info done; 3.8 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg484-1 
+Execute         ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 3.94 sec.
+Execute     ap_part_info -data single -name xc7z020-clg484-1 
+Execute     ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 4.35 sec.
+Execute   set_part xc7z020-clg484-1 
+Execute     ap_part_info -name xc7z020-clg484-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
+Execute       get_default_platform 
+Execute       ap_part_info -data single -name xc7z020-clg484-1 
+Execute       ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     get_default_platform 
+Command   set_part done; 0.13 sec.
+Execute   create_clock -period 6.66 -name default 
+Execute   source ./proj_2D_convolution_with_linebuffer/solution1/directives.tcl 
+Execute     set_directive_dataflow filter11x11_orig 
+INFO-FLOW: Setting directive 'DATAFLOW' 
+Execute   csim_design -quiet 
+Execute     source /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/proj_2D_convolution_with_linebuffer/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/convolution_test.cpp 
+Execute     is_xip /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/convolution_test.cpp 
+Execute     is_encrypted /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/convolution.cpp 
+Execute     is_xip /home/kefuz/git/vivado_hls_test/2D_convolution_with_linebuffer/convolution.cpp 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 3.09 sec.
+Command ap_source done; 7.6 sec.
+Execute cleanup_all 
