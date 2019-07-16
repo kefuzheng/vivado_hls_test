@@ -161,9 +161,39 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.264414114.84998656" name="hier_func_test.c" rcbsApplicability="disable" resourcePath="testbench/hier_func_test.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1471582966.59677486">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1471582966.59677486" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1471582966">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.125880815" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option id="gnu.c.compiler.option.include.paths.312106125" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/hier_func"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/etc"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.1313043972" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1766795990" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
                     <sourceEntries>
                         						
-                        <entry excluding="solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="solution1|solution2|solution3|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
@@ -313,9 +343,39 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1580671426.2040377909" name="hier_func_test.c" rcbsApplicability="disable" resourcePath="testbench/hier_func_test.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.481221572.2071623546">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.481221572.2071623546" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.481221572">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.1744428330" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option id="gnu.c.compiler.option.include.paths.201588416" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/hier_func"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/etc"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.1430449464" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.776153689" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
                     <sourceEntries>
                         						
-                        <entry excluding="solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="solution1|solution2|solution3|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				

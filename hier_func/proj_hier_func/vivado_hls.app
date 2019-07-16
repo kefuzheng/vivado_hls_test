@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="com.autoesl.autopilot.project" name="proj_hier_func" top="hier_func">
-  <files>
-    <file name="../../tb_data" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" blackbox="false" csimflags=" -Wno-unknown-pragmas"/>
-    <file name="../../hier_func_test.c" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" blackbox="false" csimflags=" -Wno-unknown-pragmas"/>
-    <file name="hier_func.c" sc="0" tb="false" cflags="" blackbox="false" csimflags=""/>
-  </files>
-  <solutions>
-    <solution name="solution1" status="inactive"/>
-    <solution name="solution2" status="inactive"/>
-    <solution name="solution3" status="active"/>
-  </solutions>
-  <includePaths/>
-  <libraryPaths/>
-  <libraryFlag/>
-  <Simulation>
-    <SimFlow name="csim" clean="true" csimMode="0" lastCsimMode="0"/>
-  </Simulation>
+    <includePaths/>
+    <libraryPaths/>
+    <libraryFlag/>
+    <Simulation>
+        <SimFlow name="csim" clean="true" csimMode="0" lastCsimMode="0"/>
+    </Simulation>
+    <files xmlns="">
+        <file name="../../hier_func_test.c" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>
+        <file name="../../tb_data" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>
+        <file name="hier_func.c" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
+    </files>
+    <solutions xmlns="">
+        <solution name="solution1" status="inactive"/>
+        <solution name="solution2" status="inactive"/>
+        <solution name="solution3" status="active"/>
+    </solutions>
 </project>
+
