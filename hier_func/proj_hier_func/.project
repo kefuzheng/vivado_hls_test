@@ -47,6 +47,11 @@
 			<location>/home/kefuz/git/vivado_hls_test/hier_func/proj_hier_func/solution2/.tcls</location>
 		</link>
 		<link>
+			<name>solution3/constraints</name>
+			<type>2</type>
+			<location>/home/kefuz/git/vivado_hls_test/hier_func/proj_hier_func/solution3/.tcls</location>
+		</link>
+		<link>
 			<name>source/hier_func.c</name>
 			<type>1</type>
 			<location>/home/kefuz/git/vivado_hls_test/hier_func/hier_func.c</location>
@@ -90,6 +95,21 @@
 			<name>solution2/constraints/script.tcl</name>
 			<type>1</type>
 			<location>/home/kefuz/git/vivado_hls_test/hier_func/proj_hier_func/solution2/script.tcl</location>
+		</link>
+		<link>
+			<name>solution3/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>/home/kefuz/git/vivado_hls_test/hier_func/proj_hier_func/solution3/solution3.directive</location>
+		</link>
+		<link>
+			<name>solution3/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/home/kefuz/git/vivado_hls_test/hier_func/proj_hier_func/solution3/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution3/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/home/kefuz/git/vivado_hls_test/hier_func/proj_hier_func/solution3/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>
