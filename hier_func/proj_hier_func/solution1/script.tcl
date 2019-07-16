@@ -11,7 +11,7 @@ add_files -tb hier_func_test.c -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-u
 open_solution "solution1"
 set_part {xc7k160t-fbg484-1}
 create_clock -period 4 -name default
-#source "./proj_hier_func/solution1/directives.tcl"
+source "./proj_hier_func/solution1/directives.tcl"
 csim_design -clean
 csynth_design -dump_cfg
 cosim_design
