@@ -1,0 +1,22 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../hier_func_test.c in debug mode
+INFO: [HLS 200-10] Running '/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'kefuz' on host 'xhdengvm154063' (Linux_x86_64 version 3.10.0-693.el7.x86_64) on Tue Jul 16 08:08:12 IST 2019
+INFO: [HLS 200-10] On os "CentOS Linux release 7.4.1708 (Core) "
+INFO: [HLS 200-10] In directory '/home/kefuz/git/vivado_hls_test/hier_func/proj_hier_func/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_kefuz/137771563244693005389
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../hier_func.c in debug mode
+INFO: [HLS 200-10] Running '/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'kefuz' on host 'xhdengvm154063' (Linux_x86_64 version 3.10.0-693.el7.x86_64) on Tue Jul 16 08:08:31 IST 2019
+INFO: [HLS 200-10] On os "CentOS Linux release 7.4.1708 (Core) "
+INFO: [HLS 200-10] In directory '/home/kefuz/git/vivado_hls_test/hier_func/proj_hier_func/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_kefuz/139341563244711804284
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+    *** *** *** *** 
+    Results are good 
+    *** *** *** *** 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

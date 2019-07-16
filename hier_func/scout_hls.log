@@ -1,0 +1,42 @@
+
+****** Scout HLS - High-Level Synthesis from C, C++ and OpenCL v2019.2.0 (64-bit)
+  **** SW Build 2591210 on Sun Jul 14 20:18:13 MDT 2019
+  **** IP Build 2591089 on Sun Jul 14 23:02:57 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/scripts/scout_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/bin/unwrapped/lnx64.o/scout_hls'
+INFO: [HLS 200-10] For user 'kefuz' on host 'xhdengvm154063' (Linux_x86_64 version 3.10.0-693.el7.x86_64) on Tue Jul 16 08:07:59 IST 2019
+INFO: [HLS 200-10] On os "CentOS Linux release 7.4.1708 (Core) "
+INFO: [HLS 200-10] In directory '/home/kefuz/git/vivado_hls_test/hier_func'
+Sourcing Tcl script '/home/kefuz/git/vivado_hls_test/hier_func/proj_hier_func/solution1/csim.tcl'
+INFO: [HLS 200-10] Opening project '/home/kefuz/git/vivado_hls_test/hier_func/proj_hier_func'.
+INFO: [HLS 200-10] Adding design file 'hier_func.c' to the project
+INFO: [HLS 200-10] Adding test bench file 'tb_data' to the project
+INFO: [HLS 200-10] Adding test bench file 'hier_func_test.c' to the project
+INFO: [HLS 200-10] Opening solution '/home/kefuz/git/vivado_hls_test/hier_func/proj_hier_func/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 4ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k160t-fbg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../hier_func_test.c in debug mode
+INFO: [HLS 200-10] Running '/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'kefuz' on host 'xhdengvm154063' (Linux_x86_64 version 3.10.0-693.el7.x86_64) on Tue Jul 16 08:08:12 IST 2019
+INFO: [HLS 200-10] On os "CentOS Linux release 7.4.1708 (Core) "
+INFO: [HLS 200-10] In directory '/home/kefuz/git/vivado_hls_test/hier_func/proj_hier_func/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_kefuz/137771563244693005389
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../hier_func.c in debug mode
+INFO: [HLS 200-10] Running '/proj/xbuilds/HEAD_daily_latest/installs/lin64/Vivado/HEAD/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'kefuz' on host 'xhdengvm154063' (Linux_x86_64 version 3.10.0-693.el7.x86_64) on Tue Jul 16 08:08:31 IST 2019
+INFO: [HLS 200-10] On os "CentOS Linux release 7.4.1708 (Core) "
+INFO: [HLS 200-10] In directory '/home/kefuz/git/vivado_hls_test/hier_func/proj_hier_func/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_kefuz/139341563244711804284
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+    *** *** *** *** 
+    Results are good 
+    *** *** *** *** 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [Common 17-206] Exiting scout_hls at Tue Jul 16 08:08:41 2019...
