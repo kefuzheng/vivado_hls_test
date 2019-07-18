@@ -46,7 +46,7 @@ ALL TIMES.
 
 #include <stdio.h>
 
-
+//example
 void example(char *a, char *b, char *c)
 {
 #pragma HLS INTERFACE s_axilite port=a bundle=BUS_A
