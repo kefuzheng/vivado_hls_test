@@ -51,17 +51,19 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.514867958" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/axi_lite"/>
+                                    <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls1/axi_lite"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/lnx64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/lnx64/tools/auto_cc/include"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/axi_lite"/>
                                     								
                                 </option>
                                 								
@@ -87,17 +89,19 @@
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.1675533448" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/axi_lite"/>
+                                    <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls1/axi_lite"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/lnx64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/lnx64/tools/auto_cc/include"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/axi_lite"/>
                                     								
                                 </option>
                                 								
@@ -119,7 +123,7 @@
                                 								
                                 <option id="gnu.c.link.option.paths.1694200688" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/lnx64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -133,7 +137,7 @@
                                 								
                                 <option id="gnu.cpp.link.option.paths.2002471145" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/lnx64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -223,17 +227,19 @@
                                 								
                                 <option id="gnu.cpp.compiler.option.include.paths.612618405" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/axi_lite"/>
+                                    <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls1/axi_lite"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/lnx64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/lnx64/tools/auto_cc/include"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/axi_lite"/>
                                     								
                                 </option>
                                 								
@@ -249,17 +255,19 @@
                                 								
                                 <option id="gnu.c.compiler.option.include.paths.1453746480" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/axi_lite"/>
+                                    <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls1/axi_lite"/>
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/auto_cc/include"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="/tools/systemc/include"/>
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/lnx64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/ap_sysc"/>
                                     									
                                     <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/lnx64/tools/auto_cc/include"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/include/etc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/kefuz/git/vivado_hls_test/axi_lite"/>
                                     								
                                 </option>
                                 								
@@ -271,7 +279,7 @@
                                 								
                                 <option id="gnu.c.link.option.paths.1644142640" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/lnx64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								
@@ -285,7 +293,7 @@
                                 								
                                 <option id="gnu.cpp.link.option.paths.764238520" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
                                     									
-                                    <listOptionValue builtIn="false" value="/tools/systemc/lib"/>
+                                    <listOptionValue builtIn="false" value="/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/lnx64/tools/systemc/lib"/>
                                     								
                                 </option>
                                 								

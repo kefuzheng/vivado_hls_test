@@ -1,0 +1,24 @@
+INFO: [HLS 200-10] Running '/proj/xbuilds/HEAD_daily_latest/installs/lin64/Scout/HEAD/bin/unwrapped/lnx64.o/scout_hls'
+INFO: [HLS 200-10] For user 'kefuz' on host 'xhdengvm156022' (Linux_x86_64 version 3.10.0-693.el7.x86_64) on Fri Jul 19 12:41:00 IST 2019
+INFO: [HLS 200-10] On os "CentOS Linux release 7.4.1708 (Core) "
+INFO: [HLS 200-10] In directory '/home/kefuz/git/vivado_hls1/axi_lite'
+Sourcing Tcl script '/home/kefuz/git/vivado_hls1/axi_lite/proj_axi_lite/solution1/csim.tcl'
+INFO: [HLS 200-10] Opening project '/home/kefuz/git/vivado_hls1/axi_lite/proj_axi_lite'.
+INFO: [HLS 200-10] Adding design file 'example.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'example_test.cpp' to the project
+INFO: [HLS 200-10] Opening solution '/home/kefuz/git/vivado_hls1/axi_lite/proj_axi_lite/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.333ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../example_test.cpp in debug mode
+   Compiling ../../../../example.cpp in debug mode
+   Generating csim.exe
+HLS AXI-Lite Example
+Function c += a + b
+Initial values a = 5, b = 10, c = 0
+HW result = 15
+SW result = 15
+Success SW and HW results match
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

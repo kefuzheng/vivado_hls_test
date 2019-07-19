@@ -11,7 +11,7 @@ open_solution "solution1"
 set_part {xc7z020clg484-2}
 create_clock -period 75MHz -name default
 #source "./proj_axi_lite/solution1/directives.tcl"
-csim_design
+csim_design -clean
 csynth_design -dump_cfg
 cosim_design
 export_design -format ip_catalog
